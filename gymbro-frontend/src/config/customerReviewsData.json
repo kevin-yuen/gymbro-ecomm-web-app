@@ -1,0 +1,23 @@
+{
+    "total_reviews": 26,
+    "reviews": [
+        {
+            "review_title": "Great tank",
+            "review_comment": "Nice tank top. Good material.",
+            "review_star_rating": "5",
+            "review_author": "desiree",
+            "review_author_avatar": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png",
+            "review_date": "Reviewed in the United States on February 11, 2024",
+            "is_verified_purchase": true
+        },
+        {
+            "review_title": "Great tank",
+            "review_comment": "Nice tank top. Good material.",
+            "review_star_rating": "5",
+            "review_author": "tulipz123",
+            "review_author_avatar": "https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png",
+            "review_date": "Reviewed in the United States on February 11, 2024",
+            "is_verified_purchase": false
+        }
+    ]
+}

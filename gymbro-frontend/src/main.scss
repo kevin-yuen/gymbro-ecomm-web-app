@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+
+// importing in case need to add custom values into existing sass variables
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+$darknavyblue: #082c54;
+$darkpurple: #3E0957;
+$antiquewhite: #f8faf9;
+$lightpurple: #f0e8f4;
+$green: #057814;
+$lightgreen: #3EC40C;
+$red: #f80000;
+$black: #000000;
+$orange: #ea9000;
+$grey: #75737398;
+$enable-negative-margins: true;
+
+$custom-position-values: (
+    5: 5%,
+    10: 10%,
+    15: 15%,
+    20: 20%,
+    21: 21%,
+    22: 22%,
+    23: 23%,
+    24: 24%,
+    25: 25%,
+    30: 30%,
+    35: 35%,
+    40: 40%,
+    45: 45%,
+    55: 55%,
+    60: 60%,
+    65: 65%,
+    70: 70%,
+    75: 75%,
+    80: 80%,
+    85: 85%,
+    90: 90%,
+    95: 95%
+);
+$position-values: map-merge($position-values, $custom-position-values);
+
+$custom-spacers: (
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+  11: $spacer * 9,
+  12: $spacer * 10,
+  13: $spacer * 11,
+  14: $spacer * 12,
+  15: $spacer * 13,
+  16: $spacer * 14,
+  17: $spacer * 15,
+  18: $spacer * 16,
+  19: $spacer * 17,
+  20: $spacer * 18,
+  21: $spacer * 19,
+  22: $spacer * 20,
+  23: $spacer * 21,
+  24: $spacer * 22,
+  25: $spacer * 23,
+  26: $spacer * 24,
+  27: $spacer * 25,
+);
+$spacers: map-merge($spacers, $custom-spacers);
+
+$custom-font-sizes: (
+  7: $font-size-base * 0.85,
+  8: $font-size-base * 0.80,
+  9: $font-size-base * 0.75,
+  10: $font-size-base * 0.70,
+  11: $font-size-base * 0.86,
+  12: $font-size-base * 0.87,
+  13: $font-size-base * 0.88,
+  14: $font-size-base * 0.89,
+);
+$font-sizes: map-merge($font-sizes, $custom-font-sizes);
+
+// set up base font family
+$font-family-base: "Raleway", sans-serif;
+
+// create own custom class
+$utilities: (
+    "custom-font-family": (
+        property: font-family,
+        class: custom-font-family,
+        values: (
+            "teko": Teko
+        )
+    ),
+  "custom-color": (
+    property: color,
+    class: custom-color,
+    values: (
+      "darknavyblue": $darknavyblue,
+      "darkpurple": $darkpurple,
+      "antiquewhite": $antiquewhite,
+      "black": $black,
+      "green": $green,
+      "red": $red,
+      "grey": $grey,
+      "lightgreen": $lightgreen
+    ),
+  ),
+  "custom-background-color": (
+    property: background-color,
+    class: custom-background-color,
+    values: (
+      "darknavyblue": $darknavyblue,
+      "darkpurple": $darkpurple,
+      "antiquewhite": $antiquewhite,
+      "lightpurple": $lightpurple,
+      "orange": $orange,
+      "red": $red
+    ),
+  ),
+  "custom-width": (
+    property: width,
+    class: custom-width,
+    responsive: true,
+    values: (
+        10: 10%,
+        15: 15%,
+        20: 20%,
+        25: 25%,
+        30: 30%,
+        35: 35%,
+        40: 40%,
+        60: 60%,
+        70: 70%,
+        80: 80%,
+        90: 90%,
+        92: 92%,
+        93: 93%,
+        95: 95%
+    )
+  ),
+  "custom-height": (
+    property: height,
+    class: custom-height,
+    responsive: true,
+    values: (
+        10: 10%,
+        15: 15%,
+        20: 20%,
+        30: 30%,
+        40: 40%,
+        60: 60%,
+        70: 70%,
+        80: 80%,
+        90: 90%,
+    )
+  )
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";

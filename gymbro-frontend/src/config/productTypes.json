@@ -1,0 +1,25 @@
+{
+    "women": [
+        "crop tops",
+        "joggers",
+        "leggings",
+        "gym jackets",
+        "hoodies",
+        "shorts",
+        "sports bra"
+    ],
+    "men": [
+        "tanks",
+        "joggers",
+        "leggings",
+        "gym jackets",
+        "hoodies",
+        "shorts"
+    ],
+    "supplements": [
+        "whey protein",
+        "protein bar",
+        "creatine",
+        "BCAA"
+    ]
+}

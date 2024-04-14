@@ -1,0 +1,41 @@
+{
+  "Sidebar": [
+    {
+      "fieldType": "radio",
+      "fieldID": "#sortBy",
+      "fieldName": "Sort By",
+      "options": ["Price: Low to High", "Price: High to Low", "Newest"]
+    },
+    {
+      "fieldType": "radio",
+      "fieldID": "#gender",
+      "fieldName": "Gender",
+      "options": ["Women", "Men"]
+    },
+    {
+      "fieldType": "checkbox",
+      "fieldID": "#productType",
+      "fieldName": "Product Type",
+      "options": [
+        "Crop Tops",
+        "Joggers",
+        "Leggings",
+        "Gym Jackets",
+        "Hoodies",
+        "Sports",
+        "Sports Bra",
+        "Tanks",
+        "Whey Protein",
+        "Protein Bar",
+        "Creatine",
+        "BCAA"
+      ]
+    },
+    {
+      "fieldType": "checkbox",
+      "fieldID": "#size",
+      "fieldName": "Size",
+      "options": ["XXS", "XS", "S", "M", "L", "XL", "XXL"]
+    }
+  ]
+}
