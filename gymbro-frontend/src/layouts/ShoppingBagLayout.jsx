@@ -43,7 +43,7 @@ export default function ShoppingBagLayout() {
             stepClicked={checkoutContext.handleShowHideRouteSteps}
           />
           <ProgressBarComponent
-            destination={"checkout-complete"}
+            destination={"checkoutComplete"}
             stepNumber={5}
             stepName={"Complete"}
             stepClicked={checkoutContext.handleShowHideRouteSteps}

@@ -16,8 +16,6 @@ export default function CheckoutContextProvider({ children }) {
   });
 
   const handleShowHideRouteSteps = (progressStepClicked) => {
-    console.log("FROM PROGERSS BAR: ", progressStepClicked.id);
-
     switch (progressStepClicked.id) {
       // compare using stepName
       case "Your bag":
@@ -67,7 +65,7 @@ export default function CheckoutContextProvider({ children }) {
             prevStepName: "Shipping",
           },
           next: {
-            nextDestination: "checkout-complete",
+            nextDestination: "checkoutComplete",
             nextStepName: "Complete",
           },
         });

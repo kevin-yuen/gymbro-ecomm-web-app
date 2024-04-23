@@ -32,9 +32,9 @@ export default function FooterComponent() {
         <div className="col-4">
           <h4 className="pt-3 pb-2 fs-6 fw-bolder">MY ACCOUNT</h4>
           <ul className="list-unstyled fs-7">
-            <FooterLinksComponent destination={"/signin"} linkName={"Login"} />
+            <FooterLinksComponent destination={"/auth/signin"} linkName={"Login"} />
             <FooterLinksComponent
-              destination={"/register"}
+              destination={"/auth/register"}
               linkName={"Register"}
             />
           </ul>

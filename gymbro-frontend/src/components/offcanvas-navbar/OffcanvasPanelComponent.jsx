@@ -1,9 +1,8 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 // components
 import ImageLinkComponent from "./ImageLinkComponent";
-import AuthButtonComponent from "../common/AuthButtonComponent";
 import BrandComponent from "../common/BrandComponent";
 
 // images
@@ -13,6 +12,8 @@ import offcanvasWomenActivewearImage from "../../assets/offcanvas-women-activewe
 import offcanvasSupplementsImage from "../../assets/offcanvas-supplements.jpeg";
 
 export default function OffcanvasPanelComponent() {
+  const navigate = useNavigate();
+
   return (
     <>
       <button
@@ -35,10 +36,7 @@ export default function OffcanvasPanelComponent() {
           <h5 className="offcanvas-title" id="offcanvas-NavbarLabel">
             <div className="logo d-flex flex-direction-row custom-width-sm-30 custom-width-md-40 ms-5">
               <h1 className="navbar-brand fs-2 custom-font-family-teko custom-color-darkpurple">
-                <BrandComponent
-                  customWidth={60}
-                  customHeight={90}
-                />
+                <BrandComponent customWidth={60} customHeight={90} />
               </h1>
             </div>
           </h5>
@@ -53,7 +51,7 @@ export default function OffcanvasPanelComponent() {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li className="nav-item">
-              <NavLink to="/all-products" className="nav-link">
+              <NavLink to="/allProducts" className="nav-link">
                 <ImageLinkComponent
                   imageSource={offcanvasAllProductsImage}
                   imageLabel={"all-products"}
@@ -62,7 +60,7 @@ export default function OffcanvasPanelComponent() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/women-activewear" className="nav-link">
+              <NavLink to="/womenActivewear" className="nav-link">
                 <ImageLinkComponent
                   imageSource={offcanvasWomenActivewearImage}
                   imageLabel={"women-activewear"}
@@ -71,7 +69,7 @@ export default function OffcanvasPanelComponent() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/men-activewear" className="nav-link">
+              <NavLink to="/menActivewear" className="nav-link">
                 <ImageLinkComponent
                   imageSource={offcanvasMenActivewearImage}
                   imageLabel={"men-activewear"}
@@ -92,7 +90,12 @@ export default function OffcanvasPanelComponent() {
         </div>
 
         <div className="offcanvas-footer border-top custom-background-color-antiquewhite p-3">
-          <AuthButtonComponent path={"/signin"} buttonName={"Sign In"}/>
+          <button
+            className="btn custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-teko fw-bolder custom-width-92"
+            onClick={() => navigate("/auth/signin")}
+          >
+            Sign In
+          </button>
         </div>
       </div>
     </>

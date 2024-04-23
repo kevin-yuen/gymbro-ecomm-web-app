@@ -12,7 +12,7 @@ export default function NavbarFunctionsComponent() {
       <Link to="/bag">
         <Bag className="me-2" size={25} color="#3E0957" />
       </Link>
-      <Link to="/signin">
+      <Link to="/auth/signin">
         <BoxArrowInRight className="authcart-icon" size={25} color="#3E0957" />
       </Link>
     </div>

@@ -12,6 +12,7 @@ $lightpurple: #f0e8f4;
 $green: #057814;
 $lightgreen: #3EC40C;
 $red: #f80000;
+$lightred: #F7DEDE;
 $black: #000000;
 $orange: #ea9000;
 $grey: #75737398;
@@ -116,7 +117,8 @@ $utilities: (
       "antiquewhite": $antiquewhite,
       "lightpurple": $lightpurple,
       "orange": $orange,
-      "red": $red
+      "red": $red,
+      "lightred": $lightred,
     ),
   ),
   "custom-width": (

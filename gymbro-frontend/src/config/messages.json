@@ -1,0 +1,73 @@
+{
+    "auth": {
+        "email-already-in-use": "This email address is already in use.",
+        "not-match": "Your email address is not within our record, or your password does not match.",
+        "not-match-forgot-password": "Unfortunately, your email address is not within our record.",
+        "not-verify": "You have not yet verified your email address. Please check your inbox or spam folder.",
+        "name": "Enter your name",
+        "email": "Enter your email address",
+        "password": "Enter your password",
+        "pwd-too-short": "Minimum 6 characters required",
+        "temp-password": "Enter the temporary password from the email",
+        "new-password": "Enter a new password",
+        "confirm-password": "Re-enter the password",
+        "confirm-password-not-match": "Passwords must match",
+        "confirm-password-not-match-auth-error": "Your passwords do not match",
+        "not-match-temp-password": "The temporary password does not match our record. Please check the email we sent."
+    },
+    "server": {
+        "generic": "Server is currently down. Please try again later."
+    },
+    "notification": {
+        "verification": {
+            "auto-redirect": false,
+            "user-specific-redirect": false,
+            "header": "Verification email sent",
+            "text": "A verification email has been sent to",
+            "alttext1": "After verifying your email address, you can sign in and start",
+            "alltext2": "",
+            "url": "/",
+            "labelurl": "shopping"
+        },
+        "email-verified": {
+            "auto-redirect": true,
+            "user-specific-redirect": false,
+            "header": "Email verified!",
+            "text": "You can now sign in and start shopping.",
+            "alttext1": "Redirecting...",
+            "alttext2": "",
+            "url": "/auth/signin",
+            "labelurl": ""
+        },
+        "email-verified-prior": {
+            "auto-redirect": true,
+            "user-specific-redirect": false,
+            "header": "Email was previously verified!",
+            "text": "You can now sign in and start shopping.",
+            "alttext1": "Redirecting...",
+            "alttext2": "",
+            "url": "/auth/signin",
+            "labelurl": ""
+        },
+        "password-reset": {
+            "auto-redirect": false,
+            "user-specific-redirect": true,
+            "header": "Password Reset email sent",
+            "text": "An email has been sent to",
+            "alttext1": "with instructions for resetting your password",
+            "alttext2": "This email may take a few minutes to arrive in your inbox.",
+            "url": "/auth/resetPassword",
+            "labelurl": "here"
+        },
+        "password-reset-success": {
+            "auto-redirect": true,
+            "user-specific-redirect": false,
+            "header": "Password Reset success",
+            "text": "You can now sign in and start shopping.",
+            "alttext1": "Redirecting...",
+            "alttext2": "",
+            "url": "/auth/signin",
+            "labelurl": ""
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function LoadingSpinnerComponent() {
+export default function RedirectingComponent() {
   return (
     <button className="btn custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-teko fw-bolder custom-width-92" type="button" disabled>
       <span

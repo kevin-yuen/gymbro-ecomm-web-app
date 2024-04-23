@@ -1,4 +1,12 @@
 {
+  "email-verification": {
     "content": "Hello,<br /><br />GymBro needs to verify the email address associated with the account you created before you can join our community.<br /><br />To verify your email address, click the following link:<br /><br />",
     "subject": "Verify Your Email Address"
+  },
+  "password-reset": {
+    "content-one": "Hello,<br /><br />We've received a request to reset your password. Your temporary password is as below:<br/><br/>",
+    "content-two": "Please click the below link to reset your password.<br /><br/>",
+    "signature": "Thanks,<br /><br />The GymBro Team",
+    "subject": "Reset Your Password"
+  }
 }

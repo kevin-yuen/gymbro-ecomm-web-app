@@ -1,0 +1,6 @@
+{
+    "input-box": {
+        "valid-style": "form-control fs-9",
+        "invalid-style": "form-control fs-9 custom-background-color-lightred"
+    }
+}

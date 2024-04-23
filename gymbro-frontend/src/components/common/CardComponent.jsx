@@ -17,7 +17,7 @@ export default function CardComponent({
   productOrigPrice,
 }) {
   return (
-    <Link to="/about-product" className="text-decoration-none">
+    <Link to="/aboutProduct" className="text-decoration-none">
       <div className="card border-0" style={styles}>
         <img src={leggingsImg} className="card-img-top" alt="..." />
         <div className="card-body">
