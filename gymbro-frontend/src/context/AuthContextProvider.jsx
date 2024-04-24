@@ -1,32 +1,20 @@
-import React, {createContext, useReducer} from "react";
+import React, { createContext, useState, useEffect } from "react";
 
 export const AuthContext = createContext();
 
-const initialUserState = {
+export default function AuthContextProvider({ children }) {
+  const initialAuthState = {
+    name: null,
     email: null,
-    password: null,
-    isLoggedIn: false
-}
+    isAuthorized: false,
+  };
+  const [authState, setAuthState] = useState(initialAuthState);
 
-const handleSignInReducer = (state, action) => {
-    switch (action.type) {
-        case "ON_CHANGE_EMAIL":
-            return {...state, email: action.payload};
-        case "ON_CHANGE_PASSWORD":
-            return {...state, password: action.payload};
-        case "ON_CLICK_LOG_IN":
-            return {...state, isLoggedIn: state.password !== null ? true : false};
-        default:
-            return state;
-    }
-}
+  // useEffect(() => console.log(authState), [authState])
 
-const [user, dispatch] = useReducer(handleSignInReducer, initialUserState);
-
-export default function AuthContextProvider({children}) {
-    return (
-        <AuthContext.Provider value={{user, dispatch, handleSignInReducer}}>
-            {children}
-        </AuthContext.Provider>
-    )
+  return (
+    <AuthContext.Provider value={{ authState, setAuthState }}>
+      {children}
+    </AuthContext.Provider>
+  );
 }

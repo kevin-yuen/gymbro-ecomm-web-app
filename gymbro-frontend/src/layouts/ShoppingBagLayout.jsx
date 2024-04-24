@@ -90,7 +90,7 @@ export default function ShoppingBagLayout() {
         </div>
       </main>
 
-      <FooterComponent />
+      {/* <FooterComponent /> */}
     </>
   );
 }

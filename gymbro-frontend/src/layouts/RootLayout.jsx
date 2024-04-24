@@ -5,12 +5,16 @@ import BrandComponent from "../components/common/BrandComponent";
 import NavbarFunctionsComponent from "../components/oncanvas-navbar/NavbarFunctionsComponent";
 import OffcanvasPanelComponent from "../components/offcanvas-navbar/OffcanvasPanelComponent";
 import NavLinksComponent from "../components/oncanvas-navbar/NavLinksComponent";
+import FooterComponent from "../components/common/FooterComponent";
+import SearchComponent from "../components/oncanvas-navbar/SearchComponent";
 
 import { Outlet } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function RootLayout() {
+  console.log("Root Layout re-renders...");
+  
   return (
     <>
       <div className="fixed-top">
@@ -21,7 +25,7 @@ export default function RootLayout() {
                 <BrandComponent customWidth={15} customHeight={85} />
               </h1>
             </div>
-            <NavbarFunctionsComponent />
+            <NavbarFunctionsComponent searchComponent={<SearchComponent />} />
             <OffcanvasPanelComponent />
           </div>
         </nav>
@@ -34,6 +38,8 @@ export default function RootLayout() {
       <main className="main">
         {/* This is a placeholder for whatever pages inside .createBrowserRouter() that the user is navigating to */}
         <Outlet />
+
+        <FooterComponent />
       </main>
     </>
   );

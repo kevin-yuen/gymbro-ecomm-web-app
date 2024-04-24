@@ -4,7 +4,6 @@ import React from "react";
 import SidebarFilterComponent from "../../components/common/SidebarFilterComponent";
 import CardComponent from "../../components/common/CardComponent";
 import PaginationComponent from "../../components/common/PaginationComponent";
-import FooterComponent from "../../components/common/FooterComponent";
 
 export default function AllProducts() {
   return (
@@ -72,8 +71,6 @@ export default function AllProducts() {
           </div>
         </section>
       </div>
-
-      <FooterComponent />
     </>
   );
 }

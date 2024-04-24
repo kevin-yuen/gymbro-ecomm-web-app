@@ -69,5 +69,8 @@
             "url": "/auth/signin",
             "labelurl": ""
         }
+    },
+    "tooltip": {
+        "shopping-bag": "Log in to start shopping"
     }
 }

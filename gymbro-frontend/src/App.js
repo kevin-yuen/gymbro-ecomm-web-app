@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 // context
+import AuthContextProvider from "./context/AuthContextProvider";
 import LogoContextProvider from "./context/LogoContextProvider";
 import CheckoutContextProvider from "./context/CheckoutContextProvider";
 
@@ -193,10 +194,12 @@ const router = createBrowserRouter(
 
 export default function App() {
   return (
-    <LogoContextProvider>
-      <CheckoutContextProvider>
-        <RouterProvider router={router} />;
-      </CheckoutContextProvider>
-    </LogoContextProvider>
+    <AuthContextProvider>
+      <LogoContextProvider>
+        <CheckoutContextProvider>
+          <RouterProvider router={router} />;
+        </CheckoutContextProvider>
+      </LogoContextProvider>
+    </AuthContextProvider>
   );
 }

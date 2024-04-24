@@ -1,9 +1,12 @@
-import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 
 // components
 import ImageLinkComponent from "./ImageLinkComponent";
 import BrandComponent from "../common/BrandComponent";
+
+// context
+import { AuthContext } from "../../context/AuthContextProvider";
 
 // images
 import offcanvasAllProductsImage from "../../assets/offcanvas-all-products.jpeg";
@@ -11,8 +14,14 @@ import offcanvasMenActivewearImage from "../../assets/offcanvas-men-activewear.j
 import offcanvasWomenActivewearImage from "../../assets/offcanvas-women-activewear.jpeg";
 import offcanvasSupplementsImage from "../../assets/offcanvas-supplements.jpeg";
 
+// custom hooks
+import useLogout from "../../hooks/useLogout";
+
 export default function OffcanvasPanelComponent() {
-  const navigate = useNavigate();
+  const authContext = useContext(AuthContext);
+  const { authState } = authContext;
+
+  const { handleLogout } = useLogout();
 
   return (
     <>
@@ -51,51 +60,53 @@ export default function OffcanvasPanelComponent() {
         <div className="offcanvas-body">
           <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li className="nav-item">
-              <NavLink to="/allProducts" className="nav-link">
+              <Link to="/allProducts" className="nav-link">
                 <ImageLinkComponent
                   imageSource={offcanvasAllProductsImage}
                   imageLabel={"all-products"}
                   imageLinkName={"All products"}
                 />
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/womenActivewear" className="nav-link">
+              <Link to="/womenActivewear" className="nav-link">
                 <ImageLinkComponent
                   imageSource={offcanvasWomenActivewearImage}
                   imageLabel={"women-activewear"}
                   imageLinkName={"Women Activewear"}
                 />
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/menActivewear" className="nav-link">
+              <Link to="/menActivewear" className="nav-link">
                 <ImageLinkComponent
                   imageSource={offcanvasMenActivewearImage}
                   imageLabel={"men-activewear"}
                   imageLinkName={"Men Activewear"}
                 />
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/supplements" className="nav-link">
+              <Link to="/supplements" className="nav-link">
                 <ImageLinkComponent
                   imageSource={offcanvasSupplementsImage}
                   imageLabel={"supplements"}
                   imageLinkName={"Supplements"}
                 />
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </div>
 
         <div className="offcanvas-footer border-top custom-background-color-antiquewhite p-3">
-          <button
-            className="btn custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-teko fw-bolder custom-width-92"
-            onClick={() => navigate("/auth/signin")}
-          >
-            Sign In
-          </button>
+          <Link to="/auth/signin">
+            <button
+              className="btn custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-teko fw-bolder custom-width-92"
+              onClick={handleLogout}
+            >
+              {!authState.isAuthorized ? "Sign In" : "Sign Out"}
+            </button>
+          </Link>
         </div>
       </div>
     </>

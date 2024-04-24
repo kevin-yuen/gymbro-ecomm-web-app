@@ -11,7 +11,6 @@ import menSales from "../assets/landing-men-sales.jpeg";
 
 // components
 import PromotionComponent from "../components/landing/PromotionComponent";
-import FooterComponent from "../components/common/FooterComponent";
 
 export default function Landing() {
   return (
@@ -124,8 +123,6 @@ export default function Landing() {
           />
         </div>
       </section>
-
-      <FooterComponent />
     </>
   );
 }

@@ -157,7 +157,7 @@ const signInUser = async (req, res) => {
     );
 
     if (isPasswordMatch) {
-      return res.status(201).json({ message: "Password match" });
+      return res.status(201).json({ message: "Password match", isUserExist });
     } else {
       return res.status(401).json({ error: "Password not match" });
     }

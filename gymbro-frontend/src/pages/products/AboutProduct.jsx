@@ -5,7 +5,6 @@ import ProductImageGroupComponent from "../../components/products/ProductImageGr
 import BuyComponent from "../../components/products/BuyComponent";
 import ProductDetailsComponent from "../../components/products/ProductDetailsComponent";
 import CustomerReviewsComponent from "../../components/products/CustomerReviewsComponent";
-import FooterComponent from "../../components/common/FooterComponent";
 
 // mock data
 import ProductInformationData from "../../config/productInformationData.json";
@@ -69,7 +68,6 @@ export default function AboutProduct() {
           ))}
         </div>
       </div>
-      <FooterComponent />
     </>
   );
 }

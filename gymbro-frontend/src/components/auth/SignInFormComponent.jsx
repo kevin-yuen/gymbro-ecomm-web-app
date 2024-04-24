@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 // config
@@ -11,6 +11,9 @@ import { handleAuthAPI } from "../../utils/authAPI";
 // components
 import AuthErrorComponent from "./AuthErrorComponent";
 
+// context
+import { AuthContext } from "../../context/AuthContextProvider";
+
 const valid = FormFieldStyle["input-box"]["valid-style"];
 const invalid = FormFieldStyle["input-box"]["invalid-style"];
 
@@ -22,6 +25,9 @@ const emailNotVerifyErr = FormFieldErrMessage.auth["not-verify"];
 const serverErr = FormFieldErrMessage.server.generic;
 
 const SignInFormComponent = ({ formButton }) => {
+  const authContext = useContext(AuthContext);
+  const { setAuthState } = authContext;
+
   const navigate = useNavigate();
 
   const emailRef = useRef(null);
@@ -64,8 +70,16 @@ const SignInFormComponent = ({ formButton }) => {
         signInRequest
       );
 
+      const signInServerResDets = await signInServerResponse.json().then(res => res.isUserExist).catch(err => err);
+
       switch (signInServerResponse.status) {
         case 201:
+          setAuthState({
+            name: signInServerResDets.name,
+            email: signInServerResDets.email,
+            isAuthorized: true
+          })
+
           return navigate("/");
         case 400:
           setLoginErrEncountered(emailNotVerifyErr);
