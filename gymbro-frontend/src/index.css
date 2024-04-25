@@ -1,7 +1,7 @@
 :root {
   --darkpurple: #3e0957;
   --antiquewhite: #f8faf9;
-  --brightorange: #f3af05;
+  --lightpurple: #F2D5F1;
 }
 
 body {
@@ -35,7 +35,7 @@ input[type="password"]:focus {
 }
 
 .oncanvas-nav-link.active {
-  color: var(--brightorange) !important;
+  color: var(--lightpurple) !important;
 }
 
 .main {

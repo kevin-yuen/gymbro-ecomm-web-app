@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 // importing in case need to add custom values into existing sass variables
 @import "../node_modules/bootstrap/scss/_functions.scss";
@@ -91,7 +92,8 @@ $utilities: (
         property: font-family,
         class: custom-font-family,
         values: (
-            "teko": Teko
+            "teko": Teko,
+            "montserrat": Montserrat
         )
     ),
   "custom-color": (
