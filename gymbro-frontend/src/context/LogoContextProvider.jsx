@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/images/logo.jpeg";
 
 export const LogoContext = createContext();
 

@@ -2,9 +2,9 @@ import React from "react";
 import { Facebook, Instagram, Discord } from "react-bootstrap-icons";
 
 // images
-import visa from "../../assets/footer-visa.jpeg";
-import mastercard from "../../assets/footer-mastercard.jpeg";
-import paypal from "../../assets/footer-paypal.jpeg";
+import visa from "../../assets/images/footer-visa.jpeg";
+import mastercard from "../../assets/images/footer-mastercard.jpeg";
+import paypal from "../../assets/images/footer-paypal.jpeg";
 
 // components
 import TrademarkComponent from "./TrademarkComponent";

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useState } from "react";
 
 export const AuthContext = createContext();
 
@@ -9,8 +9,6 @@ export default function AuthContextProvider({ children }) {
     isAuthorized: false,
   };
   const [authState, setAuthState] = useState(initialAuthState);
-
-  // useEffect(() => console.log(authState), [authState])
 
   return (
     <AuthContext.Provider value={{ authState, setAuthState }}>

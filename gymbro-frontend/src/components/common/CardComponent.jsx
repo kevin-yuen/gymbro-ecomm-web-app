@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 // context
 import { AuthContext } from "../../context/AuthContextProvider";
 
-import leggingsImg from "../../assets/leggings-test.jpeg";
+import leggingsImg from "../../assets/images/leggings-test.jpeg";
 
 const styles = {
   width: "18rem",

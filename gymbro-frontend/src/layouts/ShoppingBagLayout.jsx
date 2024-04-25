@@ -4,7 +4,6 @@ import { Outlet } from "react-router-dom";
 // components
 import ProgressBarComponent from "../components/checkout/ProgressBarComponent";
 import PriceSummaryComponent from "../components/checkout/PriceSummaryComponent";
-import FooterComponent from "../components/common/FooterComponent";
 import PrevStepComponent from "../components/checkout/PrevStepComponent";
 import NextStepComponent from "../components/checkout/NextStepComponent";
 
@@ -59,7 +58,7 @@ export default function ShoppingBagLayout() {
             <div className="position-relative mb-7">
               <div className="position-absolute start-0">
                 {(checkoutContext.step.previous.prevDestination !== null ||
-                checkoutContext.step.previous.prevStepName !== null) && checkoutContext.step.currentStep != "Complete" ? (
+                checkoutContext.step.previous.prevStepName !== null) && checkoutContext.step.currentStep !== "Complete" ? (
                   <PrevStepComponent
                     destination={checkoutContext.step.previous.prevDestination}
                     stepName={checkoutContext.step.previous.prevStepName}

@@ -9,10 +9,10 @@ import BrandComponent from "../common/BrandComponent";
 import { AuthContext } from "../../context/AuthContextProvider";
 
 // images
-import offcanvasAllProductsImage from "../../assets/offcanvas-all-products.jpeg";
-import offcanvasMenActivewearImage from "../../assets/offcanvas-men-activewear.jpeg";
-import offcanvasWomenActivewearImage from "../../assets/offcanvas-women-activewear.jpeg";
-import offcanvasSupplementsImage from "../../assets/offcanvas-supplements.jpeg";
+import offcanvasAllProductsImage from "../../assets/images/offcanvas-all-products.jpeg";
+import offcanvasMenActivewearImage from "../../assets/images/offcanvas-men-activewear.jpeg";
+import offcanvasWomenActivewearImage from "../../assets/images/offcanvas-women-activewear.jpeg";
+import offcanvasSupplementsImage from "../../assets/images/offcanvas-supplements.jpeg";
 
 // custom hooks
 import useLogout from "../../hooks/useLogout";

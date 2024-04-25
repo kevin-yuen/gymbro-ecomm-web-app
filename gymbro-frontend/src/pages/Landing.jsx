@@ -1,13 +1,13 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // images
-import carouselWomenActiveWear from "../assets/carousel-women-activewear.jpeg";
-import carouselMenActiveWear from "../assets/carousel-men-activewear.jpeg";
-import carouselSupplements from "../assets/carousel-supplements.jpeg";
-import landingContent from "../assets/landing-content.jpeg";
-import womenSales from "../assets/landing-women-sales.jpeg";
-import menSales from "../assets/landing-men-sales.jpeg";
+import carouselWomenActiveWear from "../assets/images/carousel-women-activewear.jpeg";
+import carouselMenActiveWear from "../assets/images/carousel-men-activewear.jpeg";
+import carouselSupplements from "../assets/images/carousel-supplements.jpeg";
+import landingContent from "../assets/images/landing-content.jpeg";
+import womenSales from "../assets/images/landing-women-sales.jpeg";
+import menSales from "../assets/images/landing-men-sales.jpeg";
 
 // components
 import PromotionComponent from "../components/landing/PromotionComponent";
