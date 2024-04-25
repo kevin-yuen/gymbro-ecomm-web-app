@@ -75,8 +75,9 @@ export default function Landing() {
         </div>
       </section>
 
-      <section className="container border rounded-2 border-light border-2 shadow-lg mt-3">
+      <section className="container border rounded-2 border-light border-2 shadow-lg mt-3">        
         <PromotionComponent promotionHeading={"ITEMS ON DISCOUNT"} />
+        
         <div className="mt-5">
           <img src={landingContent} className="w-100" />
           <div className="landing-img-label position-absolute mt-n22 ms-5">

@@ -1,0 +1,862 @@
+[
+    {
+        "Category": "activewear",
+        "Product Type": "underwear",
+        "Product Name": "My Protein Underwear air",
+        "Gender": "women",
+        "Brand": "My Protein",
+        "Is on Discount": true,
+        "Original Price": 86.54,
+        "Discount Price": 75.04,
+        "Fit Type": "loose",
+        "Number of Ratings": 61,
+        "Average Rating": 1.7,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 5
+            },
+            {
+                "Type": "small",
+                "Is in Stock": true,
+                "Quantity In Stock": 19
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 2
+            },
+            {
+                "Type": "large",
+                "Is in Stock": true,
+                "Quantity In Stock": 13
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "J4TN5U5T",
+        "Product Description": "Memory work radio minute blue. Check east financial artist.",
+        "Materials": "Nylon"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "underwear",
+        "Product Name": "Lululemon Underwear phone",
+        "Gender": "women",
+        "Brand": "Lululemon",
+        "Is on Discount": true,
+        "Original Price": 41.58,
+        "Discount Price": 38.19,
+        "Fit Type": "tight",
+        "Number of Ratings": 82,
+        "Average Rating": 1.2,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "small",
+                "Is in Stock": true,
+                "Quantity In Stock": 9
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 11
+            },
+            {
+                "Type": "large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "KHLB2QG8",
+        "Product Description": "Store husband ever good. Place task exactly night at ball sometimes. Fund season guy anything success down environmental.",
+        "Materials": "Nylon"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "leggings",
+        "Product Name": "Lululemon Leggings according",
+        "Gender": "women",
+        "Brand": "Lululemon",
+        "Is on Discount": true,
+        "Original Price": 23.31,
+        "Discount Price": 21.27,
+        "Fit Type": "loose",
+        "Number of Ratings": 6,
+        "Average Rating": 2.7,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 7
+            },
+            {
+                "Type": "small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 8
+            },
+            {
+                "Type": "large",
+                "Is in Stock": true,
+                "Quantity In Stock": 12
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": true,
+                "Quantity In Stock": 1
+            }
+        ],
+        "SKU": "3G80OV28",
+        "Product Description": "Special television must only. Term field office on audience raise perform.",
+        "Materials": "Spandex"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "sports bra",
+        "Product Name": "GymShark Sports bra build",
+        "Gender": "women",
+        "Brand": "GymShark",
+        "Is on Discount": true,
+        "Original Price": 56.63,
+        "Discount Price": 49.11,
+        "Fit Type": "tight",
+        "Number of Ratings": 21,
+        "Average Rating": 3.6,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 20
+            },
+            {
+                "Type": "large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": true,
+                "Quantity In Stock": 9
+            }
+        ],
+        "SKU": "WF3J5RRZ",
+        "Product Description": "Media mind give good wide. Even everything kind rule south provide. Teacher relate from fact practice.",
+        "Materials": "Mesh"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "crop tops",
+        "Product Name": "My Protein Crop tops brother",
+        "Gender": "women",
+        "Brand": "My Protein",
+        "Is on Discount": true,
+        "Original Price": 38.14,
+        "Discount Price": 32.89,
+        "Fit Type": "loose",
+        "Number of Ratings": 69,
+        "Average Rating": 4.6,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 20
+            },
+            {
+                "Type": "small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "large",
+                "Is in Stock": true,
+                "Quantity In Stock": 1
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "K3TEP4SB",
+        "Product Description": "Religious woman discuss eight ready tough. Politics her American market personal less final compare. Art happy bit way fish must.",
+        "Materials": "Polyester"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "crop tops",
+        "Product Name": "My Protein Crop tops make",
+        "Gender": "women",
+        "Brand": "My Protein",
+        "Is on Discount": true,
+        "Original Price": 57.92,
+        "Discount Price": 46.66,
+        "Fit Type": "loose",
+        "Number of Ratings": 81,
+        "Average Rating": 1.9,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 16
+            },
+            {
+                "Type": "small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 17
+            },
+            {
+                "Type": "large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": true,
+                "Quantity In Stock": 3
+            }
+        ],
+        "SKU": "FS7XJJHO",
+        "Product Description": "Realize too memory away authority knowledge. Firm end other language possible.",
+        "Materials": "Spandex"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "underwear",
+        "Product Name": "GymShark Underwear join",
+        "Gender": "women",
+        "Brand": "GymShark",
+        "Is on Discount": true,
+        "Original Price": 44.36,
+        "Discount Price": 38.38,
+        "Fit Type": "regular",
+        "Number of Ratings": 49,
+        "Average Rating": 3.3,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "small",
+                "Is in Stock": true,
+                "Quantity In Stock": 2
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 13
+            },
+            {
+                "Type": "large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": true,
+                "Quantity In Stock": 15
+            }
+        ],
+        "SKU": "IAK8SDA0",
+        "Product Description": "Benefit light share when game break. Score follow human professor. Sort say rule out usually.",
+        "Materials": "Mesh"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "leggings",
+        "Product Name": "GymShark Leggings support",
+        "Gender": "women",
+        "Brand": "GymShark",
+        "Is on Discount": true,
+        "Original Price": 99.65,
+        "Discount Price": 89.73,
+        "Fit Type": "loose",
+        "Number of Ratings": 81,
+        "Average Rating": 4.0,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "large",
+                "Is in Stock": true,
+                "Quantity In Stock": 16
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": true,
+                "Quantity In Stock": 10
+            }
+        ],
+        "SKU": "QGO2ETNJ",
+        "Product Description": "Bed information season. Nature stock dinner they store government sort. Wrong manage continue strategy beat left.",
+        "Materials": "Polyester"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "underwear",
+        "Product Name": "My Protein Underwear certainly",
+        "Gender": "women",
+        "Brand": "My Protein",
+        "Is on Discount": true,
+        "Original Price": 30.22,
+        "Discount Price": 25.26,
+        "Fit Type": "loose",
+        "Number of Ratings": 6,
+        "Average Rating": 2.6,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "small",
+                "Is in Stock": true,
+                "Quantity In Stock": 14
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "1Q2I50BT",
+        "Product Description": "Concern yard southern policy. Main couple interview minute maintain.",
+        "Materials": "Mesh"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "underwear",
+        "Product Name": "GymShark Underwear open",
+        "Gender": "women",
+        "Brand": "GymShark",
+        "Is on Discount": true,
+        "Original Price": 41.7,
+        "Discount Price": 37.87,
+        "Fit Type": "tight",
+        "Number of Ratings": 49,
+        "Average Rating": 1.9,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "large",
+                "Is in Stock": true,
+                "Quantity In Stock": 6
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "6VBKZ11P",
+        "Product Description": "Together Congress nor plan per employee. Light office draw money sit page.",
+        "Materials": "Spandex"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "t-shirts",
+        "Product Name": "Lululemon T-shirts together",
+        "Gender": "women",
+        "Brand": "Lululemon",
+        "Is on Discount": true,
+        "Original Price": 75.3,
+        "Discount Price": 63.05,
+        "Fit Type": "regular",
+        "Number of Ratings": 42,
+        "Average Rating": 3.5,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 8
+            },
+            {
+                "Type": "small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 5
+            },
+            {
+                "Type": "large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": true,
+                "Quantity In Stock": 19
+            }
+        ],
+        "SKU": "UPKFDOZQ",
+        "Product Description": "It be ready. Music visit wonder look thus stop. Main six look deep including ahead husband allow.",
+        "Materials": "Mesh"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "crop tops",
+        "Product Name": "GymShark Crop tops executive",
+        "Gender": "women",
+        "Brand": "GymShark",
+        "Is on Discount": true,
+        "Original Price": 40.47,
+        "Discount Price": 33.46,
+        "Fit Type": "tight",
+        "Number of Ratings": 86,
+        "Average Rating": 1.6,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "small",
+                "Is in Stock": true,
+                "Quantity In Stock": 13
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "large",
+                "Is in Stock": true,
+                "Quantity In Stock": 13
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "P1TNJ879",
+        "Product Description": "Item necessary something better thought police. Black now no talk. Hospital member all local.",
+        "Materials": "Mesh"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "sports bra",
+        "Product Name": "GymShark Sports bra provide",
+        "Gender": "women",
+        "Brand": "GymShark",
+        "Is on Discount": true,
+        "Original Price": 41.69,
+        "Discount Price": 33.69,
+        "Fit Type": "loose",
+        "Number of Ratings": 25,
+        "Average Rating": 3.7,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 1
+            },
+            {
+                "Type": "small",
+                "Is in Stock": true,
+                "Quantity In Stock": 14
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": true,
+                "Quantity In Stock": 16
+            }
+        ],
+        "SKU": "ETPFOJQ1",
+        "Product Description": "Executive understand great suffer member during forget. East film term soldier agent.",
+        "Materials": "Polyester"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "sports bra",
+        "Product Name": "My Protein Sports bra entire",
+        "Gender": "women",
+        "Brand": "My Protein",
+        "Is on Discount": true,
+        "Original Price": 33.9,
+        "Discount Price": 30.85,
+        "Fit Type": "loose",
+        "Number of Ratings": 62,
+        "Average Rating": 3.4,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 8
+            },
+            {
+                "Type": "small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "UMN75ZT0",
+        "Product Description": "Care check camera lot design. Space walk a detail write later community.",
+        "Materials": "Cotton"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "t-shirts",
+        "Product Name": "Lululemon T-shirts property",
+        "Gender": "women",
+        "Brand": "Lululemon",
+        "Is on Discount": true,
+        "Original Price": 96.89,
+        "Discount Price": 90.12,
+        "Fit Type": "regular",
+        "Number of Ratings": 72,
+        "Average Rating": 4.5,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "large",
+                "Is in Stock": true,
+                "Quantity In Stock": 20
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "LIOQ0Y3D",
+        "Product Description": "Perform process page others direction two decade. Suggest current throw mind.",
+        "Materials": "Spandex"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "leggings",
+        "Product Name": "GymShark Leggings quickly",
+        "Gender": "women",
+        "Brand": "GymShark",
+        "Is on Discount": true,
+        "Original Price": 31.42,
+        "Discount Price": 25.4,
+        "Fit Type": "regular",
+        "Number of Ratings": 1,
+        "Average Rating": 3.1,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "small",
+                "Is in Stock": true,
+                "Quantity In Stock": 20
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "large",
+                "Is in Stock": true,
+                "Quantity In Stock": 3
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "KOD3WCLD",
+        "Product Description": "Opportunity family military sign conference. Second house later citizen heavy learn.",
+        "Materials": "Cotton"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "underwear",
+        "Product Name": "Lululemon Underwear yet",
+        "Gender": "women",
+        "Brand": "Lululemon",
+        "Is on Discount": true,
+        "Original Price": 91.03,
+        "Discount Price": 85.58,
+        "Fit Type": "loose",
+        "Number of Ratings": 12,
+        "Average Rating": 1.4,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 14
+            },
+            {
+                "Type": "small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 7
+            },
+            {
+                "Type": "large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": true,
+                "Quantity In Stock": 12
+            }
+        ],
+        "SKU": "54SBGFSP",
+        "Product Description": "Ground today treat carry figure.",
+        "Materials": "Spandex"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "leggings",
+        "Product Name": "GymShark Leggings theory",
+        "Gender": "women",
+        "Brand": "GymShark",
+        "Is on Discount": true,
+        "Original Price": 59.67,
+        "Discount Price": 49.45,
+        "Fit Type": "regular",
+        "Number of Ratings": 20,
+        "Average Rating": 1.3,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 8
+            },
+            {
+                "Type": "small",
+                "Is in Stock": true,
+                "Quantity In Stock": 13
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 17
+            },
+            {
+                "Type": "large",
+                "Is in Stock": true,
+                "Quantity In Stock": 4
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "OKH4FTP3",
+        "Product Description": "Practice senior hour. New sea interesting likely include individual. Best chair western approach test especially.",
+        "Materials": "Nylon"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "underwear",
+        "Product Name": "Lululemon Underwear receive",
+        "Gender": "women",
+        "Brand": "Lululemon",
+        "Is on Discount": true,
+        "Original Price": 68.94,
+        "Discount Price": 61.61,
+        "Fit Type": "loose",
+        "Number of Ratings": 32,
+        "Average Rating": 1.5,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "small",
+                "Is in Stock": true,
+                "Quantity In Stock": 20
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 13
+            },
+            {
+                "Type": "large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "SH43HPSU",
+        "Product Description": "Task soon music likely during American another. Who myself civil its.",
+        "Materials": "Spandex"
+    },
+    {
+        "Category": "activewear",
+        "Product Type": "t-shirts",
+        "Product Name": "GymShark T-shirts billion",
+        "Gender": "women",
+        "Brand": "GymShark",
+        "Is on Discount": true,
+        "Original Price": 74.05,
+        "Discount Price": 63.86,
+        "Fit Type": "tight",
+        "Number of Ratings": 29,
+        "Average Rating": 2.3,
+        "Size Options": [
+            {
+                "Type": "extra small",
+                "Is in Stock": true,
+                "Quantity In Stock": 20
+            },
+            {
+                "Type": "small",
+                "Is in Stock": true,
+                "Quantity In Stock": 1
+            },
+            {
+                "Type": "medium",
+                "Is in Stock": true,
+                "Quantity In Stock": 0
+            },
+            {
+                "Type": "large",
+                "Is in Stock": true,
+                "Quantity In Stock": 4
+            },
+            {
+                "Type": "double large",
+                "Is in Stock": false,
+                "Quantity In Stock": 0
+            }
+        ],
+        "SKU": "1YDYSIWU",
+        "Product Description": "Skill reduce I other senior exactly thus. Item could important information five administration city.",
+        "Materials": "Nylon"
+    }
+]

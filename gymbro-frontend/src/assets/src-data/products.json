@@ -1,0 +1,1102 @@
+{
+  "activewear": [
+    {
+      "type": "jacket",
+      "brand": "Underarmour",
+      "name": "Men's UA Storm Armour Down Parka",
+      "gender": "men",
+      "fit type": "Loose",
+      "isDiscounted": false,
+      "originalPrice": 60.99,
+      "discountPrice": 0,
+      "rating": 4.9,
+      "numOfReviews": 4,
+      "options": [
+        {
+          "color": "black",
+          "availableSize": ["extra small", "small", "extra large"],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://underarmour.scene7.com/is/image/Underarmour/V5-1373663-001_FC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
+            "https://underarmour.scene7.com/is/image/Underarmour/V5-1373663-001_BC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
+            "https://underarmour.scene7.com/is/image/Underarmour/V5-1373663-001_FSF?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
+            "https://underarmour.scene7.com/is/image/Underarmour/V5-1373663-001_COLLAR?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500"
+          ]
+        }
+      ],
+      "description": [
+        "This is our go-to down jacket for winter. It's crazy-warm, light, and still lets you move like an athlete.",
+        "UA Storm technology repels water without sacrificing breathability",
+        "600-fill Allied duck down insulation provides extreme warmth & is ethically sourced & traceable via tag",
+        "Lightweight woven fabric delivers superior comfort & durability",
+        "Generous, 3-piece hood with bungee adjust & extended, bonded brim"
+      ],
+      "spec": ["Style #: 1373663", "100% Nylon"],
+      "fit-and-care": [
+        "Loose: Fuller cut for complete comfort.",
+        "Garment should be washed & dried fully zipped & turned inside out",
+        "Machine wash cold with like colors",
+        "Do not use softeners",
+        "Use only non-chlorine bleach when needed",
+        "Tumble dry low",
+        "Do not iron",
+        "Do not dry clean"
+      ],
+      "reviews": [
+        {
+          "name": "Intellectual Architect",
+          "rating": 5,
+          "subject": "Lightweight Warmth!",
+          "comment": "Great jacket! Lightweight, warm and the two zippers make it customizable. Sadly, my hubby wanted the green to be different, so I had to return it. Perfect otherwise.",
+          "datePosted": "25 Apr 2023"
+        },
+        {
+          "name": "UA Strm Armour down parka",
+          "rating": 5,
+          "subject": "Product is gret",
+          "comment": "Shipping was fast. The jacket itself was very comfortable and definitely kept me warm. I was satisfied with the overall fit of the jacket as well.",
+          "datePosted": "25 Apr 2023"
+        },
+        {
+          "name": "Jag812",
+          "rating": 5,
+          "subject": "Perfect for cold weather",
+          "comment": "The Men's UA Storm Armour Down Parka is perfect for cold weather, wind and even rain. The fit was spot on since I wear a medium, 5'7, 170LBS. I highly recommend it since I was looking for something that would be ideal for winter.",
+          "datePosted": "04 Dec 2023"
+        },
+        {
+          "name": "EFR410",
+          "rating": 5,
+          "subject": null,
+          "comment": "GREAT WINTER COAT. LIGHT WEIGHT & VERY WARM",
+          "datePosted": "11 Jan 2024"
+        },
+        {
+          "name": "Cobes",
+          "rating": 5,
+          "subject": "This coat fits perfectly and is incredibly warm.",
+          "comment": "This coat fits exactly how I wanted it to and is the perfect length. The coat is very warm as soon as you put it on and keeps you warm the entire time you are wearing it. The zipper that goes up past your neck is the first coat I've had in a long time that does not rub up against and irate my neck. I like my coat so much that I stopped looking forward to springtime.",
+          "datePosted": "13 Mar 2024"
+        }
+      ]
+    },
+    {
+      "type": "shorts",
+      "brand": "Gymshark",
+      "name": "SPEED 5\" SHORTS",
+      "gender": "men",
+      "fit type": "Slim Fit",
+      "isDiscounted": true,
+      "originalPrice": 55,
+      "discountPrice": 44,
+      "rating": 5,
+      "numOfReviews": 3,
+      "options": [
+        {
+          "color": "black",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Speed5ShortGSBlackA5A9B-BB2J31_4fea06d3-ecd5-47c3-bbd5-9f919f2d31e6_3840x.jpg?v=1702281422",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Speed5ShortGSBlackA5A9B-BB2J50_b64eee5a-7ac9-4960-a522-28e883c8ab10_3840x.jpg?v=1702281422",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Speed5ShortGSBlackA5A9B-BB2J43_8891436f-b7e2-438c-b238-bb27e957f4ef_3840x.jpg?v=1702281422",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Speed5ShortGSBlackA5A9B-BB2J55_df93917b-c42d-44f4-8ce6-67b8e9a48098_3840x.jpg?v=1702281422"
+          ]
+        },
+        {
+          "color": "grey",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Speed5ShortGSSmokeyGreyA5A9B-GB7R-1179_dedf4a39-e56a-4ac8-b8e5-e98a00a06a4f_3840x.jpg?v=1702281418",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Speed5ShortGSSmokeyGreyA5A9B-GB7R-1190_5c6cd545-6a26-4749-9a88-270ddda619ed_3840x.jpg?v=1702281418",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Speed5ShortGSSmokeyGreyA5A9B-GB7R-1184_b259ec51-9f1d-4b99-9e17-5441f8848144_3840x.jpg?v=1702281418",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Speed5ShortGSSmokeyGreyA5A9B-GB7R-1196_3840x.jpg?v=1702281418"
+          ]
+        }
+      ],
+      "description": [
+        "RUNNING. IT’S JUST A REALLY LONG SET.",
+        "Lightweight. Breathable. Fresh af. The Speed collection is almost making us… want to do cardio.",
+        "Lightweight, breathable and distraction-free for your breeziest run yet",
+        "Reflective details keep you seen when the sun goes down"
+      ],
+      "spec": ["SKU: A5A9B-GB7R", "87% Recycled Polyester, 13% Elastane"],
+      "fit-and-care": [
+        "Slim fit",
+        "5” in-seam based on a size M",
+        "Model is 6'1\" and wears a size M"
+      ],
+      "reviews": [
+        {
+          "name": "Rchap",
+          "rating": 5,
+          "subject": "Durable",
+          "comment": "Fit great. Very durable. Big fan of the phone pocket",
+          "datePosted": "01 Apr 2022"
+        },
+        {
+          "name": "BoKnows",
+          "rating": 5,
+          "subject": "Perfect Fit",
+          "comment": "Good quality and design, will buy again",
+          "datePosted": "25 Apr 2023"
+        },
+        {
+          "name": "Cabfog1957",
+          "rating": 5,
+          "subject": "Comfortable and excellent fabrics",
+          "comment": "Comfortable with high quality fabrics. Delivery time was fast and easy",
+          "datePosted": "04 Mar 2024"
+        }
+      ]
+    },
+    {
+      "type": "shorts",
+      "brand": "Gymshark",
+      "name": "LIFTING CLUB MESH 5\" SHORTS",
+      "gender": "men",
+      "fit type": "Regular Fit",
+      "isDiscounted": false,
+      "originalPrice": 55,
+      "discountPrice": 0,
+      "rating": 3.9,
+      "numOfReviews": 0,
+      "options": [
+        {
+          "color": "black",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingClubMesh5ShortGSBlackA6A2H-BB2J-0730_3dc4b0dc-5fae-425e-a943-bfc02426af84_3840x.jpg?v=1704288377",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingClubMesh5ShortsBlackA6A2H-BB2J-0855_3840x.jpg?v=1704288375",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingClubMesh5ShortsBlackA6A2H-BB2J-0858_3840x.jpg?v=1704288378",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingClubMesh5ShortGSBlackA6A2H-BB2J-0757_825df519-ea12-4bc6-a5f9-63bcd39cfa1a_3840x.jpg?v=1704288376"
+          ]
+        },
+        {
+          "color": "grey",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 5,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Mesh5ShortGSFreshBlueA6A2H-UCMN-0318_190356ff-fe37-4d21-a0cf-b68662282f33_3840x.jpg?v=1711460658",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Mesh5ShortGSFreshBlueA6A2H-UCMN-0324_31116811-1bf3-4632-950d-c0a5fc16da64_3840x.jpg?v=1711460658",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Mesh5ShortGSFreshBlueA6A2H-UCMN-0322_d8db7f16-d234-43a1-a1e2-c67287caa29b_3840x.jpg?v=1711460660",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/Mesh5ShortGSFreshBlueA6A2H-UCMN-0338_03625ffa-8bed-43f0-90d3-70c495b90aca_3840x.jpg?v=1711460660"
+          ]
+        }
+      ],
+      "description": [
+        "IN THE CLUB",
+        "Rep the Gymshark Lifting Club all day, everyday in this collection.",
+        "Drawcord waist for an adjustable fit",
+        "Open side pockets for storage",
+        "Gymshark Lifting Club graphic to front"
+      ],
+      "spec": [
+        "SKU: A6A2H-UCMN",
+        "90% Nylon, 10% Elastane",
+        "260gsm, heavyweight fabric",
+        "Mesh material"
+      ],
+      "fit-and-care": [
+        "Regular fit",
+        "5” inseam based on size M",
+        "Model is 5'9\" and wears size M"
+      ],
+      "reviews": []
+    },
+    {
+      "type": "tanks",
+      "brand": "Gymshark",
+      "name": "REACT DROP ARM TANK",
+      "gender": "men",
+      "fit type": "Slim Fit",
+      "isDiscounted": true,
+      "originalPrice": 35,
+      "discountPrice": 28,
+      "rating": 4.2,
+      "numOfReviews": 2,
+      "options": [
+        {
+          "color": "Burgundy Brown",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0856_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0862_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0858_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0870_3840x.jpg?v=1711444396"
+          ]
+        },
+        {
+          "color": "Dark Grey",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 9,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0989_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0997_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0994_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-1004_3840x.jpg?v=1711444397"
+          ]
+        },
+        {
+          "color": "White",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 5,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1427_3840x.jpg?v=1704298756",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1434_3840x.jpg?v=1704298757",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1430_3840x.jpg?v=1704298756",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1442_3840x.jpg?v=1704298756"
+          ]
+        }
+      ],
+      "description": [
+        "GET THE JOB DONE",
+        "New and improved React gets the job done, every time. A minimalist design means you’ll have full focus on your training, and new physique-accentuating seams and panels provide an understated lifting aesthetic. Train your hardest, and React will never let you down."
+      ],
+      "spec": [
+        "SKU: A2A8O-WBBM",
+        "Main: 64% Cotton, 33% Polyester, 3% Elastane.",
+        "Mesh: 90% Cotton, 7% Polyester, 3% Elastane."
+      ],
+      "fit-and-care": [
+        "Slim fit",
+        "Drop armhole cut",
+        "Side seam panels to accentuate the physique",
+        "Mesh panels for breathability",
+        "Printed Gymshark logo"
+      ],
+      "reviews": [
+        {
+          "name": "Jredj",
+          "rating": 5,
+          "subject": "Great for during/after workout",
+          "comment": "Love the way these fit. Helps ease shoulders after workout. Bonus keeps you sitting straight.",
+          "datePosted": "25 Apr 2024"
+        },
+        {
+          "name": "UA Strm Armour down parka",
+          "rating": 5,
+          "subject": "Product is gret",
+          "comment": "Feels great and comfortable for lifting! It's not a shirt to wear if you're shy. The neck opening doesn't stretch a lot so you might want to go up a size and it should still be plenty tight. I went up to a large from a medium.",
+          "datePosted": "25 Apr 2024"
+        }
+      ]
+    },
+    {
+      "type": "tanks",
+      "brand": "Gymshark",
+      "name": "LEGACY DROP ARM TANK",
+      "gender": "men",
+      "fit type": "Slim Fit",
+      "isDiscounted": false,
+      "originalPrice": 35,
+      "discountPrice": 0,
+      "rating": 3.9,
+      "numOfReviews": 1,
+      "options": [
+        {
+          "color": "Desert Beige",
+          "availableSize": [
+            "extra small",
+            "small",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LegacyDropArmTank-GSDesertBeige-A5A2Z-NBZJ-1385_3840x.jpg?v=1696606396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LegacyDropArmTank-GSDesertBeige-A5A2Z-NBZJ-1394_3840x.jpg?v=1696606396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LegacyDropArmTank-GSDesertBeige-A5A2Z-NBZJ-1386_3840x.jpg?v=1696606396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LegacyDropArmTank-GSDesertBeige-A5A2Z-NBZJ-1410_3840x.jpg?v=1696606396"
+          ]
+        }
+      ],
+      "description": [
+        "BUILD YOUR LEGACY",
+        "Old-school styles meet new-school functionalities in a collection designed to make gains and build legacies."
+      ],
+      "spec": ["SKU: A5A2Z-NBZJ", "95% Cotton, 5% Elastane"],
+      "fit-and-care": ["Slim fit", "Model is 6'1\" and wears size L"],
+      "reviews": [
+        {
+          "name": "Jredj",
+          "rating": 5,
+          "subject": "Great for during/after workout",
+          "comment": "Love the way these fit. Helps ease shoulders after workout. Bonus keeps you sitting straight.",
+          "datePosted": "25 Apr 2024"
+        }
+      ]
+    },
+    {
+      "type": "tanks",
+      "brand": "Gymshark",
+      "name": "REACT DROP ARM TANK",
+      "gender": "men",
+      "fit type": "Slim Fit",
+      "isDiscounted": true,
+      "originalPrice": 35,
+      "discountPrice": 28,
+      "rating": 4.2,
+      "numOfReviews": 2,
+      "options": [
+        {
+          "color": "Burgundy Brown",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0856_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0862_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0858_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0870_3840x.jpg?v=1711444396"
+          ]
+        },
+        {
+          "color": "Dark Grey",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 9,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0989_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0997_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0994_3840x.jpg?v=1711444396",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-1004_3840x.jpg?v=1711444397"
+          ]
+        },
+        {
+          "color": "White",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 5,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1427_3840x.jpg?v=1704298756",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1434_3840x.jpg?v=1704298757",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1430_3840x.jpg?v=1704298756",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1442_3840x.jpg?v=1704298756"
+          ]
+        }
+      ],
+      "description": [
+        "GET THE JOB DONE",
+        "New and improved React gets the job done, every time. A minimalist design means you’ll have full focus on your training, and new physique-accentuating seams and panels provide an understated lifting aesthetic. Train your hardest, and React will never let you down."
+      ],
+      "spec": [
+        "SKU: A2A8O-WBBM",
+        "Main: 64% Cotton, 33% Polyester, 3% Elastane.",
+        "Mesh: 90% Cotton, 7% Polyester, 3% Elastane."
+      ],
+      "fit-and-care": [
+        "Slim fit",
+        "Drop armhole cut",
+        "Side seam panels to accentuate the physique",
+        "Mesh panels for breathability",
+        "Printed Gymshark logo"
+      ],
+      "reviews": [
+        {
+          "name": "Jredj",
+          "rating": 5,
+          "subject": "Great for during/after workout",
+          "comment": "Love the way these fit. Helps ease shoulders after workout. Bonus keeps you sitting straight.",
+          "datePosted": "25 Apr 2024"
+        },
+        {
+          "name": "UA Strm Armour down parka",
+          "rating": 5,
+          "subject": "Product is gret",
+          "comment": "Feels great and comfortable for lifting! It's not a shirt to wear if you're shy. The neck opening doesn't stretch a lot so you might want to go up a size and it should still be plenty tight. I went up to a large from a medium.",
+          "datePosted": "25 Apr 2024"
+        }
+      ]
+    },
+    {
+      "type": "leggings",
+      "brand": "Gymshark",
+      "name": "VITAL SEAMLESS 2.0 LEGGINGS",
+      "gender": "women",
+      "fit type": null,
+      "isDiscounted": true,
+      "originalPrice": 65,
+      "discountPrice": 52,
+      "rating": 4.1,
+      "numOfReviews": 0,
+      "options": [
+        {
+          "color": "Brown Marl",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsPennyBrownMarlB1A2B-NBBW0735_3840x.jpg?v=1702460856",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsPennyBrownMarlB1A2B-NBBW0754_3840x.jpg?v=1702460857",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsPennyBrownMarlB1A2B-NBBW0749_3840x.jpg?v=1702460856",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsPennyBrownMarlB1A2B-NBBW0776_3840x.jpg?v=1702460857"
+          ]
+        },
+        {
+          "color": "Black Marl",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessLeggingsBlackMarlBlackMarlB1A2B-BBF3-1501_3840x.jpg?v=1702281433",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessLeggingsBlackMarlBlackMarlB1A2B-BBF3-1516_3840x.jpg?v=1702281432",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessLeggingsBlackMarlBlackMarlB1A2B-BBF3-1508_3840x.jpg?v=1702281432",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessLeggingsBlackMarlBlackMarlB1A2B-BBF3-1521_3840x.jpg?v=1702281433"
+          ]
+        },
+        {
+          "color": "Base Green Marl",
+          "availableSize": ["extra small", "small", "medium", "large"],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsGSBaseGreen-MarlB1A2B-ECH30275_3840x.jpg?v=1702556165",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsGSBaseGreen-MarlB1A2B-ECH30301_3840x.jpg?v=1702556165",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsGSBaseGreen-MarlB1A2B-ECH30281_3840x.jpg?v=1702556165",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsGSBaseGreen-MarlB1A2B-ECH30323_3840x.jpg?v=1702556165"
+          ]
+        }
+      ],
+      "description": [
+        "DO IT ALL IN VITAL",
+        "From work to workout, you need your essentials to be able to do it all alongside you, which is why Vital’s sweat-wicking tech and seamless design is gonna tick all your boxes.",
+        "Supportive ribbed waistband",
+        "Sweat-wicking tech keeps you dry however you move",
+        "Breathable mesh dots keep you cool",
+        "Physique-shaping shades",
+        "Seamless design for comfort & confidence"
+      ],
+      "spec": ["SKU: B1A2B-ECH3", "93% Nylon, 7% Elastane"],
+      "fit-and-care": [
+        "High-waisted fit",
+        "Model is 5'7\" and wears size S",
+        "Machine wash cold with the same or similar colours",
+        "Don’t dry clean, iron, use fabric softeners or bleach"
+      ],
+      "reviews": []
+    },
+    {
+      "type": "leggings",
+      "brand": "Gymshark",
+      "name": "EVERYDAY SEAMLESS LEGGINGS",
+      "gender": "women",
+      "fit type": null,
+      "isDiscounted": true,
+      "originalPrice": 50,
+      "discountPrice": 45,
+      "rating": 4.1,
+      "numOfReviews": 0,
+      "options": [
+        {
+          "color": "Blue",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 6,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydaySeamlessLeggingsGSNavyB7A3L-UB9P-1247_3840x.jpg?v=1690107788",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydaySeamlessLeggingsGSNavyB7A3L-UB9P-1260_3840x.jpg?v=1690107789",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydaySeamlessLeggingsGSNavyB7A3L-UB9P-1259_3840x.jpg?v=1690107788",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydaySeamlessLeggingsGSNavyB7A3L-UB9P-1283_3840x.jpg?v=1690107789"
+          ]
+        }
+      ],
+      "description": [
+        "ADD A LITTLE EXTRA",
+        "These collections take your staples and give you something a little bit extra.",
+        "Lightweight seamless material, great for running, cycling, light exercise, or just relaxing on your days off. Just don't do any squats in it (IYKYK).",
+        "High waisted fit for comfort"
+      ],
+      "spec": ["SKU: B7A3L-UB9P", "88% Nylon, 12% Elastane"],
+      "fit-and-care": ["Body fit", "Model is 5'8\" and wears size S"],
+      "reviews": []
+    },
+    {
+      "type": "leggings",
+      "brand": "Gymshark",
+      "name": "MARL SEAMLESS LEGGINGS",
+      "gender": "women",
+      "fit type": null,
+      "isDiscounted": true,
+      "originalPrice": 55,
+      "discountPrice": 27.5,
+      "rating": 4.1,
+      "numOfReviews": 0,
+      "options": [
+        {
+          "color": "Light Grey Marl/Dark Grey Marl/Smokey Grey",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 6,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightGreyMarl_GSDarkGreyMarl_SmokeyGreyB8A3N-GCPZ-0079_3840x.jpg?v=1695390444",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightGreyMarl_GSDarkGreyMarl_SmokeyGreyB8A3N-GCPZ-0093_3840x.jpg?v=1695390444",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightGreyMarl_GSDarkGreyMarl_SmokeyGreyB8A3N-GCPZ-0090_3840x.jpg?v=1695390444",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightGreyMarl_GSDarkGreyMarl_SmokeyGreyB8A3N-GCPZ-0080_3840x.jpg?v=1695390444"
+          ]
+        },
+        {
+          "color": "Light Blue Marl/Light Grey Marl/Turkish Teal",
+          "availableSize": ["extra small"],
+          "availableQuantity": 2,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightBlueMarl_GSLightGreyMarl_TurkishTealB8A3N-UCSD-0321_3840x.jpg?v=1695390443",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightBlueMarl_GSLightGreyMarl_TurkishTealB8A3N-UCSD-0346_3840x.jpg?v=1695390443",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightBlueMarl_GSLightGreyMarl_TurkishTealB8A3N-UCSD-0335_3840x.jpg?v=1695390443",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightBlueMarl_GSLightGreyMarl_TurkishTealB8A3N-UCSD-0379_3840x.jpg?v=1695390443"
+          ]
+        }
+      ],
+      "description": [
+        "MARL-VELOUS FIT",
+        "Add a little marl to your lifting look for a workout that’s nothing short of marl-velous.",
+        "Comfortable, seamless design",
+        "Marl pattern"
+      ],
+      "spec": ["SKU: B8A3N-UCSD", "93% Nylon, 7% Elastane"],
+      "fit-and-care": ["High-waisted fit", "Model is 5'8\" and wears size S"],
+      "reviews": []
+    },
+    {
+      "type": "leggings",
+      "brand": "Lululemon",
+      "name": "Fast and Free Reflective High-Rise Tight 24\" Asia Fit",
+      "gender": "women",
+      "fit type": "Asia Fit",
+      "isDiscounted": true,
+      "originalPrice": 155,
+      "discountPrice": 85,
+      "rating": 4.1,
+      "numOfReviews": 2,
+      "options": [
+        {
+          "color": "Nomad",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 6,
+          "imgSrc": [
+            "https://images.lululemon.com/is/image/lululemon/LW5BLBA_035955_1?size=1200,1200",
+            "https://images.lululemon.com/is/image/lululemon/LW5BLBA_035955_2?size=1200,1200",
+            "https://images.lululemon.com/is/image/lululemon/LW5BLBA_035955_3?size=1200,1200",
+            "https://images.lululemon.com/is/image/lululemon/LW5BLBA_035955_4?size=1200,1200"
+          ]
+        },
+        {
+          "color": "Black",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://images.lululemon.com/is/image/lululemon/LW5BLBA_0001_1?size=1200,1200",
+            "https://images.lululemon.com/is/image/lululemon/LW5BLBA_0001_2?size=1200,1200",
+            "https://images.lululemon.com/is/image/lululemon/LW5BLBA_0001_3?size=1200,1200",
+            "https://images.lululemon.com/is/image/lululemon/LW5BLBA_0001_4?size=1200,1200"
+          ]
+        }
+      ],
+      "description": [
+        "MARL-VELOUS FIT",
+        "100% pure running freedom. The Fast and Free collection, powered by Nulux™ fabric, is about unrestricted movement and incredibly lightweight coverage that passes the squat test.",
+        "Designed for Running"
+      ],
+      "spec": [
+        "Two side drop-in pockets fit your phone",
+        "Five drop-in pockets on the waistband hold small items",
+        "The tighter waistband and continuous drawcord help keep your leggings in place so you don't have to pull them up mid-run",
+        "Reflective details"
+      ],
+      "fit-and-care": [
+        "Asia fit",
+        "Waistband Lining:89% Nylon, 11% Elastane",
+        "Body:84% Nylon, 16% Lycra Elastane",
+        "Machine Wash Cold",
+        "Do Not Bleach",
+        "Tumble Dry Low",
+        "Do Not Iron",
+        "Do Not Dry Clean",
+        "Wash With Like Colors"
+      ],
+      "reviews": [
+        {
+          "name": "Eleanor",
+          "rating": 5,
+          "subject": "I love Fast and Free Tights (Asia Fit)",
+          "comment": "Fast and Free Tights are always so comfortable. It's my 3rd pair. Love all of them.",
+          "datePosted": "25 Apr 2023"
+        },
+        {
+          "name": "JeanWu",
+          "rating": 5,
+          "subject": "Such a great deal!",
+          "comment": "My first fast and free was bought several years ago and it’s still in good condition! I’m so happy to get a 50% discount this time and I really love the colour which is a mix of blue and purple!",
+          "datePosted": "01 Jan 2024"
+        }
+      ]
+    },
+    {
+      "type": "leggings",
+      "brand": "Lululemon",
+      "name": "lululemon Align™ High-Rise Crop 21",
+      "gender": "women",
+      "fit type": null,
+      "isDiscounted": false,
+      "originalPrice": 120,
+      "discountPrice": 0,
+      "rating": 4.7,
+      "numOfReviews": 1,
+      "options": [
+        {
+          "color": "Magenta Purple",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://images.lululemon.com/is/image/lululemon/LW6BQUS_054428_1?size=1200,1200",
+            "https://images.lululemon.com/is/image/lululemon/LW6BQUS_054428_2?size=1200,1200",
+            "https://images.lululemon.com/is/image/lululemon/LW6BQUS_054428_3?size=1200,1200",
+            "https://images.lululemon.com/is/image/lululemon/LW6BQUS_054428_4?size=1200,1200"
+          ]
+        }
+      ],
+      "description": [
+        "MARL-VELOUS FIT",
+        "When feeling nothing is everything. The lululemon Align™ collection, powered by Nulu™ fabric, is so weightless and buttery soft, all you feel is your practice.",
+        "Designed for Yoga"
+      ],
+      "spec": [
+        "Hidden waistband pocket fits a card or key, and won’t get in your way",
+        "This collection’s great for low-impact workouts like yoga, or whenever you want to feel really, really comfortable",
+        "Intended to sit at bottom of calf"
+      ],
+      "fit-and-care": [
+        "81% Nylon, 19% Lycra Elastane",
+        "Machine Wash Cold",
+        "Do Not Bleach",
+        "Tumble Dry Low",
+        "Do Not Iron",
+        "Do Not Dry Clean",
+        "Wash With Like Colors"
+      ],
+      "reviews": [
+        {
+          "name": "ChengC2016",
+          "rating": 5,
+          "subject": "Buttery soft too yummy",
+          "comment": "Align leggings are the bessssstessssttttttt! buttery soft indeed. I do wanna wear them everywhere if i could. So comfy. Whether doing yoga, rowing, working out, running or just lounging watching netflix, you’d want to wear this. Filed under: never taking this off.",
+          "datePosted": "25 Apr 2023"
+        }
+      ]
+    },
+    {
+      "type": "crop tops",
+      "brand": "GymShark",
+      "name": "EVERYDAY HALTER NECK RIBBON TANK",
+      "gender": "women",
+      "fit type": "Regular Fit",
+      "isDiscounted": true,
+      "originalPrice": 25,
+      "discountPrice": 17.5,
+      "rating": 4.5,
+      "numOfReviews": 2,
+      "options": [
+        {
+          "color": "Black",
+          "availableSize": [
+            "extra small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTankGSBlackB8A2I-BB2J-0192_b2491571-72df-4b15-8928-96666a3ee123_3840x.jpg?v=1695117314",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTankGSBlackB8A2I-BB2J-0202_d1a808fe-eb45-4eb5-8fd0-049b48ee7b63_3840x.jpg?v=1695117313",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTankGSBlackB8A2I-BB2J-0195_4c67409b-f50e-4c4f-bb2d-9db77737f87f_3840x.jpg?v=1695117314",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTankGSBlackB8A2I-BB2J-0206_8fb0c132-7222-49a8-aa66-7d0bab84bf43_3840x.jpg?v=1695117314"
+          ]
+        },
+        {
+          "color": "Core Olive",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 8,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTank-GSCoreOlive-B8A2I-ECBG-0590_3840x.jpg?v=1695117312",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTank-GSCoreOlive-B8A2I-ECBG-0608_3840x.jpg?v=1695117312",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTank-GSCoreOlive-B8A2I-ECBG-0600_3840x.jpg?v=1695117312",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTank-GSCoreOlive-B8A2I-ECBG-0621_3840x.jpg?v=1695117312"
+          ]
+        }
+      ],
+      "description": [
+        "ADD A LITTLE EXTRA",
+        "These collections take your staples and give you something a little bit extra.",
+        "Halter neck design with tie for ribbon effect",
+        "Seamless cropped tank"
+      ],
+      "spec": ["78% Recycled Polyester, 22% Elastane"],
+      "fit-and-care": [
+        "Regular fit",
+        "Cropped length",
+        "Model is 5'3\" and wears size XS"
+      ],
+      "reviews": [
+        {
+          "name": "Brindisll",
+          "rating": 5,
+          "subject": "Loose and light Fit",
+          "comment": "I love how light and breathable the shirt feels while working out. The length isn't too short either!",
+          "datePosted": "11 Feb 2024"
+        },
+        {
+          "name": "sur19",
+          "rating": 5,
+          "subject": "comfortable and nice color",
+          "comment": "It is very comfortable, and the cloth is also very nice. Fits me right. Also, the color is nice too.",
+          "datePosted": "21 Feb 2024"
+        }
+      ]
+    },
+    {
+      "type": "crop tops",
+      "brand": "GymShark",
+      "name": "EVERYDAY HALTER NECK RIBBON TANK",
+      "gender": "women",
+      "fit type": "Regular Fit",
+      "isDiscounted": true,
+      "originalPrice": 25,
+      "discountPrice": 17.5,
+      "rating": 4.5,
+      "numOfReviews": 0,
+      "options": [
+        {
+          "color": "Black Marl",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 8,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VITALSEAMLESSMIDITANKB4A6WBlackMarlB4A6W-BBF3-1631.162_cdc277a6-4c11-425c-9110-aa3fd3361109_3840x.jpg?v=1702281425",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VITALSEAMLESSMIDITANKB4A6WBlackMarlB4A6W-BBF3-1649.164_29c19a08-a1ff-4176-9715-d541e0d85420_3840x.jpg?v=1702281427",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VITALSEAMLESSMIDITANKB4A6WBlackMarlB4A6W-BBF3-1644.163_b279f00b-8abb-4d3c-9d6c-3d995754eb93_3840x.jpg?v=1702281426",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VITALSEAMLESSMIDITANKB4A6WBlackMarlB4A6W-BBF3-1653.165_52856e59-6169-436d-b349-418e592857f8_3840x.jpg?v=1702281426"
+          ]
+        },
+        {
+          "color": "Vanilla Brown Marl",
+          "availableSize": ["small", "extra large", "double large"],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0MidiTank-VanillaBrownMarl-B4A6W-NBD912_fd5a1e3c-b03f-4801-be8a-4322f7cb50d9_3840x.jpg?v=1701441722",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0MidiTank-VanillaBrownMarl-B4A6W-NBD936_bec5529e-e9cd-42a0-aaeb-cc0839bcfe49_3840x.jpg?v=1701441723",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0MidiTank-VanillaBrownMarl-B4A6W-NBD925_8a23a642-9a48-4108-9772-c147cad5738b_3840x.jpg?v=1701441723",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0MidiTank-VanillaBrownMarl-B4A6W-NBD960_3bd91015-426d-4426-8d9c-adf4bdcdd148_3840x.jpg?v=1701441721"
+          ]
+        },
+        {
+          "color": "Brick Red Marl",
+          "availableSize": ["extra large", "double large"],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSMIDITANKB4A6WBrickRed_MarlB4A6W-RBML-1487.142_13e0cc6d-f4b4-4962-9dff-14533a25ae77_3840x.jpg?v=1679991496",
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSMIDITANKB4A6WBrickRed_MarlB4A6W-RBML-1495.143_8513168b-5959-45c2-902b-0f0aedeaccf7_3840x.jpg?v=1679991497",
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSMIDITANKB4A6WBrickRed_MarlB4A6W-RBML-1498.144_4f3b193f-71c8-4be6-abe2-91d51de00c3f_3840x.jpg?v=1679991496",
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSMIDITANKB4A6WBrickRed_MarlB4A6W-RBML-1503.145_66abd96a-07a4-4fa6-9528-446df2f48cbc_3840x.jpg?v=1679991496"
+          ]
+        }
+      ],
+      "description": [
+        "DO IT ALL IN VITAL",
+        "Whatever conditioning means to you, Vital's got something to help you feel, and perform, your best. Because you can do it all, and so can Vital.",
+        "Sweat-wicking tech",
+        "Breathable marl mesh dots",
+        "Seamless design",
+        "Heat-sealed Gymshark logo"
+      ],
+      "spec": ["100% Nylon"],
+      "fit-and-care": [
+        "Midi fit",
+        "Model is 5'8\" and wears size XS",
+        "Machine wash cold with the same or similar colours",
+        "Don't dry clean",
+        "Don't iron",
+        "Don't use fabric softeners",
+        "Don't bleach"
+      ],
+      "reviews": []
+    },
+    {
+      "type": "t-shirt",
+      "brand": "GymShark",
+      "name": "FRACTION OVERSIZED T-SHIRT",
+      "gender": "women",
+      "fit type": null,
+      "isDiscounted": false,
+      "originalPrice": 35,
+      "discountPrice": 0,
+      "rating": 4.6,
+      "numOfReviews": 0,
+      "options": [
+        {
+          "color": "White",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-WhiteB3A6L-WBBM.B_a8550e4a-3782-4330-92fc-123ae48b117a_3840x.jpg?v=1659621955",
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-WhiteB3A6L-WBBM.A_ed5e261d-4161-4e3d-961a-6606630c31dd_3840x.jpg?v=1659621955",
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-WhiteB3A6L-WBBM.D1_828c5fb2-3190-4f8f-bd89-210ce04ebeb3_3840x.jpg?v=1659621955"
+          ]
+        },
+        {
+          "color": "Black/White",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-Black_WhiteB3A6L-BBGR_3840x.jpg?v=1661954222",
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-Black-White-B3A6L-BBGR.A_da957273-925c-4108-a48b-17e301d517df_3840x.jpg?v=1661954222",
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-Black-White-B3A6L-BBGR.C_5535a8e8-0c6c-4405-95ce-00f1c146c42c_3840x.jpg?v=1661954223",
+            "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-Black-White-B3A6L-BBGR.D1_8b4db834-1695-453c-b343-cf23510923e9_3840x.jpg?v=1661954222"
+          ]
+        }
+      ],
+      "description": [
+        "GRAPHIC IMAGES",
+        "A piece you can pair with anything doesn't have to be boring. That's where your Graphic Fraction look steps in. This simple, stylish design can be worn for work or play, whilst the Gymshark fraction graphic adds a touch of individuality to your look. Say hello to your new staple item."
+      ],
+      "spec": ["Main: 100% Cotton", "Rib: 95% Cotton 5% Elastane"],
+      "fit-and-care": [
+        "Oversized fit",
+        "Dropped shoulders",
+        "Round neckline",
+        "Screenprint Gymshark graphic to back",
+        "Logo to centre front"
+      ],
+      "reviews": []
+    },
+    {
+      "type": "t-shirt",
+      "brand": "GymShark",
+      "name": "LIFTING ESSENTIALS OVERSIZED T-SHIRT",
+      "gender": "women",
+      "fit type": "Oversized Fit",
+      "isDiscounted": false,
+      "originalPrice": 35,
+      "discountPrice": 0,
+      "rating": 4.8,
+      "numOfReviews": 0,
+      "options": [
+        {
+          "color": "White",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingEssentialsOversizedT-shirt-GSWhite-B8A3R-WB57-1076_3840x.jpg?v=1695117301",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingEssentialsOversizedT-shirt-GSWhite-B8A3R-WB57-1094_3840x.jpg?v=1695117301",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingEssentialsOversizedT-shirt-GSWhite-B8A3R-WB57-1106_3840x.jpg?v=1695117302",
+            "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingEssentialsOversizedT-shirt-GSWhite-B8A3R-WB57-1100_3840x.jpg?v=1695117301"
+          ]
+        }
+      ],
+      "description": [
+        "ADD A LITTLE EXTRA",
+        "These collections take your training staples and give you something a little bit extra.",
+        "\"Gymshark Lifting Essentials\" graphic"
+      ],
+      "spec": ["SKU: B8A3R-WB57", "100% Cotton"],
+      "fit-and-care": ["Oversized fit", "Model is 5'9\" and wears size S"],
+      "reviews": []
+    },
+    {
+      "type": "t-shirt",
+      "brand": "Underarmour",
+      "name": "Women's Project Rock Heavyweight Campus T-Shirt",
+      "gender": "women",
+      "fit type": null,
+      "isDiscounted": false,
+      "originalPrice": 50,
+      "discountPrice": 0,
+      "rating": 4.8,
+      "numOfReviews": 0,
+      "options": [
+        {
+          "color": "Black",
+          "availableSize": [
+            "extra small",
+            "small",
+            "medium",
+            "large",
+            "extra large",
+            "double large"
+          ],
+          "availableQuantity": 10,
+          "imgSrc": [
+            "https://underarmour.scene7.com/is/image/Underarmour/V5-1385942-001_FC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
+            "https://underarmour.scene7.com/is/image/Underarmour/V5-1385942-001_BC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
+            "https://underarmour.scene7.com/is/image/Underarmour/PS1385942-001_HF?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
+            "https://underarmour.scene7.com/is/image/Underarmour/PS1385942-001_HB?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500"
+          ]
+        }
+      ],
+      "description": [
+        "Project Rock training gear was built to help you find boundaries, then push right through them. Everything in this collection was personally approved by Dwayne Johnson, the hardest worker in the room. ANY room.",
+        "Heavyweight, soft cotton-blend fabric provides all-day comfort",
+        "Ribbed collar"
+      ],
+      "spec": ["Style #: 1385942", "60% Cotton/40% Polyester"],
+      "fit-and-care": [
+        "Loose: Fuller cut for complete comfort.",
+        "Wash garment inside out",
+        "Machine wash cold with like colors",
+        "Use only non-chlorine bleach when needed",
+        "Tumble dry low",
+        "Do not iron",
+        "Do not use softeners",
+        "Do not dry clean"
+      ],
+      "reviews": []
+    }
+  ]
+}
