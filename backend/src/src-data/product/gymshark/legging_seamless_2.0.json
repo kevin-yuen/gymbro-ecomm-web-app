@@ -1,0 +1,77 @@
+{
+    "category": "leggings",
+    "brand": "Gymshark",
+    "name": "VITAL SEAMLESS 2.0 LEGGINGS",
+    "gender": "women",
+    "fitType": null,
+    "isDiscounted": true,
+    "originalPrice": 65,
+    "discountPrice": 52,
+    "rating": 4.1,
+    "numOfReviews": 0,
+    "options": [
+      {
+        "color": "Brown Marl",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large",
+          "double large"
+        ],
+        "quantity": 10,
+        "imgSrc": [
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsPennyBrownMarlB1A2B-NBBW0735_3840x.jpg?v=1702460856",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsPennyBrownMarlB1A2B-NBBW0754_3840x.jpg?v=1702460857",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsPennyBrownMarlB1A2B-NBBW0749_3840x.jpg?v=1702460856",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsPennyBrownMarlB1A2B-NBBW0776_3840x.jpg?v=1702460857"
+        ]
+      },
+      {
+        "color": "Black Marl",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large",
+          "double large"
+        ],
+        "quantity": 10,
+        "imgSrc": [
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessLeggingsBlackMarlBlackMarlB1A2B-BBF3-1501_3840x.jpg?v=1702281433",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessLeggingsBlackMarlBlackMarlB1A2B-BBF3-1516_3840x.jpg?v=1702281432",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessLeggingsBlackMarlBlackMarlB1A2B-BBF3-1508_3840x.jpg?v=1702281432",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessLeggingsBlackMarlBlackMarlB1A2B-BBF3-1521_3840x.jpg?v=1702281433"
+        ]
+      },
+      {
+        "color": "Base Green Marl",
+        "size": ["extra small", "small", "medium", "large"],
+        "quantity": 10,
+        "imgSrc": [
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsGSBaseGreen-MarlB1A2B-ECH30275_3840x.jpg?v=1702556165",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsGSBaseGreen-MarlB1A2B-ECH30301_3840x.jpg?v=1702556165",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsGSBaseGreen-MarlB1A2B-ECH30281_3840x.jpg?v=1702556165",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0LeggingsGSBaseGreen-MarlB1A2B-ECH30323_3840x.jpg?v=1702556165"
+        ]
+      }
+    ],
+    "description": [
+      "DO IT ALL IN VITAL",
+      "From work to workout, you need your essentials to be able to do it all alongside you, which is why Vital’s sweat-wicking tech and seamless design is gonna tick all your boxes.",
+      "Supportive ribbed waistband",
+      "Sweat-wicking tech keeps you dry however you move",
+      "Breathable mesh dots keep you cool",
+      "Physique-shaping shades",
+      "Seamless design for comfort & confidence"
+    ],
+    "spec": ["SKU: B1A2B-ECH3", "93% Nylon, 7% Elastane"],
+    "fitAndCare": [
+      "High-waisted fit",
+      "Model is 5'7\" and wears size S",
+      "Machine wash cold with the same or similar colours",
+      "Don’t dry clean, iron, use fabric softeners or bleach"
+    ]
+  }

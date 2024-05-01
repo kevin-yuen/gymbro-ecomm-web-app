@@ -1,0 +1,54 @@
+{
+    "category": "leggings",
+    "brand": "Gymshark",
+    "name": "MARL SEAMLESS LEGGINGS",
+    "gender": "women",
+    "fitType": null,
+    "isDiscounted": true,
+    "originalPrice": 55,
+    "discountPrice": 27.5,
+    "rating": 4.1,
+    "numOfReviews": 0,
+    "options": [
+      {
+        "color": "Light Grey Marl/Dark Grey Marl/Smokey Grey",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large",
+          "double large"
+        ],
+        "quantity": 6,
+        "imgSrc": [
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightGreyMarl_GSDarkGreyMarl_SmokeyGreyB8A3N-GCPZ-0079_3840x.jpg?v=1695390444",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightGreyMarl_GSDarkGreyMarl_SmokeyGreyB8A3N-GCPZ-0093_3840x.jpg?v=1695390444",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightGreyMarl_GSDarkGreyMarl_SmokeyGreyB8A3N-GCPZ-0090_3840x.jpg?v=1695390444",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightGreyMarl_GSDarkGreyMarl_SmokeyGreyB8A3N-GCPZ-0080_3840x.jpg?v=1695390444"
+        ]
+      },
+      {
+        "color": "Light Blue Marl/Light Grey Marl/Turkish Teal",
+        "size": ["extra small"],
+        "quantity": 2,
+        "imgSrc": [
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightBlueMarl_GSLightGreyMarl_TurkishTealB8A3N-UCSD-0321_3840x.jpg?v=1695390443",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightBlueMarl_GSLightGreyMarl_TurkishTealB8A3N-UCSD-0346_3840x.jpg?v=1695390443",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightBlueMarl_GSLightGreyMarl_TurkishTealB8A3N-UCSD-0335_3840x.jpg?v=1695390443",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightBlueMarl_GSLightGreyMarl_TurkishTealB8A3N-UCSD-0379_3840x.jpg?v=1695390443"
+        ]
+      }
+    ],
+    "description": [
+      "MARL-VELOUS FIT",
+      "Add a little marl to your lifting look for a workout that’s nothing short of marl-velous.",
+      "Comfortable, seamless design",
+      "Marl pattern"
+    ],
+    "spec": ["SKU: B8A3N-UCSD", "93% Nylon, 7% Elastane"],
+    "fitAndCare": [
+      "High-waisted fit",
+      "Model is 5'8\" and wears size S"
+    ]
+  }

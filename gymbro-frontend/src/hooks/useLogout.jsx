@@ -4,8 +4,6 @@ import {useContext} from "react";
 import { AuthContext } from "../context/AuthContextProvider";
 
 export default function useLogout() {
-    console.log("logging out...");
-
     const authContext = useContext(AuthContext);
     const { setAuthState } = authContext;
 

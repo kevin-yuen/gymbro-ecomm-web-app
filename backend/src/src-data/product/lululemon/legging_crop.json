@@ -1,0 +1,51 @@
+{
+    "category": "leggings",
+    "brand": "Lululemon",
+    "name": "lululemon Align™ High-Rise Crop 21",
+    "gender": "women",
+    "fitType": null,
+    "isDiscounted": false,
+    "originalPrice": 120,
+    "discountPrice": 0,
+    "rating": 4.7,
+    "numOfReviews": 1,
+    "options": [
+      {
+        "color": "Magenta Purple",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large",
+          "double large"
+        ],
+        "quantity": 10,
+        "imgSrc": [
+          "https://images.lululemon.com/is/image/lululemon/LW6BQUS_054428_1?size=1200,1200",
+          "https://images.lululemon.com/is/image/lululemon/LW6BQUS_054428_2?size=1200,1200",
+          "https://images.lululemon.com/is/image/lululemon/LW6BQUS_054428_3?size=1200,1200",
+          "https://images.lululemon.com/is/image/lululemon/LW6BQUS_054428_4?size=1200,1200"
+        ]
+      }
+    ],
+    "description": [
+      "MARL-VELOUS FIT",
+      "When feeling nothing is everything. The lululemon Align™ collection, powered by Nulu™ fabric, is so weightless and buttery soft, all you feel is your practice.",
+      "Designed for Yoga"
+    ],
+    "spec": [
+      "Hidden waistband pocket fits a card or key, and won’t get in your way",
+      "This collection’s great for low-impact workouts like yoga, or whenever you want to feel really, really comfortable",
+      "Intended to sit at bottom of calf"
+    ],
+    "fitAndCare": [
+      "81% Nylon, 19% Lycra Elastane",
+      "Machine Wash Cold",
+      "Do Not Bleach",
+      "Tumble Dry Low",
+      "Do Not Iron",
+      "Do Not Dry Clean",
+      "Wash With Like Colors"
+    ]
+  }

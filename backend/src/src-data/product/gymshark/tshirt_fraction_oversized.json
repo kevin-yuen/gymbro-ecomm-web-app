@@ -1,0 +1,61 @@
+{
+    "category": "t-shirt",
+    "brand": "GymShark",
+    "name": "FRACTION OVERSIZED T-SHIRT",
+    "gender": "women",
+    "fitType": null,
+    "isDiscounted": false,
+    "originalPrice": 35,
+    "discountPrice": 0,
+    "rating": 4.6,
+    "numOfReviews": 0,
+    "options": [
+      {
+        "color": "White",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large",
+          "double large"
+        ],
+        "quantity": 10,
+        "imgSrc": [
+          "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-WhiteB3A6L-WBBM.B_a8550e4a-3782-4330-92fc-123ae48b117a_3840x.jpg?v=1659621955",
+          "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-WhiteB3A6L-WBBM.A_ed5e261d-4161-4e3d-961a-6606630c31dd_3840x.jpg?v=1659621955",
+          "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-WhiteB3A6L-WBBM.D1_828c5fb2-3190-4f8f-bd89-210ce04ebeb3_3840x.jpg?v=1659621955"
+        ]
+      },
+      {
+        "color": "Black/White",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large",
+          "double large"
+        ],
+        "quantity": 10,
+        "imgSrc": [
+          "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-Black_WhiteB3A6L-BBGR_3840x.jpg?v=1661954222",
+          "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-Black-White-B3A6L-BBGR.A_da957273-925c-4108-a48b-17e301d517df_3840x.jpg?v=1661954222",
+          "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-Black-White-B3A6L-BBGR.C_5535a8e8-0c6c-4405-95ce-00f1c146c42c_3840x.jpg?v=1661954223",
+          "https://cdn.shopify.com/s/files/1/1367/5207/products/GRAPHICSFRACTIONOVERSIZEDT-SHIRT-Black-White-B3A6L-BBGR.D1_8b4db834-1695-453c-b343-cf23510923e9_3840x.jpg?v=1661954222"
+        ]
+      }
+    ],
+    "description": [
+      "GRAPHIC IMAGES",
+      "A piece you can pair with anything doesn't have to be boring. That's where your Graphic Fraction look steps in. This simple, stylish design can be worn for work or play, whilst the Gymshark fraction graphic adds a touch of individuality to your look. Say hello to your new staple item."
+    ],
+    "spec": ["Main: 100% Cotton", "Rib: 95% Cotton 5% Elastane"],
+    "fitAndCare": [
+      "Oversized fit",
+      "Dropped shoulders",
+      "Round neckline",
+      "Screenprint Gymshark graphic to back",
+      "Logo to centre front"
+    ]
+  }

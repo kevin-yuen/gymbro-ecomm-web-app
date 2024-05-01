@@ -13,8 +13,6 @@ import { Outlet } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function RootLayout() {
-  console.log("Root Layout re-renders...");
-  
   return (
     <>
       <div className="fixed-top">

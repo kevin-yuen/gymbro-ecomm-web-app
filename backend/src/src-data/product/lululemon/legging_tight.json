@@ -1,0 +1,71 @@
+{
+    "category": "leggings",
+    "brand": "Lululemon",
+    "name": "Fast and Free Reflective High-Rise Tight 24\" Asia Fit",
+    "gender": "women",
+    "fitType": "Asia Fit",
+    "isDiscounted": true,
+    "originalPrice": 155,
+    "discountPrice": 85,
+    "rating": 4.1,
+    "numOfReviews": 2,
+    "options": [
+      {
+        "color": "Nomad",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large",
+          "double large"
+        ],
+        "quantity": 6,
+        "imgSrc": [
+          "https://images.lululemon.com/is/image/lululemon/LW5BLBA_035955_1?size=1200,1200",
+          "https://images.lululemon.com/is/image/lululemon/LW5BLBA_035955_2?size=1200,1200",
+          "https://images.lululemon.com/is/image/lululemon/LW5BLBA_035955_3?size=1200,1200",
+          "https://images.lululemon.com/is/image/lululemon/LW5BLBA_035955_4?size=1200,1200"
+        ]
+      },
+      {
+        "color": "Black",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large"
+        ],
+        "quantity": 10,
+        "imgSrc": [
+          "https://images.lululemon.com/is/image/lululemon/LW5BLBA_0001_1?size=1200,1200",
+          "https://images.lululemon.com/is/image/lululemon/LW5BLBA_0001_2?size=1200,1200",
+          "https://images.lululemon.com/is/image/lululemon/LW5BLBA_0001_3?size=1200,1200",
+          "https://images.lululemon.com/is/image/lululemon/LW5BLBA_0001_4?size=1200,1200"
+        ]
+      }
+    ],
+    "description": [
+      "MARL-VELOUS FIT",
+      "100% pure running freedom. The Fast and Free collection, powered by Nulux™ fabric, is about unrestricted movement and incredibly lightweight coverage that passes the squat test.",
+      "Designed for Running"
+    ],
+    "spec": [
+      "Two side drop-in pockets fit your phone",
+      "Five drop-in pockets on the waistband hold small items",
+      "The tighter waistband and continuous drawcord help keep your leggings in place so you don't have to pull them up mid-run",
+      "Reflective details"
+    ],
+    "fitAndCare": [
+      "Asia fit",
+      "Waistband Lining:89% Nylon, 11% Elastane",
+      "Body:84% Nylon, 16% Lycra Elastane",
+      "Machine Wash Cold",
+      "Do Not Bleach",
+      "Tumble Dry Low",
+      "Do Not Iron",
+      "Do Not Dry Clean",
+      "Wash With Like Colors"
+    ]
+  }

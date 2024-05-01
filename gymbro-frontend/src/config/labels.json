@@ -1,0 +1,14 @@
+{
+    "promo-discounts": {
+        "header": "Items on Discount",
+        "more-discounts": "See all discounts"
+    },
+    "promo-topRatings": {
+        "header": "Top-Rating Items",
+        "more-topRatings": "See all top-ratings"
+    },
+    "promo-clearance": {
+        "header": "Clearance",
+        "more-clearance": "See all clearance"
+    }
+}

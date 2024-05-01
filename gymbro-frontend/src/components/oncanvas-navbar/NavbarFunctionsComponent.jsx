@@ -14,12 +14,8 @@ import useLogout from "../../hooks/useLogout";
 const shopBagTooltip = Messages.tooltip["shopping-bag"];
 
 export default function NavbarFunctionsComponent({ searchComponent }) {
-  console.log("NavBar Functions Component re-renders...");
-
   const authContext = useContext(AuthContext);
   const { authState } = authContext;
-
-  useEffect(() => console.log(authState));
 
   const { handleLogout } = useLogout();
 
@@ -57,7 +53,7 @@ export default function NavbarFunctionsComponent({ searchComponent }) {
 
       <Link to={enableBagBoxArrow ? "/bag" : "#"}>
         <span
-          class="d-inline-block"
+          className="d-inline-block"
           tabindex="0"
           data-toggle="tooltip"
           title={!authState.isAuthorized && showToolTip ? shopBagTooltip : ""}

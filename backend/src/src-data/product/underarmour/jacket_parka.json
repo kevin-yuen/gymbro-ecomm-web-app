@@ -1,0 +1,43 @@
+{
+  "category": "jacket",
+  "brand": "Underarmour",
+  "name": "Men's UA Storm Armour Down Parka",
+  "gender": "men",
+  "fitType": "Loose",
+  "isDiscounted": false,
+  "originalPrice": 60.99,
+  "discountPrice": 0,
+  "rating": 4.9,
+  "numOfReviews": 4,
+  "options": [
+    {
+      "color": "black",
+      "size": ["extra small", "small", "extra large"],
+      "quantity": 10,
+      "imgSrc": [
+        "https://underarmour.scene7.com/is/image/Underarmour/V5-1373663-001_FC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
+        "https://underarmour.scene7.com/is/image/Underarmour/V5-1373663-001_BC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
+        "https://underarmour.scene7.com/is/image/Underarmour/V5-1373663-001_FSF?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
+        "https://underarmour.scene7.com/is/image/Underarmour/V5-1373663-001_COLLAR?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500"
+      ]
+    }
+  ],
+  "description": [
+    "This is our go-to down jacket for winter. It's crazy-warm, light, and still lets you move like an athlete.",
+    "UA Storm technology repels water without sacrificing breathability",
+    "600-fill Allied duck down insulation provides extreme warmth & is ethically sourced & traceable via tag",
+    "Lightweight woven fabric delivers superior comfort & durability",
+    "Generous, 3-piece hood with bungee adjust & extended, bonded brim"
+  ],
+  "spec": ["Style #: 1373663", "100% Nylon"],
+  "fitAndCare": [
+    "Loose: Fuller cut for complete comfort.",
+    "Garment should be washed & dried fully zipped & turned inside out",
+    "Machine wash cold with like colors",
+    "Do not use softeners",
+    "Use only non-chlorine bleach when needed",
+    "Tumble dry low",
+    "Do not iron",
+    "Do not dry clean"
+  ]
+}

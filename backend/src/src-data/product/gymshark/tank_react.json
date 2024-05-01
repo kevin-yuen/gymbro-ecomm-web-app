@@ -1,0 +1,93 @@
+{
+    "category": "tanks",
+    "brand": "Gymshark",
+    "name": "REACT DROP ARM TANK",
+    "gender": "men",
+    "fitType": "Slim Fit",
+    "isDiscounted": true,
+    "originalPrice": 35,
+    "discountPrice": 28,
+    "rating": 4.2,
+    "numOfReviews": 2,
+    "options": [
+      {
+        "color": "Burgundy Brown",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large",
+          "double large"
+        ],
+        "quantity": 10,
+        "imgSrc": [
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0856_3840x.jpg?v=1711444396",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0862_3840x.jpg?v=1711444396",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0858_3840x.jpg?v=1711444396",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0870_3840x.jpg?v=1711444396"
+        ]
+      },
+      {
+        "color": "Dark Grey",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large",
+          "double large"
+        ],
+        "quantity": 9,
+        "imgSrc": [
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0989_3840x.jpg?v=1711444396",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0997_3840x.jpg?v=1711444396",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0994_3840x.jpg?v=1711444396",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-1004_3840x.jpg?v=1711444397"
+        ]
+      },
+      {
+        "color": "White",
+        "size": [
+          "extra small",
+          "small",
+          "medium",
+          "large",
+          "extra large",
+          "double large"
+        ],
+        "quantity": 5,
+        "imgSrc": [
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1427_3840x.jpg?v=1704298756",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1434_3840x.jpg?v=1704298757",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1430_3840x.jpg?v=1704298756",
+          "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1442_3840x.jpg?v=1704298756"
+        ]
+      }
+    ],
+    "description": [
+      "GET THE JOB DONE",
+      "New and improved React gets the job done, every time. A minimalist design means you’ll have full focus on your training, and new physique-accentuating seams and panels provide an understated lifting aesthetic. Train your hardest, and React will never let you down."
+    ],
+    "spec": [
+      "SKU: A2A8O-WBBM",
+      "Main: 64% Cotton, 33% Polyester, 3% Elastane.",
+      "Mesh: 90% Cotton, 7% Polyester, 3% Elastane."
+    ],
+    "fitAndCare": [
+      "Slim fit",
+      "Drop armhole cut",
+      "Side seam panels to accentuate the physique",
+      "Mesh panels for breathability",
+      "Printed Gymshark logo"
+    ]
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  

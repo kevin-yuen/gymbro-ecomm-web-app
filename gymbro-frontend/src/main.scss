@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 
 // importing in case need to add custom values into existing sass variables
 @import "../node_modules/bootstrap/scss/_functions.scss";
@@ -17,6 +19,7 @@ $lightred: #F7DEDE;
 $black: #000000;
 $orange: #ea9000;
 $grey: #75737398;
+$lightgrey: #E5E7E3;
 $enable-negative-margins: true;
 
 $custom-position-values: (
@@ -93,7 +96,9 @@ $utilities: (
         class: custom-font-family,
         values: (
             "teko": Teko,
-            "montserrat": Montserrat
+            "montserrat": Montserrat,
+            "inconsolata": Inconsolata,
+            "jersey": "Jersey 15"
         )
     ),
   "custom-color": (
@@ -121,6 +126,7 @@ $utilities: (
       "orange": $orange,
       "red": $red,
       "lightred": $lightred,
+      "lightgrey": $lightgrey
     ),
   ),
   "custom-width": (
@@ -135,6 +141,9 @@ $utilities: (
         30: 30%,
         35: 35%,
         40: 40%,
+        45: 45%,
+        50: 50%,
+        55: 55%,
         60: 60%,
         70: 70%,
         80: 80%,

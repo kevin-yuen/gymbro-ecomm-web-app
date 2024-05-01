@@ -9,6 +9,8 @@ app.use(express.json());
 
 // routes
 app.use("/users", require("./src/routes/user"));
+app.use("/products", require("./src/routes/product"));
+app.use("/products", require("./src/routes/review"));
 
 // connect to MongoDB
 mongoose
