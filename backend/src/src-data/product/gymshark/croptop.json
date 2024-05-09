@@ -2,24 +2,45 @@
     "category": "crop tops",
     "brand": "GymShark",
     "name": "EVERYDAY HALTER NECK RIBBON TANK",
+    "shortName": "EVERYDAY HALTER NECK RIBBON TANK",
     "gender": "women",
     "fitType": "Regular Fit",
     "isDiscounted": true,
+    "isOnClearance": false,
     "originalPrice": 25,
     "discountPrice": 17.5,
+    "clearancePercent": 0,
     "rating": 4.5,
     "numOfReviews": 2,
     "options": [
       {
         "color": "Black",
-        "size": [
-          "extra small",
-          "medium",
-          "large",
-          "extra large",
-          "double large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 11
+          },
+          {
+            "size": "small",
+            "quantity": 7
+          },
+          {
+            "size": "medium",
+            "quantity": 6
+          },
+          {
+            "size": "large",
+            "quantity": 5
+          },
+          {
+            "size": "extra large",
+            "quantity": 0
+          },
+          {
+            "size": "double large",
+            "quantity": 4
+          }
         ],
-        "quantity": 10,
         "imgSrc": [
           "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTankGSBlackB8A2I-BB2J-0192_b2491571-72df-4b15-8928-96666a3ee123_3840x.jpg?v=1695117314",
           "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTankGSBlackB8A2I-BB2J-0202_d1a808fe-eb45-4eb5-8fd0-049b48ee7b63_3840x.jpg?v=1695117313",
@@ -29,15 +50,32 @@
       },
       {
         "color": "Core Olive",
-        "size": [
-          "extra small",
-          "small",
-          "medium",
-          "large",
-          "extra large",
-          "double large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 11
+          },
+          {
+            "size": "small",
+            "quantity": 7
+          },
+          {
+            "size": "medium",
+            "quantity": 6
+          },
+          {
+            "size": "large",
+            "quantity": 5
+          },
+          {
+            "size": "extra large",
+            "quantity": 4
+          },
+          {
+            "size": "double large",
+            "quantity": 14
+          }
         ],
-        "quantity": 8,
         "imgSrc": [
           "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTank-GSCoreOlive-B8A2I-ECBG-0590_3840x.jpg?v=1695117312",
           "https://cdn.shopify.com/s/files/1/1367/5207/files/EverydayHalterNeckRibbonTank-GSCoreOlive-B8A2I-ECBG-0608_3840x.jpg?v=1695117312",

@@ -10,6 +10,7 @@ import {
 import AuthContextProvider from "./context/AuthContextProvider";
 import LogoContextProvider from "./context/LogoContextProvider";
 import CheckoutContextProvider from "./context/CheckoutContextProvider";
+import ShoppingBagContextProvider from "./context/ShoppingBagContextProvider";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
@@ -21,6 +22,7 @@ import NotificationConfig from "./config/messages.json";
 
 // components
 import AuthFormButtonComponent from "./components/auth/AuthFormButtonComponent";
+import SidebarFilterComponent from "./components/common/SidebarFilterComponent";
 
 // pages
 import Landing from "./pages/Landing";
@@ -59,7 +61,12 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Landing />} />
-        <Route path="/allProducts" element={<AllProducts />} />
+        <Route
+          path="/allProducts"
+          element={
+            <AllProducts sideBarFilterComponent={<SidebarFilterComponent />} />
+          }
+        />
         <Route path="/womenActivewear" element={<WomenActivewear />} />
         <Route path="/menActivewear" element={<MenActivewear />} />
         <Route path="/supplements" element={<Supplements />} />
@@ -196,9 +203,11 @@ export default function App() {
   return (
     <AuthContextProvider>
       <LogoContextProvider>
-        <CheckoutContextProvider>
-          <RouterProvider router={router} />;
-        </CheckoutContextProvider>
+        <ShoppingBagContextProvider>
+          <CheckoutContextProvider>
+            <RouterProvider router={router} />;
+          </CheckoutContextProvider>
+        </ShoppingBagContextProvider>
       </LogoContextProvider>
     </AuthContextProvider>
   );

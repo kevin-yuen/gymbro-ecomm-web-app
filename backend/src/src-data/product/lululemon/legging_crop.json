@@ -2,25 +2,45 @@
     "category": "leggings",
     "brand": "Lululemon",
     "name": "lululemon Align™ High-Rise Crop 21",
+    "shortName": "lululemon Align™ High-Rise Crop",
     "gender": "women",
     "fitType": null,
     "isDiscounted": false,
+    "isOnClearance": false,
     "originalPrice": 120,
     "discountPrice": 0,
+    "clearancePercent": 0,
     "rating": 4.7,
     "numOfReviews": 1,
     "options": [
       {
         "color": "Magenta Purple",
-        "size": [
-          "extra small",
-          "small",
-          "medium",
-          "large",
-          "extra large",
-          "double large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 1
+          },
+          {
+            "size": "small",
+            "quantity": 6
+          },
+          {
+            "size": "medium",
+            "quantity": 6
+          },
+          {
+            "size": "large",
+            "quantity": 5
+          },
+          {
+            "size": "extra large",
+            "quantity": 4
+          },
+          {
+            "size": "double large",
+            "quantity": 2
+          }
         ],
-        "quantity": 10,
         "imgSrc": [
           "https://images.lululemon.com/is/image/lululemon/LW6BQUS_054428_1?size=1200,1200",
           "https://images.lululemon.com/is/image/lululemon/LW6BQUS_054428_2?size=1200,1200",

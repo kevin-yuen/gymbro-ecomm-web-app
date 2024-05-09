@@ -8,9 +8,11 @@ import Messages from "../config/messages.json";
 const serverErr = Messages.server.generic;
 
 export const apiResultLoader = (isFetchSuccess, eligibleItems, noEligibleErr) => {
+  console.log("apiResultLoader", eligibleItems);
+
     if (isFetchSuccess === true) {
         if (eligibleItems.length > 0) {
-          return <PromotionComponent discountItems={eligibleItems} />;
+          return <PromotionComponent eligibleItems={eligibleItems} />;
         } else {
           return <ErrorComponent error={noEligibleErr} />;
         }

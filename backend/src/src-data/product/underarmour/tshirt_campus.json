@@ -2,25 +2,45 @@
     "category": "t-shirt",
     "brand": "Underarmour",
     "name": "Women's Project Rock Heavyweight Campus T-Shirt",
+    "shortName": "Project Rock Heavyweight T-Shirt",
     "gender": "women",
     "fitType": null,
     "isDiscounted": false,
+    "isOnClearance": false,
     "originalPrice": 50,
     "discountPrice": 0,
+    "clearancePercent": 0,
     "rating": 4.8,
     "numOfReviews": 0,
     "options": [
       {
         "color": "Black",
-        "size": [
-          "extra small",
-          "small",
-          "medium",
-          "large",
-          "extra large",
-          "double large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 1
+          },
+          {
+            "size": "small",
+            "quantity": 7
+          },
+          {
+            "size": "medium",
+            "quantity": 6
+          },
+          {
+            "size": "large",
+            "quantity": 1
+          },
+          {
+            "size": "extra large",
+            "quantity": 2
+          },
+          {
+            "size": "double large",
+            "quantity": 4
+          }
         ],
-        "quantity": 10,
         "imgSrc": [
           "https://underarmour.scene7.com/is/image/Underarmour/V5-1385942-001_FC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
           "https://underarmour.scene7.com/is/image/Underarmour/V5-1385942-001_BC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",

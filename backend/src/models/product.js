@@ -54,14 +54,18 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
-      size: {
-        type: Array,
-        required: true,
-      },
-      quantity: {
-        type: Number,
-        required: true,
-      },
+      unit: [
+        {
+          size: {
+            type: String,
+            required: true
+          },
+          quantity: {
+            type: Number,
+            required: true
+          }
+        }
+      ],
       imgSrc: {
         type: Array,
         required: true,

@@ -2,25 +2,45 @@
     "category": "t-shirt",
     "brand": "GymShark",
     "name": "LIFTING ESSENTIALS OVERSIZED T-SHIRT",
+    "shortName": "ESSENTIALS OVERSIZED T-SHIRT",
     "gender": "women",
     "fitType": "Oversized Fit",
     "isDiscounted": false,
+    "isOnClearance": false,
     "originalPrice": 35,
     "discountPrice": 0,
+    "clearancePercent": 0,
     "rating": 4.8,
     "numOfReviews": 0,
     "options": [
       {
         "color": "White",
-        "size": [
-          "extra small",
-          "small",
-          "medium",
-          "large",
-          "extra large",
-          "double large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 1
+          },
+          {
+            "size": "small",
+            "quantity": 3
+          },
+          {
+            "size": "medium",
+            "quantity": 6
+          },
+          {
+            "size": "large",
+            "quantity": 7
+          },
+          {
+            "size": "extra large",
+            "quantity": 4
+          },
+          {
+            "size": "double large",
+            "quantity": 13
+          }
         ],
-        "quantity": 10,
         "imgSrc": [
           "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingEssentialsOversizedT-shirt-GSWhite-B8A3R-WB57-1076_3840x.jpg?v=1695117301",
           "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingEssentialsOversizedT-shirt-GSWhite-B8A3R-WB57-1094_3840x.jpg?v=1695117301",

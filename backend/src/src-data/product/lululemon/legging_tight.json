@@ -2,25 +2,45 @@
     "category": "leggings",
     "brand": "Lululemon",
     "name": "Fast and Free Reflective High-Rise Tight 24\" Asia Fit",
+    "shortName": "Reflective High-Rise Tight",
     "gender": "women",
     "fitType": "Asia Fit",
     "isDiscounted": true,
+    "isOnClearance": false,
     "originalPrice": 155,
     "discountPrice": 85,
+    "clearancePercent": 0,
     "rating": 4.1,
     "numOfReviews": 2,
     "options": [
       {
         "color": "Nomad",
-        "size": [
-          "extra small",
-          "small",
-          "medium",
-          "large",
-          "extra large",
-          "double large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 11
+          },
+          {
+            "size": "small",
+            "quantity": 7
+          },
+          {
+            "size": "medium",
+            "quantity": 6
+          },
+          {
+            "size": "large",
+            "quantity": 5
+          },
+          {
+            "size": "extra large",
+            "quantity": 4
+          },
+          {
+            "size": "double large",
+            "quantity": 2
+          }
         ],
-        "quantity": 6,
         "imgSrc": [
           "https://images.lululemon.com/is/image/lululemon/LW5BLBA_035955_1?size=1200,1200",
           "https://images.lululemon.com/is/image/lululemon/LW5BLBA_035955_2?size=1200,1200",
@@ -30,14 +50,32 @@
       },
       {
         "color": "Black",
-        "size": [
-          "extra small",
-          "small",
-          "medium",
-          "large",
-          "extra large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 9
+          },
+          {
+            "size": "small",
+            "quantity": 7
+          },
+          {
+            "size": "medium",
+            "quantity": 15
+          },
+          {
+            "size": "large",
+            "quantity": 2
+          },
+          {
+            "size": "extra large",
+            "quantity": 4
+          },
+          {
+            "size": "double large",
+            "quantity": 0
+          }
         ],
-        "quantity": 10,
         "imgSrc": [
           "https://images.lululemon.com/is/image/lululemon/LW5BLBA_0001_1?size=1200,1200",
           "https://images.lululemon.com/is/image/lululemon/LW5BLBA_0001_2?size=1200,1200",

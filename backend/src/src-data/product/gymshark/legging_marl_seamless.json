@@ -2,25 +2,45 @@
     "category": "leggings",
     "brand": "Gymshark",
     "name": "MARL SEAMLESS LEGGINGS",
+    "shortName": "MARL SEAMLESS LEGGINGS",
     "gender": "women",
     "fitType": null,
     "isDiscounted": true,
-    "originalPrice": 55,
+    "isOnClearance": true,
+    "originalPrice": 45,
     "discountPrice": 27.5,
+    "clearancePercent": 10,
     "rating": 4.1,
     "numOfReviews": 0,
     "options": [
       {
         "color": "Light Grey Marl/Dark Grey Marl/Smokey Grey",
-        "size": [
-          "extra small",
-          "small",
-          "medium",
-          "large",
-          "extra large",
-          "double large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 11
+          },
+          {
+            "size": "small",
+            "quantity": 1
+          },
+          {
+            "size": "medium",
+            "quantity": 1
+          },
+          {
+            "size": "large",
+            "quantity": 1
+          },
+          {
+            "size": "extra large",
+            "quantity": 2
+          },
+          {
+            "size": "double large",
+            "quantity": 4
+          }
         ],
-        "quantity": 6,
         "imgSrc": [
           "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightGreyMarl_GSDarkGreyMarl_SmokeyGreyB8A3N-GCPZ-0079_3840x.jpg?v=1695390444",
           "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightGreyMarl_GSDarkGreyMarl_SmokeyGreyB8A3N-GCPZ-0093_3840x.jpg?v=1695390444",
@@ -30,8 +50,32 @@
       },
       {
         "color": "Light Blue Marl/Light Grey Marl/Turkish Teal",
-        "size": ["extra small"],
-        "quantity": 2,
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 2
+          },
+          {
+            "size": "small",
+            "quantity": 0
+          },
+          {
+            "size": "medium",
+            "quantity": 0
+          },
+          {
+            "size": "large",
+            "quantity": 0
+          },
+          {
+            "size": "extra large",
+            "quantity": 0
+          },
+          {
+            "size": "double large",
+            "quantity": 4
+          }
+        ],
         "imgSrc": [
           "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightBlueMarl_GSLightGreyMarl_TurkishTealB8A3N-UCSD-0321_3840x.jpg?v=1695390443",
           "https://cdn.shopify.com/s/files/1/1367/5207/files/MarlSeamlessLeggingENG-L-A0204GSLightBlueMarl_GSLightGreyMarl_TurkishTealB8A3N-UCSD-0346_3840x.jpg?v=1695390443",

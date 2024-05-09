@@ -2,25 +2,45 @@
     "category": "tanks",
     "brand": "Gymshark",
     "name": "REACT DROP ARM TANK",
+    "shortName": "REACT DROP ARM TANK",
     "gender": "men",
     "fitType": "Slim Fit",
     "isDiscounted": true,
+    "isOnClearance": false,
     "originalPrice": 35,
     "discountPrice": 28,
+    "clearancePercent": 0,
     "rating": 4.2,
     "numOfReviews": 2,
     "options": [
       {
         "color": "Burgundy Brown",
-        "size": [
-          "extra small",
-          "small",
-          "medium",
-          "large",
-          "extra large",
-          "double large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 11
+          },
+          {
+            "size": "small",
+            "quantity": 7
+          },
+          {
+            "size": "medium",
+            "quantity": 6
+          },
+          {
+            "size": "large",
+            "quantity": 5
+          },
+          {
+            "size": "extra large",
+            "quantity": 4
+          },
+          {
+            "size": "double large",
+            "quantity": 0
+          }
         ],
-        "quantity": 10,
         "imgSrc": [
           "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0856_3840x.jpg?v=1711444396",
           "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSBurgundyBrownA2A8O-RBQV-0862_3840x.jpg?v=1711444396",
@@ -30,15 +50,32 @@
       },
       {
         "color": "Dark Grey",
-        "size": [
-          "extra small",
-          "small",
-          "medium",
-          "large",
-          "extra large",
-          "double large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 11
+          },
+          {
+            "size": "small",
+            "quantity": 7
+          },
+          {
+            "size": "medium",
+            "quantity": 6
+          },
+          {
+            "size": "large",
+            "quantity": 5
+          },
+          {
+            "size": "extra large",
+            "quantity": 4
+          },
+          {
+            "size": "double large",
+            "quantity": 0
+          }
         ],
-        "quantity": 9,
         "imgSrc": [
           "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0989_3840x.jpg?v=1711444396",
           "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankGSDarkGreyA2A8O-GB7H-0997_3840x.jpg?v=1711444396",
@@ -48,15 +85,32 @@
       },
       {
         "color": "White",
-        "size": [
-          "extra small",
-          "small",
-          "medium",
-          "large",
-          "extra large",
-          "double large"
+        "unit": [
+          {
+            "size": "extra small",
+            "quantity": 11
+          },
+          {
+            "size": "small",
+            "quantity": 3
+          },
+          {
+            "size": "medium",
+            "quantity": 2
+          },
+          {
+            "size": "large",
+            "quantity": 15
+          },
+          {
+            "size": "extra large",
+            "quantity": 4
+          },
+          {
+            "size": "double large",
+            "quantity": 0
+          }
         ],
-        "quantity": 5,
         "imgSrc": [
           "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1427_3840x.jpg?v=1704298756",
           "https://cdn.shopify.com/s/files/1/1367/5207/files/ReactDropArmTankWhiteWhiteA2A8O-WBBM-1434_3840x.jpg?v=1704298757",

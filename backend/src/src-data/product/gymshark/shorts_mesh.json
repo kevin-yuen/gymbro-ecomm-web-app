@@ -2,25 +2,45 @@
   "category": "shorts",
   "brand": "Gymshark",
   "name": "LIFTING CLUB MESH 5\" SHORTS",
+  "shortName": "LIFTING CLUB MESH 5\" SHORTS",
   "gender": "men",
   "fitType": "Regular Fit",
   "isDiscounted": false,
+  "isOnClearance": false,
   "originalPrice": 55,
   "discountPrice": 0,
+  "clearancePercent": 0,
   "rating": 3.9,
   "numOfReviews": 0,
   "options": [
     {
       "color": "black",
-      "size": [
-        "extra small",
-        "small",
-        "medium",
-        "large",
-        "extra large",
-        "double large"
+      "unit": [
+        {
+          "size": "extra small",
+          "quantity": 11
+        },
+        {
+          "size": "small",
+          "quantity": 7
+        },
+        {
+          "size": "medium",
+          "quantity": 6
+        },
+        {
+          "size": "large",
+          "quantity": 5
+        },
+        {
+          "size": "extra large",
+          "quantity": 4
+        },
+        {
+          "size": "double large",
+          "quantity": 4
+        }
       ],
-      "quantity": 10,
       "imgSrc": [
         "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingClubMesh5ShortGSBlackA6A2H-BB2J-0730_3dc4b0dc-5fae-425e-a943-bfc02426af84_3840x.jpg?v=1704288377",
         "https://cdn.shopify.com/s/files/1/1367/5207/files/LiftingClubMesh5ShortsBlackA6A2H-BB2J-0855_3840x.jpg?v=1704288375",
@@ -30,15 +50,32 @@
     },
     {
       "color": "grey",
-      "size": [
-        "extra small",
-        "small",
-        "medium",
-        "large",
-        "extra large",
-        "double large"
+      "unit": [
+        {
+          "size": "extra small",
+          "quantity": 13
+        },
+        {
+          "size": "small",
+          "quantity": 7
+        },
+        {
+          "size": "medium",
+          "quantity": 6
+        },
+        {
+          "size": "large",
+          "quantity": 5
+        },
+        {
+          "size": "extra large",
+          "quantity": 2
+        },
+        {
+          "size": "double large",
+          "quantity": 3
+        }
       ],
-      "quantity": 5,
       "imgSrc": [
         "https://cdn.shopify.com/s/files/1/1367/5207/files/Mesh5ShortGSFreshBlueA6A2H-UCMN-0318_190356ff-fe37-4d21-a0cf-b68662282f33_3840x.jpg?v=1711460658",
         "https://cdn.shopify.com/s/files/1/1367/5207/files/Mesh5ShortGSFreshBlueA6A2H-UCMN-0324_31116811-1bf3-4632-950d-c0a5fc16da64_3840x.jpg?v=1711460658",

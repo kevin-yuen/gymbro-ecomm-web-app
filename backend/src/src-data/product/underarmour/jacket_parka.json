@@ -2,18 +2,45 @@
   "category": "jacket",
   "brand": "Underarmour",
   "name": "Men's UA Storm Armour Down Parka",
+  "shortName": "Men's UA Storm Armour Down Parka",
   "gender": "men",
   "fitType": "Loose",
   "isDiscounted": false,
+  "isOnClearance": false,
   "originalPrice": 60.99,
   "discountPrice": 0,
+  "clearancePercent": 0,
   "rating": 4.9,
   "numOfReviews": 4,
   "options": [
     {
       "color": "black",
-      "size": ["extra small", "small", "extra large"],
-      "quantity": 10,
+      "unit": [
+        {
+          "size": "extra small",
+          "quantity": 10
+        },
+        {
+          "size": "small",
+          "quantity": 9
+        },
+        {
+          "size": "medium",
+          "quantity": 0
+        },
+        {
+          "size": "large",
+          "quantity": 0
+        },
+        {
+          "size": "extra large",
+          "quantity": 4
+        },
+        {
+          "size": "double large",
+          "quantity": 0
+        }
+      ],
       "imgSrc": [
         "https://underarmour.scene7.com/is/image/Underarmour/V5-1373663-001_FC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",
         "https://underarmour.scene7.com/is/image/Underarmour/V5-1373663-001_BC?rp=standard-0pad|pdpZoomDesktop&scl=0.72&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=f0f0f0&wid=1836&hei=1950&size=1500,1500",

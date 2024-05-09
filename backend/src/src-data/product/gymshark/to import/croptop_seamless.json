@@ -1,0 +1,208 @@
+{
+  "category": "crop tops",
+  "brand": "GymShark",
+  "name": "VITAL SEAMLESS 2.0 CROP TOP",
+  "shortName": "VITAL SEAMLESS 2.0 CROP TOP",
+  "gender": "women",
+  "fitType": "Body Fit",
+  "isDiscounted": false,
+  "isOnClearance": true,
+  "originalPrice": 50,
+  "discountPrice": 0,
+  "clearancePercent": 10,
+  "rating": 4.5,
+  "numOfReviews": 2,
+  "options": [
+    {
+      "color": "Vintage Pink/Marl",
+      "unit": [
+        {
+          "size": "extra small",
+          "quantity": 4
+        },
+        {
+          "size": "small",
+          "quantity": 14
+        },
+        {
+          "size": "medium",
+          "quantity": 3
+        },
+        {
+          "size": "large",
+          "quantity": 10
+        },
+        {
+          "size": "extra large",
+          "quantity": 4
+        },
+        {
+          "size": "double large",
+          "quantity": 6
+        }
+      ],
+      "imgSrc": [
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0CropTopGSVintagePink_MarlB1A3D-KB0W-0994_4b7bdec7-8f1d-41e0-8c0f-b6839421a0d9_3840x.jpg?v=1714489422",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/AprilKeyLooksEcomBannersPLP_Desktop4_89ed2412-8ae5-4af0-bfa2-26397aa3aa16_3840x.jpg?v=1714489422",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0CropTopGSVintagePink_MarlB1A3D-KB0W-1013_30eece86-ab53-4eec-8db9-7a7d4775f260_3840x.jpg?v=1714489423",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0CropTopGSVintagePink_MarlB1A3D-KB0W-1003_3840x.jpg?v=1714489424"
+      ]
+    },
+    {
+      "color": "Evening Blue Marl",
+      "unit": [
+        {
+          "size": "extra small",
+          "quantity": 7
+        },
+        {
+          "size": "small",
+          "quantity": 5
+        },
+        {
+          "size": "medium",
+          "quantity": 14
+        },
+        {
+          "size": "large",
+          "quantity": 7
+        },
+        {
+          "size": "extra large",
+          "quantity": 0
+        },
+        {
+          "size": "double large",
+          "quantity": 0
+        }
+      ],
+      "imgSrc": [
+        "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSWCROPTOPB1A3DEveningBlueMarlB1A3D-UBZ6-1456.135_1597b276-be3a-4726-90be-2884ea3e6f9e_3840x.jpg?v=1679991499",
+        "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSWCROPTOPB1A3DEveningBlueMarlB1A3D-UBZ6-1468.137_7dc10ac0-c521-48d0-a4a4-d4c2ab159422_3840x.jpg?v=1679991499",
+        "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSWCROPTOPB1A3DEveningBlueMarlB1A3D-UBZ6-1465.136_2bd86cb8-e8b7-4efd-b202-219daa3ff4e2_3840x.jpg?v=1679991499",
+        "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSWCROPTOPB1A3DEveningBlueMarlB1A3D-UBZ6-1472.138_bee84bbe-7796-474e-ba2c-f005c60b2fc1_3840x.jpg?v=1679991500"
+      ]
+    },
+    {
+      "color": "Electric Blue Marl",
+      "unit": [
+        {
+          "size": "extra small",
+          "quantity": 13
+        },
+        {
+          "size": "small",
+          "quantity": 5
+        },
+        {
+          "size": "medium",
+          "quantity": 1
+        },
+        {
+          "size": "large",
+          "quantity": 0
+        },
+        {
+          "size": "extra large",
+          "quantity": 2
+        },
+        {
+          "size": "double large",
+          "quantity": 0
+        }
+      ],
+      "imgSrc": [
+        "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSWCROPTOPB1A3DElectricBlueMarlB1A3D-UBZ7-1859.187_274bbf21-471e-435d-a4e3-f6a1e72a4c1a_3840x.jpg?v=1679991499",
+        "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSWCROPTOPB1A3DElectricBlueMarlB1A3D-UBZ7-1865.188_a4e7149f-a0fe-436b-98ad-b991a88484f1_3840x.jpg?v=1679991499",
+        "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSWCROPTOPB1A3DElectricBlueMarlB1A3D-UBZ7-1873.189_ecd4e6fc-5c49-435d-ac9c-7ff2ae6a24af_3840x.jpg?v=1679991499",
+        "https://cdn.shopify.com/s/files/1/1367/5207/products/VITALSEAMLESSWCROPTOPB1A3DElectricBlueMarlB1A3D-UBZ7-1875.190_cf414ba9-d2e0-4901-931c-06ae3b89f537_3840x.jpg?v=1679991499"
+      ]
+    },
+    {
+      "color": "Woodland Green Marl",
+      "unit": [
+        {
+          "size": "extra small",
+          "quantity": 13
+        },
+        {
+          "size": "small",
+          "quantity": 6
+        },
+        {
+          "size": "medium",
+          "quantity": 12
+        },
+        {
+          "size": "large",
+          "quantity": 6
+        },
+        {
+          "size": "extra large",
+          "quantity": 3
+        },
+        {
+          "size": "double large",
+          "quantity": 0
+        }
+      ],
+      "imgSrc": [
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessWCropTopWoodlandGreen-MarlB1A3D-EBTF-1455.165_ddf8cece-186b-4c44-8e1e-34ab0eb3b2e6_3840x.jpg?v=1702281427",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessWCropTopWoodlandGreen-MarlB1A3D-EBTF-1476.167_7cacd58c-9839-4f17-a765-f822f727255f_3840x.jpg?v=1702281427",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessWCropTopWoodlandGreen-MarlB1A3D-EBTF-1479.168_ffc51f8b-6e82-4502-8e7b-66ece1c30d60_3840x.jpg?v=1702281427",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamlessWCropTopWoodlandGreen-MarlB1A3D-EBTF-1466.166_258cc157-05ea-44c9-88f4-f197c782af82_3840x.jpg?v=1702281428"
+      ]
+    },
+    {
+      "color": "Faded Blue Marl",
+      "unit": [
+        {
+          "size": "extra small",
+          "quantity": 1
+        },
+        {
+          "size": "small",
+          "quantity": 9
+        },
+        {
+          "size": "medium",
+          "quantity": 1
+        },
+        {
+          "size": "large",
+          "quantity": 12
+        },
+        {
+          "size": "extra large",
+          "quantity": 9
+        },
+        {
+          "size": "double large",
+          "quantity": 0
+        }
+      ],
+      "imgSrc": [
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0CropTopGSFadedBlue-MarlB1A3D-UCMH1908_f6fd78ff-0494-4c78-8990-a40977fe0f99_3840x.jpg?v=1702905155",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0CropTopGSFadedBlue-MarlB1A3D-UCMH1940_c3b219dd-d4a8-4360-ba53-db9a85cad69f_3840x.jpg?v=1702905155",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0CropTopGSFadedBlue-MarlB1A3D-UCMH1922_b74d08f5-a231-4ee9-ab25-2017e0289dcb_3840x.jpg?v=1702905155",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/VitalSeamless2.0CropTopGSFadedBlue-MarlB1A3D-UCMH1958_5777c3d9-142f-4e2a-9e50-44b776fda424_3840x.jpg?v=1702905155"
+      ]
+    }
+  ],
+  "description": [
+    "DO IT ALL IN VITAL",
+    "From work to workout, you need your essentials to be able to do it all alongside you, which is why Vital’s sweat-wicking tech and seamless design is gonna tick all your boxes.",
+    "Sweat-wicking tech keeps you dry however you move",
+    "Breathable mesh dots keep you cool",
+    "Physique-shaping shades",
+    "Seamless design for comfort & confidence"
+  ],
+  "spec": ["96% Nylon, 4% Elastane"],
+  "fitAndCare": [
+    "Body fit",
+    "Cropped length",
+    "Model is 5'8\" and wears size XS",
+    "Machine wash cold with the same or similar colours",
+    "Don’t dry clean, iron, use fabric softeners or bleach"
+  ]
+}

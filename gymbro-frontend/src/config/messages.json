@@ -76,6 +76,7 @@
     "server-result": {
         "no-discount": "No discounts available today.",
         "no-topRating": "No top-rating items available today.",
-        "no-clearnace": "No clearance items available today."
+        "no-clearnace": "No clearance items available today.",
+        "no-products": "OOPS! All products have been sold. Please visit GymBro again later."
     }
 }

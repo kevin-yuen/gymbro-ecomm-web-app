@@ -1,0 +1,102 @@
+{
+  "category": "crop tops",
+  "brand": "GymShark",
+  "name": "MONOGRAM TOWEL CROP TOP",
+  "shortName": "MONOGRAM TOWEL CROP TOP",
+  "gender": "women",
+  "fitType": "Oversized Fit",
+  "isDiscounted": false,
+  "isOnClearance": false,
+  "originalPrice": 55,
+  "discountPrice": 0,
+  "clearancePercent": 0,
+  "rating": 3.5,
+  "numOfReviews": 6,
+  "options": [
+    {
+      "color": "Pebble Grey",
+      "unit": [
+        {
+          "size": "extra small",
+          "quantity": 7
+        },
+        {
+          "size": "small",
+          "quantity": 0
+        },
+        {
+          "size": "medium",
+          "quantity": 5
+        },
+        {
+          "size": "large",
+          "quantity": 11
+        },
+        {
+          "size": "extra large",
+          "quantity": 14
+        },
+        {
+          "size": "double large",
+          "quantity": 0
+        }
+      ],
+      "imgSrc": [
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/MonogramTowelCropTopGSPebbleGreyB7A2H-GB7P-0431_3840x.jpg?v=1714489424",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/AprilKeyLooksEcomBannersPLP_Desktop5_7329fee4-246b-45d9-9d65-fa4d010158c9_3840x.jpg?v=1714489423",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/MonogramTowelCropTopGSPebbleGreyB7A2H-GB7P-0443_619c619c-00cf-4b05-b7c1-b3def8887018_3840x.jpg?v=1714489424",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/MonogramTowelCropTopGSPebbleGreyB7A2H-GB7P-0437_7d60d622-3c1d-4dd4-9a1c-2d23745f3e6f_3840x.jpg?v=1714489424"
+      ]
+    },
+    {
+      "color": "Strength Green",
+      "unit": [
+        {
+          "size": "extra small",
+          "quantity": 7
+        },
+        {
+          "size": "small",
+          "quantity": 7
+        },
+        {
+          "size": "medium",
+          "quantity": 3
+        },
+        {
+          "size": "large",
+          "quantity": 16
+        },
+        {
+          "size": "extra large",
+          "quantity": 0
+        },
+        {
+          "size": "double large",
+          "quantity": 0
+        }
+      ],
+      "imgSrc": [
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/MonogramTowelCropTopGSStrengthGreenB7A2H-ECJH-0537_41d28290-d012-46b4-90dd-a34e9efb2ac4_3840x.jpg?v=1714489424",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/AprilKeyLooksEcomBannersPLP_Desktop5_f5bb9e44-1e28-42cb-a33d-53c7360b30a4_3840x.jpg?v=1714489425",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/MonogramTowelCropTopGSStrengthGreenB7A2H-ECJH-0548_427e90bd-5c71-4248-9e68-573216ce7d8c_3840x.jpg?v=1714489423",
+        "https://cdn.shopify.com/s/files/1/1367/5207/files/MonogramTowelCropTopGSStrengthGreenB7A2H-ECJH-0576_3b39ad15-bff7-48b4-b3ab-65c0d40f394f_3840x.jpg?v=1714489424"
+      ]
+    }
+  ],
+  "description": [
+    "AT YOUR LEISURE",
+    "Relaxed silhouettes, super comfortable materials and sleek yet chilled-out designs. It’s your down time, switched up.",
+    "Comfy, super soft towelling fabric",
+    "Stylish collar & v-neck",
+    "Stretchy elasticated hem",
+    "All over GS monogram pattern"
+  ],
+  "spec": ["80% Cotton, 20% Recycled Polyester"],
+  "fitAndCare": [
+    "Oversized fit",
+    "Cropped length",
+    "Extreme dropped armholes",
+    "Model is 5'9\" and wears size S"
+  ]
+}

@@ -81,6 +81,14 @@ input[type="password"]:focus {
   top: -90px;
 }
 
+.unavailableSizeOption:hover {
+  cursor:text;
+}
+
+.card-product {
+  width: 18rem;
+}
+
 @media screen and (max-width: 937px) {
   div.navbar-functions,
   .oncanvas-nav-link-group {

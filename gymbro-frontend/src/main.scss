@@ -20,6 +20,7 @@ $black: #000000;
 $orange: #ea9000;
 $grey: #75737398;
 $lightgrey: #E5E7E3;
+$whitepurple: #F3EFF7;
 $enable-negative-margins: true;
 
 $custom-position-values: (
@@ -126,7 +127,8 @@ $utilities: (
       "orange": $orange,
       "red": $red,
       "lightred": $lightred,
-      "lightgrey": $lightgrey
+      "lightgrey": $lightgrey,
+      "whitepurple": $whitepurple
     ),
   ),
   "custom-width": (

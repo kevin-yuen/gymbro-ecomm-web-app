@@ -30,6 +30,7 @@ const useGetEligibleItems = (
       case 201:
       case 404:
         switch (endpoint) {
+          case "/all/":
           case "/discounts/":
           case "/topRatings/":
           case "/clearance/":
@@ -37,6 +38,8 @@ const useGetEligibleItems = (
               .json()
               .then((res) => res.eligibleItems)
               .catch((e) => e);
+
+            console.log("FROM SERVER", serverResponse);
 
             break;
           default:
