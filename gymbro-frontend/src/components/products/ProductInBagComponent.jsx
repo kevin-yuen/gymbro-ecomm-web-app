@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Trash } from "react-bootstrap-icons";
 
 // components
-import QuantityDropdownComponent from "../../components/common/QuantityDropdownComponent";
+// import QuantityDropdownComponent from "../../components/common/QuantityDropdownComponent";
 
 // context
 import { CheckoutContext } from "../../context/CheckoutContextProvider";
@@ -26,7 +26,7 @@ const ProductInBagComponent = ({ imgSrc }) => {
             {checkoutContext.step.currentStep !== "Complete" ? (
               <div className="mt-5 d-flex justify-content-between">
                 <Trash size={20} />
-                <QuantityDropdownComponent />
+                {/* <QuantityDropdownComponent /> */}
               </div>
             ) : (
               <></>

@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-const ProductImageComponent = ({src, height}) => {
-    console.log("Product Image re-renders");
+// components
+import ThumbnailsComponent from "../products/ThumbnailsComponent";
 
-    return (
-        <img
-        src={src}
-        className="card-img-top"
-        height={height}
-      />
-    )
-}
+const ProductImageComponent = ({
+  src,
+  height,
+  location = undefined,
+  options = undefined,
+}) => {
+  console.log("Product Image Component re-renders");
+
+  return (
+    <>
+      <img src={src} className="card-img-top" height={height} />
+    </>
+  );
+};
 
 export default ProductImageComponent;

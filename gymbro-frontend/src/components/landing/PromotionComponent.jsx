@@ -1,11 +1,10 @@
-import React, {useState} from "react";
+import React, { useState, useContext } from "react";
 
 // components
 import CardComponent from "../common/CardComponent";
 import ColorPickerComponent from "../common/ColorPickerComponent";
 import SizePickerComponent from "../common/SizePickerComponent";
 import ItemDetailsComponent from "../common/ItemDetailsComponent";
-// import QuantityAdjustmentComponent from "../common/QuantityAdjustmentComponent";
 
 // context
 import ProductContextProvider from "../../context/ProductContextProvider";
@@ -23,7 +22,6 @@ export default function PromotionComponent({ eligibleItems }) {
                 <CardComponent itemDetailsComponent={<ItemDetailsComponent item={item}/>}/>
                 <ColorPickerComponent />
                 <SizePickerComponent />
-                {/* <QuantityAdjustmentComponent /> */}
               </div>
             </ProductContextProvider>
           </div>

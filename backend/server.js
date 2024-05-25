@@ -11,6 +11,7 @@ app.use(express.json());
 app.use("/users", require("./src/routes/user"));
 app.use("/products", require("./src/routes/product"));
 app.use("/products", require("./src/routes/review"));
+app.use("/shoppingbag", require("./src/routes/shoppingBag"));
 
 // connect to MongoDB
 mongoose

@@ -23,6 +23,7 @@ import NotificationConfig from "./config/messages.json";
 // components
 import AuthFormButtonComponent from "./components/auth/AuthFormButtonComponent";
 import SidebarFilterComponent from "./components/common/SidebarFilterComponent";
+import ErrorWrapperComponent from "./components/common/ErrorWrapperComponent";
 
 // pages
 import Landing from "./pages/Landing";
@@ -60,17 +61,28 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<Landing />} />
+        <Route
+          index
+          element={
+            <ErrorWrapperComponent>
+              <Landing />
+            </ErrorWrapperComponent>
+          }
+        />
         <Route
           path="/allProducts"
           element={
-            <AllProducts sideBarFilterComponent={<SidebarFilterComponent />} />
+            <ErrorWrapperComponent>
+              <AllProducts
+                sideBarFilterComponent={<SidebarFilterComponent />}
+              />
+            </ErrorWrapperComponent>
           }
         />
         <Route path="/womenActivewear" element={<WomenActivewear />} />
         <Route path="/menActivewear" element={<MenActivewear />} />
         <Route path="/supplements" element={<Supplements />} />
-        <Route path="/aboutProduct" element={<AboutProduct />} />
+        <Route path="/aboutProduct/:productId" element={<AboutProduct />} />
 
         <Route path="bag" element={<ShoppingBagLayout />}>
           <Route index element={<BagDetails />} />

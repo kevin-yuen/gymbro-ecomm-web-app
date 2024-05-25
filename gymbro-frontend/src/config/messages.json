@@ -73,10 +73,18 @@
     "tooltip": {
         "shopping-bag": "Log in to start shopping"
     },
+    "comment": {
+        "post": "Please share your thoughts"
+    },
     "server-result": {
         "no-discount": "No discounts available today.",
         "no-topRating": "No top-rating items available today.",
         "no-clearnace": "No clearance items available today.",
-        "no-products": "OOPS! All products have been sold. Please visit GymBro again later."
+        "no-products": "OOPS! All products have been sold. Please visit GymBro again later.",
+        "product-not-found": "OOPS! Product has been removed!",
+        "no-reviews": "No customer reviews so far. Be the first one to comment about this product!"
+    },
+    "shopping-bag": {
+        "insufficient": "OOPS! You've selected more than what we currently have in stock. Please check out other available items in the meantime."
     }
 }

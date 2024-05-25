@@ -39,8 +39,6 @@ const useGetEligibleItems = (
               .then((res) => res.eligibleItems)
               .catch((e) => e);
 
-            console.log("FROM SERVER", serverResponse);
-
             break;
           default:
             break;

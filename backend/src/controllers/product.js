@@ -60,6 +60,7 @@ const getData = async () => {
 const returnFields = {
   brand: 1,
   shortName: 1,
+  name: 1,
   gender: 1,
   originalPrice: 1,
   discountPrice: 1,
@@ -96,10 +97,22 @@ const getClearanceProducts = async (req, res) =>
     res
   );
 
+const getProductDetails = async(req, res) => {
+  try {
+    const productDetails = await Product.findOne({_id: req.query.productid});
+
+    if (!productDetails) return res.status(404).json({message: "Product not exist", productDetails});
+    return res.status(201).json({productDetails});
+  } catch (e) {
+    res.status(500).json({ error: e.message });
+  }
+}
+
 module.exports = {
   getAllProducts,
   getDiscountProducts,
   getTopRatingProducts,
   getClearanceProducts,
+  getProductDetails,
   getData,
 };

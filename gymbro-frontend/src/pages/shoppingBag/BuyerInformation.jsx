@@ -9,6 +9,8 @@ import statesConfig from "../../config/states.json";
 import NextStepComponent from "../../components/checkout/NextStepComponent";
 
 const BuyerInformation = () => {
+  console.log("Buyer Information page re-renders");
+   
   return (
     <form>
       <div className="mb-3">

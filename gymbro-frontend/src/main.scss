@@ -24,6 +24,8 @@ $whitepurple: #F3EFF7;
 $enable-negative-margins: true;
 
 $custom-position-values: (
+  3: 3%,
+  4: 4%,
     5: 5%,
     10: 10%,
     15: 15%,
@@ -45,6 +47,10 @@ $custom-position-values: (
     80: 80%,
     85: 85%,
     90: 90%,
+    91: 91%,
+    92: 92%,
+    93: 93%,
+    94: 94%,
     95: 95%
 );
 $position-values: map-merge($position-values, $custom-position-values);
@@ -113,7 +119,8 @@ $utilities: (
       "green": $green,
       "red": $red,
       "grey": $grey,
-      "lightgreen": $lightgreen
+      "lightgreen": $lightgreen,
+      "orange": $orange
     ),
   ),
   "custom-background-color": (
@@ -128,6 +135,7 @@ $utilities: (
       "red": $red,
       "lightred": $lightred,
       "lightgrey": $lightgrey,
+      "grey": $grey,
       "whitepurple": $whitepurple
     ),
   ),
@@ -172,5 +180,10 @@ $utilities: (
     )
   )
 );
+
+// override default accordion scss variables
+$accordion-icon-width: 1rem;
+$accordion-button-focus-box-shadow: none;
+$accordion-button-active-bg: none;
 
 @import "../node_modules/bootstrap/scss/bootstrap";

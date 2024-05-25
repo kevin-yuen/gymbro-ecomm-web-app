@@ -14,9 +14,9 @@ export const apiResultLoader = (isFetchSuccess, eligibleItems, noEligibleErr) =>
         if (eligibleItems.length > 0) {
           return <PromotionComponent eligibleItems={eligibleItems} />;
         } else {
-          return <ErrorComponent error={noEligibleErr} />;
+          return (<div className="text-danger fs-7"><div className="position-absolute start-50 mt-n1"><ErrorComponent error={noEligibleErr} /></div></div>)
         }
       } else if (isFetchSuccess === false) {
-        return <ErrorComponent error={serverErr} />;
+        return (<div className="text-danger fs-7"><div className="position-absolute start-50 mt-n1"><ErrorComponent error={serverErr} /></div></div>)
       }
 }

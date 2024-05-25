@@ -11,11 +11,11 @@ const CardComponent = ({ itemDetailsComponent }) => {
   console.log("Card Component re-renders");
 
   const productContext = useContext(ProductContext);
-  const { selectedProduct } = productContext;
+  const { selectedProduct, dispatchSelectProduct } = productContext;
 
   return (
     <>
-      <Link to="/aboutProduct" className="text-decoration-none">
+      <Link to={`/aboutProduct/product?id=${selectedProduct.productID}`} state={selectedProduct} className="text-decoration-none">
         <div className="card-product card border-0 position-relative">
           <ProductImageComponent src={selectedProduct.thumbnail} height={"343.48"} />
 

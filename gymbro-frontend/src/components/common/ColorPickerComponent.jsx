@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { CircleFill } from "react-bootstrap-icons";
 
 // config
@@ -51,15 +51,40 @@ const handleColorCodeMapping = (colorOption) => {
   return code;
 };
 
-const ColorPickerComponent = () => {
+const ColorPickerComponent = ({
+  productDetails,
+  pathname,
+  setSelectedOption,
+  setImg,
+  setSelColor,
+}) => {
   console.log("Color Picker Component re-renders");
 
   const productContext = useContext(ProductContext);
-  const { selectedProduct, dispatchSelectProduct } = productContext;
+
+  const handleSetSource = () => {
+    if (pathname === "/aboutProduct/product") {
+      return {
+        product: productDetails,
+        setSelectedOptionHandler: setSelectedOption,
+        setImgHandler: setImg,
+        setSelColorHandler: setSelColor,
+      };
+    } else {
+      const { selectedProduct, dispatchSelectProduct } = productContext;
+      return {
+        product: selectedProduct,
+        setSelectedOptionHandler: dispatchSelectProduct,
+      };
+    }
+  };
+
+  // const { selectedProduct, dispatchSelectProduct } = productContext;
+  const [source, setSource] = useState(handleSetSource());
 
   return (
     <div className="d-flex mt-1 ps-1 pb-2">
-      {selectedProduct.options?.map((option) => {
+      {source.product.options?.map((option) => {
         const code = handleColorCodeMapping(option.color.toLowerCase());
 
         return (
@@ -67,10 +92,19 @@ const ColorPickerComponent = () => {
             <CircleFill
               className="me-2"
               color={code}
-              size={17}
-              onClick={() =>
-                dispatchSelectProduct({ type: "SELECT COLOR", payload: option })
-              }
+              size={pathname === "/aboutProduct/product" ? 25 : 17}
+              onClick={() => {
+                if (pathname === "/aboutProduct/product") {
+                  source.setSelectedOptionHandler(option);
+                  source.setImgHandler(option.imgSrc[0]);
+                  source.setSelColorHandler(option.color);
+                } else {
+                  source.setSelectedOptionHandler({
+                    type: "SELECT COLOR",
+                    payload: option,
+                  });
+                }
+              }}
             />
           </>
         );

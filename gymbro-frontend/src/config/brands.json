@@ -1,4 +1,6 @@
 {
-    "_comment": "avoid camelcase conversion",
-    "underarmour": "UA"
+    "underarmour": {
+        "_comment": "avoid camelcase conversion",
+        "underarmour": "UA"
+    }
 }

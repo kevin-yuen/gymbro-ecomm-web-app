@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { Bag, BoxArrowInRight, BoxArrowRight } from "react-bootstrap-icons";
+import { BoxArrowInRight, BoxArrowRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 
 // context
@@ -11,20 +11,25 @@ import Messages from "../../config/messages.json";
 // custom hooks
 import useLogout from "../../hooks/useLogout";
 
+// components
+import ShoppingBagIconComponent from "./ShoppingBagIconComponent";
+
 const shopBagTooltip = Messages.tooltip["shopping-bag"];
 
 export default function NavbarFunctionsComponent({ searchComponent }) {
+  console.log("Navbar Functions Component re-renders");
+
   const authContext = useContext(AuthContext);
   const { authState } = authContext;
 
   const { handleLogout } = useLogout();
 
-  const [enableBagBoxArrow, setEnableBagBoxArrow] = useState(false);
+  const [enableBagAuthIcon, setEnableBagAuthIcon] = useState(false);
   const [showToolTip, setShowToolTip] = useState(false);
   const [authorizedUserName, setAuthorizedUserName] = useState(null);
 
   useEffect(() => {
-    setEnableBagBoxArrow(authState.isAuthorized ? true : false);
+    setEnableBagAuthIcon(authState.isAuthorized ? true : false);
 
     if (authState.isAuthorized) {
       const customerName = authState.name;
@@ -51,25 +56,22 @@ export default function NavbarFunctionsComponent({ searchComponent }) {
         <></>
       )}
 
-      <Link to={enableBagBoxArrow ? "/bag" : "#"}>
+      <Link to={enableBagAuthIcon ? "/bag" : "#"}>
         <span
           className="d-inline-block"
           tabindex="0"
           data-toggle="tooltip"
           title={!authState.isAuthorized && showToolTip ? shopBagTooltip : ""}
         >
-          <Bag
-            className="me-2"
-            size={25}
-            color={enableBagBoxArrow ? "#3E0957" : "#C2C1C1"}
-            onMouseOver={() => setShowToolTip(true)}
-            onMouseOut={() => setShowToolTip(false)}
+          <ShoppingBagIconComponent
+            enableBagAuthIcon={enableBagAuthIcon}
+            setShowToolTip={setShowToolTip}
           />
         </span>
       </Link>
 
       <Link to="/auth/signin">
-        {enableBagBoxArrow ? (
+        {enableBagAuthIcon ? (
           <BoxArrowRight
             className="authcart-icon"
             size={25}

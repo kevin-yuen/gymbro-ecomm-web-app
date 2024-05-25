@@ -10,6 +10,8 @@ import ProductInBagComponent from "../../components/products/ProductInBagCompone
 import NextStepComponent from "../../components/checkout/NextStepComponent";
 
 const BagDetails = () => {
+  console.log("Bag Details page re-renders");
+  
   return (
     <div className="pt-1">
       <h1 className="custom-font-family-teko fs-3 fw-bolder">YOUR BAG</h1>

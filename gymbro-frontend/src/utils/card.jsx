@@ -1,7 +1,7 @@
 // config
 import brandsConfig from "../config/brands.json";
 
-const brandNameUA = brandsConfig.underarmour;
+const brandNameUA = brandsConfig.underarmour.underarmour;
 
 // make product name camelcase
 export const handleConvertCamelCase = (productName) => {

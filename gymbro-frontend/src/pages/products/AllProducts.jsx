@@ -1,8 +1,11 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 
 // components
 import PaginationComponent from "../../components/common/PaginationComponent";
+
+// context
+import { ShoppingBagContext } from "../../context/ShoppingBagContextProvider";
 
 // utils
 import { apiResultLoader } from "../../utils/apiResultLoader";
@@ -18,6 +21,20 @@ const endpoint = "/all/";
 const noProdErr = Messages["server-result"]["no-products"];
 
 export default function AllProducts({ sideBarFilterComponent }) {
+  console.log("All Products re-renders");
+
+  const shoppingBagContext = useContext(ShoppingBagContext);
+  const { setCountResError } = shoppingBagContext;
+
+  useEffect(() => {
+    // remove previous error
+    setCountResError({
+      productName: undefined,
+      productSize: undefined,
+      errorCode: undefined,
+    });
+  }, []);
+
   const {
     getEligibleItems: getAllItems,
     eligibleItems: allItems,
@@ -26,7 +43,7 @@ export default function AllProducts({ sideBarFilterComponent }) {
 
   // display first 10 products at initial load
   const [products, setProducts] = useState({
-    count: 10,
+    count: 0 + 10,
     items: [],
   });
 
@@ -81,7 +98,11 @@ export default function AllProducts({ sideBarFilterComponent }) {
                 >
                   LOAD MORE
                 </button>
-                <p className="fs-7 mt-3">Viewing 1 - {products.items.length} of {allItems.length} products</p>
+
+                <p className="fs-7 mt-3">
+                  Viewing 1 - {products.items.length} of {allItems.length}{" "}
+                  products
+                </p>
               </div>
             </div>
           )}

@@ -4,6 +4,7 @@ export const AuthContext = createContext();
 
 export default function AuthContextProvider({ children }) {
   const initialAuthState = {
+    userid: null,
     name: null,
     email: null,
     isAuthorized: false,

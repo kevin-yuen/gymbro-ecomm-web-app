@@ -1,11 +1,7 @@
 import React, {
   createContext,
-  useReducer,
-  useContext,
+  useReducer
 } from "react";
-
-// context
-import { ShoppingBagContext } from "./ShoppingBagContextProvider";
 
 export const ProductContext = createContext();
 
@@ -21,13 +17,17 @@ const handleFindDefaultSize = (units) => {
   return size === undefined ? "N/A" : size.size;
 };
 
-export default function ProductContextProvider({ children, item }) {
-  const { setShoppingBag } = useContext(ShoppingBagContext);
+const handleFindDefaultUnitID = (units) => {
+  const ut = units.find((ut) => ut.quantity > 0);
+  return ut === undefined ? "N/A" : ut._id;
+};
 
+export default function ProductContextProvider({ children, item }) {
   const productSelected = {
     productID: item._id,
     brand: item.brand,
     name: item.shortName,
+    officialName: item.name,
     rating: item.rating,
     gender: item.gender,
     isOnClearance: item.isOnClearance,
@@ -37,6 +37,7 @@ export default function ProductContextProvider({ children, item }) {
     thumbnail: item.options[0].imgSrc[0],
     color: item.options[0].color,
     size: handleFindDefaultSize(item.options[0].unit),
+    unitID: handleFindDefaultUnitID(item.options[0].unit),
     quantity: handleFindDefaultQty(item.options[0].unit),
     options: item.options,
   };
@@ -48,6 +49,7 @@ export default function ProductContextProvider({ children, item }) {
           productID: state.productID,
           brand: state.brand,
           name: state.name,
+          officialName: state.officialName,
           rating: state.rating,
           gender: state.gender,
           isOnClearance: state.isOnClearance,
@@ -57,50 +59,10 @@ export default function ProductContextProvider({ children, item }) {
           thumbnail: action.payload.imgSrc[0],
           color: action.payload.color,
           size: handleFindDefaultSize(action.payload.unit),
+          unitID: handleFindDefaultUnitID(action.payload.unit),
           quantity: handleFindDefaultQty(action.payload.unit),
           options: state.options,
         };
-    //   case "SELECT SIZE":
-    //     return {
-    //       productID: state.productID,
-    //       brand: state.brand,
-    //       name: state.name,
-    //       rating: state.rating,
-    //       gender: state.gender,
-    //       isOnClearance: state.isOnClearance,
-    //       originalPrice: state.originalPrice,
-    //       discountPrice: state.discountPrice,
-    //       clearancePercent: state.clearancePercent,
-    //       thumbnail: state.thumbnail,
-    //       color: state.color,
-    //       size: action.payload.size,
-    //       quantity: action.payload.quantity,
-    //       options: state.options,
-    //     };
-      case "ADD TO BAG":
-        let productDets = {
-            productID: state.productID,
-            brand: state.brand,
-            name: state.name,
-            gender: state.gender,
-            isOnClearance: state.isOnClearance,
-            originalPrice: state.originalPrice,
-            discountPrice: state.discountPrice,
-            clearancePercent: state.clearancePercent,
-            thumbnail: state.thumbnail,
-            color: state.color,
-            size: action.payload.size,
-            quantity: action.payload.qty,
-        }
-
-        setShoppingBag((prevItems) => [
-          ...prevItems, productDets
-        ]);
-
-        productDets.rating = state.rating;
-        productDets.options = state.options;
-
-        return productDets;
       default:
         break;
     }

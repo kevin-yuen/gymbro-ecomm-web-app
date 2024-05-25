@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDoubleRight } from "react-bootstrap-icons";
 
@@ -13,12 +13,16 @@ import menSales from "../assets/images/landing-men-sales.jpeg";
 // custom hooks
 import useGetEligibleItems from "../hooks/useGetEligibleItems";
 
+// context
+import { ShoppingBagContext } from "../context/ShoppingBagContextProvider";
+
 // config
 import Labels from "../config/labels.json";
 import Messages from "../config/messages.json";
 
 // utils
 import { apiResultLoader } from "../utils/apiResultLoader";
+import ErrorComponent from "../components/common/ErrorComponent";
 
 const discountHeader = Labels["promo-discounts"].header;
 const moreDiscounts = Labels["promo-discounts"]["more-discounts"];
@@ -39,6 +43,8 @@ const topRatingEndpoint = "/topRatings/";
 const clearanceEndpoint = "/clearance/";
 
 export default function Landing() {
+  console.log("Landing re-renders");
+
   const {
     getEligibleItems: getDiscounts,
     eligibleItems: discountItems,
@@ -62,6 +68,22 @@ export default function Landing() {
     getTopRatings();
     getClearance();
   }, []);
+
+  // const handleShoppingBagError = () => {
+  //   if (countResError === 409) {
+  //     return (
+  //       <ErrorComponent error={insufficientError} errorCode={countResError} />
+  //     );
+  //   } else if (countResError === 500) {
+  //     return (
+  //       <div className="position-sticky fixed-bottom start-100 z-1 custom-width-30 rounded-3 pt-2 pb-2 text-center custom-background-color-red custom-color-antiquewhite custom-font-family-montserrat fs-7">
+  //         {<ErrorComponent error={serverError} />}
+  //       </div>
+  //     );
+  //   } else {
+  //     return <></>;
+  //   }
+  // };
 
   return (
     <>

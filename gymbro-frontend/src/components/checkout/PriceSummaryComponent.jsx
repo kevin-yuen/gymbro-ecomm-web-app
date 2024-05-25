@@ -1,6 +1,8 @@
 import React from "react";
 
 const PriceSummaryComponent = ({ currentStep }) => {
+  console.log("Price Summary Component re-renders");
+  
   return (
     <>
       <h1 className="custom-font-family-teko fs-3 fw-bolder">SUMMARY</h1>

@@ -11,6 +11,8 @@ import NextStepComponent from "../components/checkout/NextStepComponent";
 import { CheckoutContext } from "../context/CheckoutContextProvider";
 
 export default function ShoppingBagLayout() {
+  console.log("Shopping Bag Layout re-renders");
+  
   const checkoutContext = useContext(CheckoutContext);
 
   return (
@@ -18,7 +20,7 @@ export default function ShoppingBagLayout() {
       <div className="container mt-5">
         <div className="container d-flex justify-content-between align-items-center ps-5 pe-5">
           <ProgressBarComponent
-            destination={"/bag"}
+            destination={"/-bag"}
             stepNumber={1}
             stepName={"Your bag"}
             stepClicked={checkoutContext.handleShowHideRouteSteps}

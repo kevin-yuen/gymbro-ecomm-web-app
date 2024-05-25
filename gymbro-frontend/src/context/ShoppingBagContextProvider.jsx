@@ -1,15 +1,29 @@
-import React, {useState, createContext} from "react";
+import React, { useState, createContext } from "react";
 
 export const ShoppingBagContext = createContext();
 
-export default function ShoppingBagContextProvider({children}) {
-    const [shoppingBag, setShoppingBag] = useState([]);
+export default function ShoppingBagContextProvider({ children }) {
+  const [countResError, setCountResError] = useState({
+    productName: undefined,
+    productSize: undefined,
+    errorCode: undefined
+  });
 
-    console.log("SHOPPING BAG:", shoppingBag)
+  const [shoppingBagItems, setShoppingBagItems] = useState([]);
+  const [totalItemCount, setTotalItemCount] = useState(0);
 
-    return (
-        <ShoppingBagContext.Provider value={{shoppingBag, setShoppingBag}}>
-            {children}
-        </ShoppingBagContext.Provider>
-    )
+  return (
+    <ShoppingBagContext.Provider
+      value={{
+        shoppingBagItems,
+        setShoppingBagItems,
+        totalItemCount,
+        setTotalItemCount,
+        countResError,
+        setCountResError,
+      }}
+    >
+      {children}
+    </ShoppingBagContext.Provider>
+  );
 }
