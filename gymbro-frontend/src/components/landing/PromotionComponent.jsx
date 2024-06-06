@@ -14,9 +14,9 @@ export default function PromotionComponent({ eligibleItems }) {
 
   return (
     <div className="row pt-3">
-      {eligibleItems?.map((item) => {
+      {eligibleItems?.map((item, i) => {
         return (
-          <div className="col-sm-12 col-lg-6 col-xl-4 col-xxl-3 d-flex justify-content-center">
+          <div className="col-sm-12 col-lg-6 col-xl-4 col-xxl-3 d-flex justify-content-center" key={i}>
             <ProductContextProvider item={item}>
               <div className="position-relative">
                 <CardComponent itemDetailsComponent={<ItemDetailsComponent item={item}/>}/>

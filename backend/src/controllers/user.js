@@ -8,6 +8,7 @@ const {
   createVerificationTokenAndURL,
 } = require("../utils/email");
 const emailContent = require("../config/email-content.json");
+const ObjectId = require("mongoose").Types.ObjectId;
 
 const emailVerificationContent = emailContent["email-verification"].content;
 const pwdResetContentOne = emailContent["password-reset"]["content-one"];
@@ -50,6 +51,7 @@ const createUser = async (req, res) => {
       res.status(502).json({ error });
     }
   } catch (e) {
+    console.log(e.message);
     res.status(500).json({ error: e.message });
   }
 };
@@ -111,6 +113,7 @@ const verifyToken = async (req, res) => {
 const resendToken = async (req, res) => {
   try {
     let isUserExist = await User.findOne({ _id: req.body.id });
+
     if (!isUserExist) return res.status(404).json({ error: "User not exist" });
 
     const isTokenExist = await Token.findOne({ userId: isUserExist._id });
@@ -251,6 +254,23 @@ const resetPassword = async (req, res) => {
   }
 };
 
+// const findUser = async (req, res) => {
+//   console.log("FINDING...");
+//   console.log("FIND USER FUNCTION", req.params.userid);
+
+//   const userid = new ObjectId(req.params.userid);
+
+//   try {
+//     const user = await User.findOne({_id: userid});
+
+//     if (!user) return res.status(404).json({message: "User not found", userInfo: user});
+
+//     return res.status(201).json({message: "User found", userInfo: user});
+//   } catch (e) {
+//     return res.status(500).json({error: e.message})
+//   }
+// }
+
 module.exports = {
   createUser,
   signInUser,
@@ -258,4 +278,5 @@ module.exports = {
   resendToken,
   sendTempPassword,
   resetPassword,
+  
 };

@@ -1,0 +1,12 @@
+{
+    "checkout": [
+        {"name":"Your Bag", "routePath":"your-bag"},
+        {"name":"Information", "routePath":"information"},
+        {"name":"Shipping", "routePath":"shipping"},
+        {"name":"Payment", "routePath":"payment"}
+    ],
+    "shipping-fee": {
+        "standard": 9.50,
+        "express": 17.50
+    }
+}

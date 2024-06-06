@@ -2,39 +2,53 @@ import React, { useContext, useEffect } from "react";
 import { Bag } from "react-bootstrap-icons";
 
 // context
-import { AuthContext } from "../../context/AuthContextProvider";
 import { ShoppingBagContext } from "../../context/ShoppingBagContextProvider";
 
 // utils
 import { handleShoppingBagAPI } from "../../utils/shoppingBagAPI";
 
+// custom hooks
+import useHandleCurrentAuthStatus from "../../hooks/useHandleCurrentAuthStatus";
+
 const ShoppingBagIconComponent = ({ enableBagAuthIcon, setShowToolTip }) => {
   console.log("Shopping Bag Icon Component re-renders");
 
-  const authContext = useContext(AuthContext);
   const shoppingBagContext = useContext(ShoppingBagContext);
 
-  const { authState } = authContext;
-  const { totalItemCount, setTotalItemCount, countResError, setCountResError } =
-    shoppingBagContext;
+  const {
+    totalItemCount,
+    setTotalItemCount,
+    setCountResError,
+    shoppingBagItems,
+  } = shoppingBagContext;
+
+  const { isUserLoggedIn, handleCurrentAuthStatus } =
+    useHandleCurrentAuthStatus();
 
   useEffect(() => {
+    handleCurrentAuthStatus();
+  }, []);
+
+  useEffect(() => {
+    setTotalItemCount(0);
+
     const getShoppingBagItemTotalCount = async () => {
-      if (authState.isAuthorized) {
+      if (isUserLoggedIn.isLoggedIn) {
         const totalCountRes = await handleShoppingBagAPI(
-          `/shoppingbag/itemCount?userid=${authState.userid}`,
+          `/shoppingbag/itemCount?userid=${isUserLoggedIn.userid}`,
           "GET"
         );
 
         switch (totalCountRes.status) {
           case 201:
             const totalCount = await totalCountRes
-              .json()
-              .then((res) => ({ ...res.totalCount }));
+            .json()
+            .then((res) => ({ ...res.totalCount }));
 
-            if (Object.keys(totalCount).length >= 1)
-              setTotalItemCount(totalCount[0].total);
-            if (countResError === 500) setCountResError();
+            setTotalItemCount(totalCount[0].total);
+            break;
+          case 404:
+            setTotalItemCount(0);
             break;
           case 500:
             setCountResError(totalCountRes.status);
@@ -46,7 +60,7 @@ const ShoppingBagIconComponent = ({ enableBagAuthIcon, setShowToolTip }) => {
     };
 
     getShoppingBagItemTotalCount();
-  }, [authState.isAuthorized]);
+  }, [isUserLoggedIn.isLoggedIn, shoppingBagItems]);
 
   return (
     <>
@@ -65,7 +79,7 @@ const ShoppingBagIconComponent = ({ enableBagAuthIcon, setShowToolTip }) => {
         </button>
 
         <div className="z-1 position-absolute top-45 end-50">
-          {authContext.authState.isAuthorized && totalItemCount >= 1 ? (
+          {isUserLoggedIn.isLoggedIn && totalItemCount >= 1 ? (
             <div className="custom-color-antiquewhite custom-background-color-orange rounded-circle ps-3 pe-3 pt-2 pb-2">
               {totalItemCount}
             </div>

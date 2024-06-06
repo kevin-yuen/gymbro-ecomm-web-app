@@ -1,8 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import { Link } from "react-router-dom";
-
-// components
-import PaginationComponent from "../../components/common/PaginationComponent";
+import { ArrowDown } from "react-bootstrap-icons";
 
 // context
 import { ShoppingBagContext } from "../../context/ShoppingBagContextProvider";
@@ -41,24 +38,22 @@ export default function AllProducts({ sideBarFilterComponent }) {
     isFetchSuccess: isAllItemsFetchSuccess,
   } = useGetEligibleItems(endpoint);
 
-  // display first 10 products at initial load
-  const [products, setProducts] = useState({
-    count: 0 + 10,
-    items: [],
-  });
-
-  const handleDisplayItems = () => {
-    setProducts({
-      count: products.count + 10,
-      items: allItems.slice(0, products.count),
-    });
-  };
+  const [countOfProducts, setCountOfProducts] = useState(0);
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
     getAllItems();
+  }, []);
 
-    if (isAllItemsFetchSuccess !== undefined) handleDisplayItems();
+  useEffect(() => {
+    if (isAllItemsFetchSuccess !== undefined) {
+      setCountOfProducts((prevCount) => prevCount + 10);
+    }
   }, [isAllItemsFetchSuccess]);
+
+  useEffect(() => {
+    setItems(allItems.slice(0, countOfProducts));
+  }, [countOfProducts]);
 
   return (
     <>
@@ -87,21 +82,27 @@ export default function AllProducts({ sideBarFilterComponent }) {
           )}
 
           {isAllItemsFetchSuccess !== undefined &&
-            apiResultLoader(isAllItemsFetchSuccess, products.items, noProdErr)}
+            apiResultLoader(isAllItemsFetchSuccess, items, noProdErr)}
 
           {isAllItemsFetchSuccess !== undefined && (
             <div className="row text-center">
               <div className="mt-5">
-                <button
-                  className="custom-background-color-darkpurple custom-font-family-teko custom-color-antiquewhite fw-bolder rounded-5 text-decoration-none ps-4 pe-4 pt-2 pb-2"
-                  onClick={() => handleDisplayItems()}
-                >
-                  LOAD MORE
-                </button>
+                {countOfProducts < allItems.length - 1 ? (
+                  <button
+                    className="custom-background-color-darkpurple custom-font-family-teko custom-color-antiquewhite fw-bold rounded-4 text-decoration-none ps-7 pe-7 pt-2 pb-2"
+                    onClick={() =>
+                      setCountOfProducts((prevCount) => prevCount + 10)
+                    }
+                  >
+                    Load More
+                    <ArrowDown size={20} className="ms-2" />
+                  </button>
+                ) : (
+                  <></>
+                )}
 
                 <p className="fs-7 mt-3">
-                  Viewing 1 - {products.items.length} of {allItems.length}{" "}
-                  products
+                  Viewing 1 - {items.length} of {allItems.length} products
                 </p>
               </div>
             </div>

@@ -1,55 +1,63 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { ExclamationCircle, ChevronDoubleRight } from "react-bootstrap-icons";
+import React, { useEffect, useState } from "react";
 
-// config
-import statesConfig from "../../config/states.json";
+// stripe module
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
 
 // components
-import NextStepComponent from "../../components/checkout/NextStepComponent";
+import CheckoutForm from "./CheckoutForm";
 
 const PaymentInformation = () => {
+  console.log("Payment Info Component re-renders");
+
+  const [stripePromise, setStripePromise] = useState(null);
+  const [clientSecret, setClientSecret] = useState("");
+
+  useEffect(() => {
+    async function getStripePublishableKey() {
+      const stripePublishableKeyPromise = await fetch("/stripe/config");
+      const { publishableKey } = await stripePublishableKeyPromise.json();
+
+      setStripePromise(loadStripe(publishableKey));
+    }
+
+    getStripePublishableKey();
+  }, []);
+
+  useEffect(() => {
+    async function createPaymentIntent() {
+      const outstandingTotal = Number(
+        sessionStorage.getItem("outstandingTotal")
+      );
+
+      const paymentIntentPromise = await fetch(
+        `/stripe/create-payment-intent/${outstandingTotal}`,
+        {
+          method: "POST",
+        }
+      );
+      const { clientSecret } = await paymentIntentPromise.json();
+
+      setClientSecret(clientSecret);
+    }
+
+    createPaymentIntent();
+  }, []);
+
   return (
-    <form>
+    <>
       <div className="mb-3">
         <h1 className="form-label custom-font-family-teko fs-3 fw-bolder">
           PAYMENT
         </h1>
 
-        <div className="mb-3">
-          <input
-            type="password"
-            className="form-control pt-1 pb-1 ps-2 pe-2 fs-8"
-            id="card-number"
-            placeholder="Card Number"
-          />
-        </div>
-
-        <div className="mb-3">
-          <input
-            type="text"
-            className="form-control pt-1 pb-1 ps-2 pe-2 fs-8 me-2 mb-3"
-            id="name-on-card"
-            placeholder="Name on Card"
-          />
-        </div>
-
-        <div className="d-flex mb-3">
-          <input
-            type="text"
-            className="form-control pt-1 pb-1 ps-2 pe-2 fs-8 me-2"
-            id="expiration-date"
-            placeholder="Expiration date (MM / YY)"
-          />
-          <input
-            type="password"
-            className="form-control pt-1 pb-1 ps-2 pe-2 fs-8"
-            id="security-code"
-            placeholder="Security code"
-          />
-        </div>
+        {stripePromise && clientSecret && (
+          <Elements stripe={stripePromise} options={{ clientSecret }}>
+            <CheckoutForm />
+          </Elements>
+        )}
       </div>
-    </form>
+    </>
   );
 };
 

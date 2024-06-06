@@ -1,12 +1,11 @@
-import React, { useContext } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { BagFill, DoorOpenFill, DoorClosedFill } from "react-bootstrap-icons";
+import { useNavigate } from "react-router-dom";
 
 // components
 import ImageLinkComponent from "./ImageLinkComponent";
 import BrandComponent from "../common/BrandComponent";
-
-// context
-import { AuthContext } from "../../context/AuthContextProvider";
 
 // images
 import offcanvasAllProductsImage from "../../assets/images/offcanvas-all-products.jpeg";
@@ -16,12 +15,18 @@ import offcanvasSupplementsImage from "../../assets/images/offcanvas-supplements
 
 // custom hooks
 import useLogout from "../../hooks/useLogout";
+import useHandleCurrentAuthStatus from "../../hooks/useHandleCurrentAuthStatus";
 
 export default function OffcanvasPanelComponent() {
-  const authContext = useContext(AuthContext);
-  const { authState } = authContext;
-
+  const navigate = useNavigate();
   const { handleLogout } = useLogout();
+
+  const { isUserLoggedIn, handleCurrentAuthStatus } =
+    useHandleCurrentAuthStatus();
+
+  useEffect(() => {
+    handleCurrentAuthStatus();
+  }, []);
 
   return (
     <>
@@ -37,7 +42,7 @@ export default function OffcanvasPanelComponent() {
       </button>
       <div
         className="offcanvas offcanvas-end"
-        tabindex="-1"
+        tabIndex="-1"
         id="offcanvas-Navbar"
         aria-labelledby="offcanvas-NavbarLabel"
       >
@@ -101,12 +106,23 @@ export default function OffcanvasPanelComponent() {
         <div className="offcanvas-footer border-top custom-background-color-antiquewhite p-3">
           <Link to="/auth/signin">
             <button
-              className="btn custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-teko fw-bolder custom-width-92"
+              className="btn custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-jersey fw-bold custom-width-92"
               onClick={handleLogout}
             >
-              {!authState.isAuthorized ? "Sign In" : "Sign Out"}
+              {!isUserLoggedIn.isLoggedIn ? <><DoorOpenFill size={20} className="me-2 "/>SIGN IN</> : <><DoorClosedFill size={20} className="me-2 "/>SIGN OUT</>}
             </button>
           </Link>
+
+          <div className="mt-3">
+              <button
+                className={`btn ${!isUserLoggedIn.isLoggedIn ? "custom-background-color-grey" : "custom-background-color-darkpurple"} custom-color-antiquewhite custom-font-family-jersey fw-bold custom-width-92`}
+                onClick={() => navigate("/your-bag")}
+                disabled={!isUserLoggedIn.isLoggedIn ? true: false}
+              >
+                <BagFill size={20} className="me-2" />
+                SHOPPING BAG
+              </button>
+          </div>
         </div>
       </div>
     </>

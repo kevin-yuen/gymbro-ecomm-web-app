@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+
 require("dotenv").config();
 
 const app = express();
@@ -12,6 +13,7 @@ app.use("/users", require("./src/routes/user"));
 app.use("/products", require("./src/routes/product"));
 app.use("/products", require("./src/routes/review"));
 app.use("/shoppingbag", require("./src/routes/shoppingBag"));
+app.use("/stripe", require("./src/routes/stripe"));
 
 // connect to MongoDB
 mongoose

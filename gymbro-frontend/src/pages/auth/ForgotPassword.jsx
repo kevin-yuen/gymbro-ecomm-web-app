@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 // utils
-import { handleAuthAPI } from "../../utils/authAPI";
+import { handleAuthAPI } from "../../utils/auth";
 
 // config
 import FormFieldErrMessage from "../../config/messages.json";

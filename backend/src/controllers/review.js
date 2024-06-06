@@ -122,7 +122,8 @@ const updateProductReview = async (req, res) => {
         $set: {
           "reviews.$.subject": newSubjectRequest,
           "reviews.$.comment": newComment,
-          "reviews.$.datePosted": new Date()
+          "reviews.$.datePosted": new Date(),
+          "reviews.$.isEdited": true
         },
       },
       {

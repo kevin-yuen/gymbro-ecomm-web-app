@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 
 // context
-import { AuthContext } from "../../context/AuthContextProvider";
 import { ShoppingBagContext } from "../../context/ShoppingBagContextProvider";
 
 // components
@@ -12,6 +11,7 @@ import { handleSizeMapping } from "../../utils/sizeMapping";
 
 // custom hooks
 import useAddItemToBag from "../../hooks/useAddItemToBag";
+import useHandleCurrentAuthStatus from "../../hooks/useHandleCurrentAuthStatus";
 
 // config
 import Messages from "../../config/messages.json";
@@ -31,9 +31,17 @@ const createQuantityOptions = (quantity) => {
 const handleAddToBagError = (addToBagError) => {
   switch (addToBagError) {
     case 409:
-      return <ErrorComponent error={insufficientError} />;
+      return (
+        <div className="fs-7">
+          <ErrorComponent error={insufficientError} />
+        </div>
+      );
     case 500:
-      return (<div className="text-center"><ErrorComponent error={serverError} /></div>);
+      return (
+        <div className="text-center fs-7">
+          <ErrorComponent error={serverError} />
+        </div>
+      );
     default:
       return;
   }
@@ -46,15 +54,13 @@ export default function QuantityDropdownComponent({
 }) {
   console.log("Quantity Dropdown Component re-renders");
 
-  const authContext = useContext(AuthContext);
   const shoppingBagContext = useContext(ShoppingBagContext);
 
-  const { authState } = authContext;
   const { countResError } = shoppingBagContext;
 
-  const handlePopulateSelectedQuantity = () => {
-    const { options, size, color } = tempProductAddToBag;
+  const { _id, name, options, size, color } = tempProductAddToBag;
 
+  const handlePopulateSelectedQuantity = () => {
     // find out the quantity per selected color and size
     const { quantity } = options
       .filter((option) => option.color === color)[0]
@@ -66,18 +72,17 @@ export default function QuantityDropdownComponent({
     handlePopulateSelectedQuantity()
   );
 
-  const { handleAddToBag } = useAddItemToBag(
-    tempProductAddToBag._id,
-    tempProductAddToBag.name,
-    handleSizeMapping(tempProductAddToBag.size),
-    unitId,
-    selectedQuantity
-  );
+  const { isAdding, handleAddToBag } = useAddItemToBag();
+  const {isUserLoggedIn, handleCurrentAuthStatus} = useHandleCurrentAuthStatus();
 
   useEffect(() => {
     const qty = handlePopulateSelectedQuantity();
     setSelectedQuantity(qty);
-  }, [tempProductAddToBag.size]);
+  }, [size]);
+
+  useEffect(() => {
+    handleCurrentAuthStatus();
+  }, [])
 
   return (
     <>
@@ -94,8 +99,8 @@ export default function QuantityDropdownComponent({
 
         <ul className="dropdown-menu">
           {createQuantityOptions(handlePopulateSelectedQuantity()).map(
-            (qtyAmount) => (
-              <li>
+            (qtyAmount, i) => (
+              <li key={i}>
                 <button
                   className="dropdown-item pt-1 pb-1 fs-8"
                   type="button"
@@ -113,12 +118,25 @@ export default function QuantityDropdownComponent({
       <div className="text-center mb-3">
         <button
           className={`ps-5 pe-5 pt-2 pb-2 rounded-5 border-0 custom-font-family-inconsolata fs-6 fw-bold ${
-            authState.isAuthorized
+            isUserLoggedIn.isLoggedIn && !isAdding
               ? "custom-background-color-darkpurple custom-color-antiquewhite"
               : "notAuthorizedAddBag custom-background-color-grey custom-color-antiquewhite"
           }`}
-          disabled={authState.isAuthorized ? false : true}
-          onClick={() => handleAddToBag()}
+          disabled={
+            isUserLoggedIn.isLoggedIn && !isAdding
+              ? false
+              : true
+          }
+          onClick={() =>
+            handleAddToBag(
+              _id,
+              name,
+              color,
+              handleSizeMapping(size),
+              unitId,
+              selectedQuantity
+            )
+          }
         >
           Add to Bag
         </button>

@@ -8,8 +8,15 @@ const ReviewSchema = new mongoose.Schema({
   },
   reviews: [
     {
+      userid: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "user",
+        required: true,
+      },
       name: {
-        type: String,
+        type: mongoose.Schema.Types.String,
+        ref: "user",
+        required: true
       },
       rating: {
         type: Number,
@@ -26,6 +33,11 @@ const ReviewSchema = new mongoose.Schema({
         default: new Date(),
         required: true,
       },
+      isEdited: {
+        type: Boolean,
+        default: false,
+        required: true
+      }
     },
   ],
 });

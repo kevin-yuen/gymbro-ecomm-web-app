@@ -10,7 +10,7 @@ import Message from "../../../config/messages.json";
 import FormFieldStyle from "../../../config/styles.json";
 
 // utils
-import { handleAuthAPI } from "../../../utils/authAPI";
+import { handleAuthAPI } from "../../../utils/auth";
 
 const emailErr = Message.auth.email;
 const emailNotMatchErr = Message.auth["not-match-forgot-password"];

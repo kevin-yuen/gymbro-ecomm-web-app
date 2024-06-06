@@ -10,7 +10,7 @@ import RedirectingComponent from "../../components/common/RedirectingComponent";
 import AuthErrorComponent from "../../components/auth/AuthErrorComponent";
 
 // utils
-import { handleAuthAPI } from "../../utils/authAPI";
+import { handleAuthAPI } from "../../utils/auth";
 
 const nameErr = FormFieldErrMessage.auth.name;
 const emailErr = FormFieldErrMessage.auth.email;

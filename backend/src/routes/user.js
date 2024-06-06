@@ -6,7 +6,8 @@ const {
   signInUser,
   resendToken,
   sendTempPassword,
-  resetPassword
+  resetPassword,
+  // findUser
 } = require("../controllers/user");
 
 router.post("/signUp", createUser);
@@ -15,5 +16,6 @@ router.get("/verify/:id/:token", verifyToken);
 router.post("/resendVerificationLink", resendToken);
 router.post("/sendTemporaryPassword", sendTempPassword);
 router.post("/resetPassword", resetPassword);
+// router.get("/findUser/:userid", findUser);
 
 module.exports = router;

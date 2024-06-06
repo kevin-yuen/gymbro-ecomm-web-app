@@ -1,18 +1,26 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 
 // context
-import { AuthContext } from "../context/AuthContextProvider";
 import { ShoppingBagContext } from "../context/ShoppingBagContextProvider";
 
 // utils
 import { handleShoppingBagAPI } from "../utils/shoppingBagAPI";
 
+// custom hooks
+import useHandleCurrentAuthStatus from "./useHandleCurrentAuthStatus";
+
 const useAddItemToBag = () => {
-  const authContext = useContext(AuthContext);
   const shoppingBagContext = useContext(ShoppingBagContext);
 
-  const { authState } = authContext;
   const { setTotalItemCount, setCountResError } = shoppingBagContext;
+
+  const {isUserLoggedIn, handleCurrentAuthStatus} = useHandleCurrentAuthStatus();
+
+  const [isAdding, setIsAdding] = useState(false);
+
+  useEffect(() => {
+    handleCurrentAuthStatus();
+  }, [])
 
   const handleAddToBag = async (
     productid,
@@ -22,8 +30,6 @@ const useAddItemToBag = () => {
     unitId,
     requestedQuantity
   ) => {
-    console.log(productSize);
-
     // remove previous error
     setCountResError({
       productName: undefined,
@@ -31,8 +37,11 @@ const useAddItemToBag = () => {
       errorCode: undefined,
     });
 
+    // prevent user from double-clicking "Quick Buy" or "Add to Bag", which causes duplicate records in shoppingbags collection
+    setIsAdding(true);
+
     const buyRes = await handleShoppingBagAPI(
-      `/shoppingbag/items/${authState.userid}/${productid}/${unitId}`,
+      `/shoppingbag/items/${isUserLoggedIn.userid}/${productid}/${unitId}`,
       "POST",
       JSON.stringify({
         requestedColor: productColor,
@@ -61,9 +70,10 @@ const useAddItemToBag = () => {
       default:
         break;
     }
+    setIsAdding(false);
   };
 
-  return { handleAddToBag };
+  return { handleAddToBag, isAdding };
 };
 
 export default useAddItemToBag;

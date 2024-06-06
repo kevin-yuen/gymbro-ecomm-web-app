@@ -5,9 +5,9 @@ const ThumbnailsComponent = ({ selectedOption, setImg }) => {
 
   return (
 <>
-          {selectedOption.imgSrc.map((img) => {
+          {selectedOption.imgSrc.map((img, i) => {
             return (
-              <div className="d-flex justify-content-center justify-content-around shadow rounded">
+              <div className="d-flex justify-content-center justify-content-around shadow rounded" index={i}>
                 <img src={img} height={85} onClick={() => setImg(img)}/>
               </div>
             );

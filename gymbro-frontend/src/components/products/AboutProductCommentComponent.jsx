@@ -1,8 +1,5 @@
-import React, { useState, useContext, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { StarFill, PencilFill } from "react-bootstrap-icons";
-
-// context
-import { AuthContext } from "../../context/AuthContextProvider";
 
 // components
 import ProductReviewsComponent from "./ProductReviewsComponent";
@@ -13,14 +10,14 @@ import { handleProductsAPI } from "../../utils/productAPI";
 // config
 import Messages from "../../config/messages.json";
 
+// custom hooks
+import useHandleCurrentAuthStatus from "../../hooks/useHandleCurrentAuthStatus";
+
 const serverErr = Messages.server.generic;
 const postErr = Messages.comment.post;
 
 const AboutProductCommentComponent = ({ productId }) => {
   console.log("About Product Comment Component re-renders");
-
-  const authContext = useContext(AuthContext);
-  const { authState } = authContext;
 
   const commentTitle = useRef();
   const comment = useRef();
@@ -32,20 +29,27 @@ const AboutProductCommentComponent = ({ productId }) => {
 
   const [newComment, setNewComment] = useState();
 
+  const { isUserLoggedIn, handleCurrentAuthStatus } =
+    useHandleCurrentAuthStatus();
+
+  useEffect(() => {
+    handleCurrentAuthStatus();
+  }, []);
+
   const handleError = () => {
     if (isCommentErr) {
       if (statusCode === 500) {
-        return <p className="fs-8 text-danger">{serverErr}</p>
+        return <p className="fs-8 text-danger">{serverErr}</p>;
       }
 
-      return <p className="fs-8 text-danger">{postErr}</p>
+      return <p className="fs-8 text-danger">{postErr}</p>;
     }
-  }
+  };
 
   const handleSendPostRequest = async () => {
     if (comment.current.value !== "") {
       const customerComment = {
-        name: authState.name,
+        name: isUserLoggedIn.name,
         subject: commentTitle.current.value,
         comment: comment.current.value,
         rating: selectedRating,
@@ -85,7 +89,7 @@ const AboutProductCommentComponent = ({ productId }) => {
         Customer Reviews
       </h1>
 
-      {authState.isAuthorized ? (
+      {isUserLoggedIn.isLoggedIn ? (
         <form
           className="row mt-3 ms-2 me-2"
           onSubmit={(e) => {
@@ -138,7 +142,7 @@ const AboutProductCommentComponent = ({ productId }) => {
         <></>
       )}
 
-      <ProductReviewsComponent productId={productId} newComment={newComment}/>
+      <ProductReviewsComponent productId={productId} newComment={newComment} />
     </div>
   );
 };

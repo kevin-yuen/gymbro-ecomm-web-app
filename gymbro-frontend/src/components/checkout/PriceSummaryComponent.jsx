@@ -1,33 +1,60 @@
 import React from "react";
+import { InfoCircleFill } from "react-bootstrap-icons";
 
-const PriceSummaryComponent = ({ currentStep }) => {
+const PriceSummaryComponent = ({shoppingBagItem, handleCalculatePricePerItem}) => {
   console.log("Price Summary Component re-renders");
-  
+
   return (
-    <>
-      <h1 className="custom-font-family-teko fs-3 fw-bolder">SUMMARY</h1>
-      <div className="border-0 border-top ps-2 pe-2 fs-6">
-        <div className="d-flex justify-content-between mt-2">
-          <p>Sub Total</p>
-          <p>US$55</p>
-        </div>
+        <ul className="list-unstyled mb-2">
+          <li className="fs-9 ms-1 border-bottom pb-2 pt-2">
+            <div className="row">
+              <div className="col-1">
+                <InfoCircleFill
+                  size={19}
+                  className="me-2 ms-1"
+                  color="#ea9000"
+                />
+              </div>
 
-        {currentStep === "Complete" ? (
-          <div className="d-flex justify-content-between">
-            <p>Shipping</p>
-            <p>US$9.50</p>
-          </div>
-        ) : (
-          <></>
-        )}
+              <div className="col-9 ps-0 pe-0">
+                {shoppingBagItem.name}
+                <span className="fw-bolder ms-1">
+                  ({shoppingBagItem.totalRequestedQuantity} item
+                  {shoppingBagItem.totalRequestedQuantity > 1 ? "s" : ""})
+                </span>
+              </div>
 
-        <div className="d-flex justify-content-between">
-          <p className="fw-bold">Total</p>
-          <p className="fw-bold">US$64.50</p>
-        </div>
-      </div>
-    </>
+              <div className="col custom-font-family-inconsolata fs-7">
+                US$
+                {handleCalculatePricePerItem(
+                  shoppingBagItem.clearancePercent,
+                  shoppingBagItem.originalPrice,
+                  shoppingBagItem.discountPrice,
+                  shoppingBagItem.totalRequestedQuantity
+                )}
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-1"></div>
+
+              <div className="col-9 ps-0">
+                <p className="mt-1 mb-0">
+                  <span className="fw-bold fst-italic me-1">Color:</span>
+                  {shoppingBagItem.color}
+                </p>
+
+                <p className="mt-1 mb-0">
+                  <span className="fw-bold fst-italic me-1">Size:</span>
+                  {shoppingBagItem.size}
+                </p>
+              </div>
+
+              <div className="col"></div>
+            </div>
+          </li>
+        </ul>
   );
 };
 
-export default PriceSummaryComponent;
+export default React.memo(PriceSummaryComponent);

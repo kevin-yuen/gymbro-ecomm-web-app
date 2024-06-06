@@ -9,7 +9,7 @@ import AuthErrorComponent from "../../../components/auth/AuthErrorComponent";
 import Message from "../../../config/messages.json";
 
 // utils
-import { handleAuthAPI } from "../../../utils/authAPI";
+import { handleAuthAPI } from "../../../utils/auth";
 
 const serverErr = Message.server.generic;
 

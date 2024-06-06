@@ -4,8 +4,8 @@ import { ChevronDoubleRight } from "react-bootstrap-icons";
 
 // images
 import carouselWomenActiveWear from "../assets/images/carousel-women-activewear.jpeg";
-import carouselMenActiveWear from "../assets/images/carousel-men-activewear.jpeg";
-import carouselSupplements from "../assets/images/carousel-supplements.jpeg";
+import carouselMenActiveWear from "../assets/images/carousel-men-activewear.jpg";
+import carouselSupplements from "../assets/images/carousel-supplements.jpg";
 import landingContent from "../assets/images/landing-content.jpeg";
 import womenSales from "../assets/images/landing-women-sales.jpeg";
 import menSales from "../assets/images/landing-men-sales.jpeg";
@@ -68,22 +68,6 @@ export default function Landing() {
     getTopRatings();
     getClearance();
   }, []);
-
-  // const handleShoppingBagError = () => {
-  //   if (countResError === 409) {
-  //     return (
-  //       <ErrorComponent error={insufficientError} errorCode={countResError} />
-  //     );
-  //   } else if (countResError === 500) {
-  //     return (
-  //       <div className="position-sticky fixed-bottom start-100 z-1 custom-width-30 rounded-3 pt-2 pb-2 text-center custom-background-color-red custom-color-antiquewhite custom-font-family-montserrat fs-7">
-  //         {<ErrorComponent error={serverError} />}
-  //       </div>
-  //     );
-  //   } else {
-  //     return <></>;
-  //   }
-  // };
 
   return (
     <>

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext } from "react";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 // config
@@ -6,13 +6,10 @@ import FormFieldErrMessage from "../../config/messages.json";
 import FormFieldStyle from "../../config/styles.json";
 
 // utils
-import { handleAuthAPI } from "../../utils/authAPI";
+import { handleAuthAPI } from "../../utils/auth";
 
 // components
 import AuthErrorComponent from "./AuthErrorComponent";
-
-// context
-import { AuthContext } from "../../context/AuthContextProvider";
 
 const valid = FormFieldStyle["input-box"]["valid-style"];
 const invalid = FormFieldStyle["input-box"]["invalid-style"];
@@ -25,9 +22,6 @@ const emailNotVerifyErr = FormFieldErrMessage.auth["not-verify"];
 const serverErr = FormFieldErrMessage.server.generic;
 
 const SignInFormComponent = ({ formButton }) => {
-  const authContext = useContext(AuthContext);
-  const { setAuthState } = authContext;
-
   const navigate = useNavigate();
 
   const emailRef = useRef(null);
@@ -44,8 +38,12 @@ const SignInFormComponent = ({ formButton }) => {
 
   const [loginErrEncountered, setLoginErrEncountered] = useState(null);
 
+  const [isSigningIn, setIsSigningIn] = useState(false);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    setIsSigningIn(true);
 
     if (emailRef.current.value && passwordRef.current.value) {
       // all form field validations complete
@@ -70,18 +68,24 @@ const SignInFormComponent = ({ formButton }) => {
         signInRequest
       );
 
-      const signInServerResDets = await signInServerResponse.json().then(res => res.isUserExist).catch(err => err);
+      const signInServerResDets = await signInServerResponse
+        .json()
+        .then((res) => res.isUserExist)
+        .catch((err) => err);
 
       switch (signInServerResponse.status) {
         case 201:
-          setAuthState({
-            userid: signInServerResDets._id,
-            name: signInServerResDets.name,
-            email: signInServerResDets.email,
-            isAuthorized: true
-          })
+          const userid = signInServerResDets._id;
 
-          return navigate("/");
+          const authorizedUser = JSON.stringify({
+            userid,
+            name: signInServerResDets.name,
+            isLoggedIn: true,
+          });
+          localStorage.setItem("authorizedUser", authorizedUser);
+
+          setTimeout(() => navigate("/"), 3000);
+          return;
         case 400:
           setLoginErrEncountered(emailNotVerifyErr);
           break;
@@ -140,6 +144,8 @@ const SignInFormComponent = ({ formButton }) => {
         }
       }
     }
+
+    setIsSigningIn(false);
   };
 
   return (
@@ -196,7 +202,13 @@ const SignInFormComponent = ({ formButton }) => {
             )}
           </div>
 
-          <div className="ps-5 pe-5 mt-3 text-center">{formButton}</div>
+          <div className="ps-5 pe-5 mt-3 text-center">
+            {!isSigningIn ? (
+              formButton
+            ) : (
+              <div className="spinner-border ms-2" role="status"></div>
+            )}
+          </div>
         </form>
       </div>
     </>

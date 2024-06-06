@@ -84,11 +84,11 @@ const ColorPickerComponent = ({
 
   return (
     <div className="d-flex mt-1 ps-1 pb-2">
-      {source.product.options?.map((option) => {
+      {source.product.options?.map((option, i) => {
         const code = handleColorCodeMapping(option.color.toLowerCase());
 
         return (
-          <>
+          <div key={i}>
             <CircleFill
               className="me-2"
               color={code}
@@ -106,7 +106,7 @@ const ColorPickerComponent = ({
                 }
               }}
             />
-          </>
+          </div>
         );
       })}
     </div>

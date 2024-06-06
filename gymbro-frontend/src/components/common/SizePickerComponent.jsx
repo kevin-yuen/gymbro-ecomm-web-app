@@ -2,18 +2,16 @@ import React, { useContext, useState, useEffect } from "react";
 
 // context
 import { ProductContext } from "../../context/ProductContextProvider";
-import { AuthContext } from "../../context/AuthContextProvider";
 
 // components
 import QuickBuyComponent from "../products/QuickBuyComponent";
 import QuantityDropdownComponent from "./QuantityDropdownComponent";
-import ErrorComponent from "../common/ErrorComponent";
 
 // utils
 import { handleSizeMapping } from "../../utils/sizeMapping";
 
-// config
-import Messages from "../../config/messages.json";
+// custom hooks
+import useHandleCurrentAuthStatus from "../../hooks/useHandleCurrentAuthStatus";
 
 const handleFilterOption_CB = (selProduct, selColor = undefined) => {
   return selProduct.options.filter(
@@ -48,10 +46,9 @@ const SizePickerComponent = ({
   // all props are stricted to "/aboutProduct/product"
   console.log("Size Picker Component re-renders");
 
-  const authContext = useContext(AuthContext);
-  const { authState } = authContext;
-
   const productContext = useContext(ProductContext);
+
+  const {isUserLoggedIn, handleCurrentAuthStatus} = useHandleCurrentAuthStatus();
 
   const handleSetSource = () => {
     if (pathname === "/aboutProduct/product") {
@@ -91,6 +88,10 @@ const SizePickerComponent = ({
     setUnitId(source.unitID);
   }, [source]);
 
+  useEffect(() => {
+    handleCurrentAuthStatus();
+  }, [])
+
   return (
     <>
       <div className="d-flex fs-8 text-danger mb-n2">
@@ -101,11 +102,11 @@ const SizePickerComponent = ({
       </div>
 
       <ul className="list-group list-group-horizontal mb-3">
-        {units?.map((unit) => {
+        {units?.map((unit, i) => {
           const sizeOpt = handleSizeMapping(unit.size);
 
           return (
-            <li className="list-group-item ps-2 pe-2 custom-background-color-whitepurple w-100 d-flex justify-content-center">
+            <li className="list-group-item ps-2 pe-2 custom-background-color-whitepurple w-100 d-flex justify-content-center" key={i}>
               {unit.quantity > 0 ? (
                 <button
                   className="rounded-2 fs-9 border-0"
@@ -134,7 +135,7 @@ const SizePickerComponent = ({
       {size !== "NOT IN STOCK" &&
         handleGenerateQuantity(pathname, productDetails, size, unitId)}
 
-      {authState.isAuthorized && pathname !== "/aboutProduct/product" ? (
+      {isUserLoggedIn.isLoggedIn && pathname !== "/aboutProduct/product" ? (
         <QuickBuyComponent source={source} unitId={unitId} size={size} />
       ) : (
         <></>

@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 // context
-import AuthContextProvider from "./context/AuthContextProvider";
 import LogoContextProvider from "./context/LogoContextProvider";
 import CheckoutContextProvider from "./context/CheckoutContextProvider";
 import ShoppingBagContextProvider from "./context/ShoppingBagContextProvider";
@@ -24,6 +23,8 @@ import NotificationConfig from "./config/messages.json";
 import AuthFormButtonComponent from "./components/auth/AuthFormButtonComponent";
 import SidebarFilterComponent from "./components/common/SidebarFilterComponent";
 import ErrorWrapperComponent from "./components/common/ErrorWrapperComponent";
+import PriceWrapperComponent from "./components/checkout/PriceWrapperComponent";
+import PriceSummaryComponent from "./components/checkout/PriceSummaryComponent";
 
 // pages
 import Landing from "./pages/Landing";
@@ -84,14 +85,16 @@ const router = createBrowserRouter(
         <Route path="/supplements" element={<Supplements />} />
         <Route path="/aboutProduct/:productId" element={<AboutProduct />} />
 
-        <Route path="bag" element={<ShoppingBagLayout />}>
+        <Route path="your-bag" element={<ShoppingBagLayout><PriceWrapperComponent /></ShoppingBagLayout>}>
           <Route index element={<BagDetails />} />
           <Route path="information" element={<BuyerInformation />} />
           <Route path="shipping" element={<ShippingInformation />} />
           <Route path="payment" element={<PaymentInformation />} />
-          <Route path="checkoutComplete" element={<CheckoutCompletion />} />
+          {/* <Route path="complete" element={<CheckoutCompletion />} /> */}
         </Route>
       </Route>
+
+      <Route path="/checkout/complete" element={<CheckoutCompletion />} />
 
       <Route path="/auth" element={<AuthLayout />}>
         <Route
@@ -213,7 +216,6 @@ const router = createBrowserRouter(
 
 export default function App() {
   return (
-    <AuthContextProvider>
       <LogoContextProvider>
         <ShoppingBagContextProvider>
           <CheckoutContextProvider>
@@ -221,6 +223,5 @@ export default function App() {
           </CheckoutContextProvider>
         </ShoppingBagContextProvider>
       </LogoContextProvider>
-    </AuthContextProvider>
   );
 }

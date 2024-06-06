@@ -3,13 +3,13 @@ const Product = require("../models/product");
 const ObjectId = require("mongoose").Types.ObjectId;
 
 // This middleware function checks if the customer has the specific item in the shopping bag
-const validateItemExistInShoppingBagMiddleware = (req, res, next) => {
+const validateItemExistInShoppingBagMiddleware = async (req, res, next) => {
   const { userid, unitid } = req.params;
-  const {requestedColor} = req.body;
+  const { requestedColor } = req.body;
 
   try {
-    ShoppingBag.find({ userid }).then((haveAnyItemInBag) => {
-      if (haveAnyItemInBag.length >= 1) {
+    ShoppingBag.findOne({ userid: new ObjectId(userid) }).then((haveAnyItemInBag) => {
+      if (haveAnyItemInBag) {
         ShoppingBag.aggregate([
           {
             $unwind: "$products",
@@ -20,8 +20,8 @@ const validateItemExistInShoppingBagMiddleware = (req, res, next) => {
                 $eq: new ObjectId(unitid),
               },
               "products.unit.color": {
-                $eq: requestedColor
-              }
+                $eq: requestedColor,
+              },
             },
           },
         ]).then((itemInBag) => {
@@ -60,11 +60,11 @@ const validateQuantitySufficientMiddleware = async (req, res, next) => {
       {
         $match: {
           "options.color": {
-            $eq: requestedColor
+            $eq: requestedColor,
           },
           "options.unit._id": {
             $eq: new ObjectId(unitid),
-          }
+          },
         },
       },
     ]);
@@ -91,7 +91,7 @@ const validateQuantitySufficientMiddleware = async (req, res, next) => {
           await ShoppingBag.findOneAndUpdate(
             {
               "products.unit.unitid": new ObjectId(unitid),
-              "products.unit.color": requestedColor
+              "products.unit.color": requestedColor,
             },
             {
               $inc: { "products.$.unit.quantityInBag": reqQty },
@@ -162,7 +162,59 @@ const validateQuantitySufficientMiddleware = async (req, res, next) => {
   }
 };
 
+// This middleware function validates requested quantity against quantity in stock
+const validateQuantitySufficiencyForCheckoutMiddleware = async (
+  req,
+  res,
+  next
+) => {
+  const { shoppingBagItems } = req.body;
+
+  let shoppingBagItemsWithQtySufficiencyCheck = [];
+
+  for await (const shoppingBagItem of shoppingBagItems) {
+    try {
+      const product = await Product.aggregate([
+        {
+          $unwind: "$options",
+        },
+        {
+          $match: {
+            "options.color": {
+              $eq: shoppingBagItem.color,
+            },
+            "options.unit._id": {
+              $eq: new ObjectId(shoppingBagItem.unitid),
+            },
+          },
+        },
+      ]);
+
+      product[0].options.unit.forEach((ut) => {
+        if (ut._id.toString() === shoppingBagItem.unitid) {
+          shoppingBagItem.isSufficientQuantityInStock =
+            shoppingBagItem.totalRequestedQuantity <= ut.quantity
+              ? true
+              : false;
+        }
+      });
+
+      shoppingBagItemsWithQtySufficiencyCheck.push(shoppingBagItem);
+    } catch (e) {
+      return res.status(500).json({ error: e.message });
+    }
+  }
+
+  for (const item of shoppingBagItemsWithQtySufficiencyCheck) {
+    if (!item.isSufficientQuantityInStock) {
+      return res.status(400).json({ shoppingBagItemsWithQtySufficiencyCheck });
+    }
+  }
+  next();
+};
+
 module.exports = {
   validateItemExistInShoppingBagMiddleware,
   validateQuantitySufficientMiddleware,
+  validateQuantitySufficiencyForCheckoutMiddleware,
 };

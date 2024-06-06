@@ -1,57 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
 
 // importing in case need to add custom values into existing sass variables
 @import "../node_modules/bootstrap/scss/_functions.scss";
 @import "../node_modules/bootstrap/scss/_variables.scss";
 
 $darknavyblue: #082c54;
-$darkpurple: #3E0957;
+$darkpurple: #3e0957;
 $antiquewhite: #f8faf9;
 $lightpurple: #f0e8f4;
 $green: #057814;
-$lightgreen: #3EC40C;
+$lightgreen: #3ec40c;
 $red: #f80000;
-$lightred: #F7DEDE;
+$lightred: #f7dede;
 $black: #000000;
 $orange: #ea9000;
 $grey: #75737398;
-$lightgrey: #E5E7E3;
-$whitepurple: #F3EFF7;
+$lightgrey: #e5e7e3;
+$whitepurple: #f3eff7;
 $enable-negative-margins: true;
 
 $custom-position-values: (
   3: 3%,
   4: 4%,
-    5: 5%,
-    10: 10%,
-    15: 15%,
-    20: 20%,
-    21: 21%,
-    22: 22%,
-    23: 23%,
-    24: 24%,
-    25: 25%,
-    30: 30%,
-    35: 35%,
-    40: 40%,
-    45: 45%,
-    55: 55%,
-    60: 60%,
-    65: 65%,
-    70: 70%,
-    75: 75%,
-    80: 80%,
-    85: 85%,
-    90: 90%,
-    91: 91%,
-    92: 92%,
-    93: 93%,
-    94: 94%,
-    95: 95%
+  5: 5%,
+  10: 10%,
+  15: 15%,
+  20: 20%,
+  21: 21%,
+  22: 22%,
+  23: 23%,
+  24: 24%,
+  25: 25%,
+  30: 30%,
+  35: 35%,
+  40: 40%,
+  45: 45%,
+  55: 55%,
+  60: 60%,
+  65: 65%,
+  70: 70%,
+  75: 75%,
+  80: 80%,
+  85: 85%,
+  90: 90%,
+  91: 91%,
+  92: 92%,
+  93: 93%,
+  94: 94%,
+  95: 95%,
 );
 $position-values: map-merge($position-values, $custom-position-values);
 
@@ -83,9 +83,9 @@ $spacers: map-merge($spacers, $custom-spacers);
 
 $custom-font-sizes: (
   7: $font-size-base * 0.85,
-  8: $font-size-base * 0.80,
+  8: $font-size-base * 0.8,
   9: $font-size-base * 0.75,
-  10: $font-size-base * 0.70,
+  10: $font-size-base * 0.7,
   11: $font-size-base * 0.86,
   12: $font-size-base * 0.87,
   13: $font-size-base * 0.88,
@@ -98,16 +98,16 @@ $font-family-base: "Raleway", sans-serif;
 
 // create own custom class
 $utilities: (
-    "custom-font-family": (
-        property: font-family,
-        class: custom-font-family,
-        values: (
-            "teko": Teko,
-            "montserrat": Montserrat,
-            "inconsolata": Inconsolata,
-            "jersey": "Jersey 15"
-        )
+  "custom-font-family": (
+    property: font-family,
+    class: custom-font-family,
+    values: (
+      "teko": Teko,
+      "montserrat": Montserrat,
+      "inconsolata": Inconsolata,
+      "jersey": "Jersey 15",
     ),
+  ),
   "custom-color": (
     property: color,
     class: custom-color,
@@ -120,7 +120,7 @@ $utilities: (
       "red": $red,
       "grey": $grey,
       "lightgreen": $lightgreen,
-      "orange": $orange
+      "orange": $orange,
     ),
   ),
   "custom-background-color": (
@@ -136,7 +136,7 @@ $utilities: (
       "lightred": $lightred,
       "lightgrey": $lightgrey,
       "grey": $grey,
-      "whitepurple": $whitepurple
+      "whitepurple": $whitepurple,
     ),
   ),
   "custom-width": (
@@ -144,41 +144,66 @@ $utilities: (
     class: custom-width,
     responsive: true,
     values: (
-        10: 10%,
-        15: 15%,
-        20: 20%,
-        25: 25%,
-        30: 30%,
-        35: 35%,
-        40: 40%,
-        45: 45%,
-        50: 50%,
-        55: 55%,
-        60: 60%,
-        70: 70%,
-        80: 80%,
-        90: 90%,
-        92: 92%,
-        93: 93%,
-        95: 95%,
-    )
+      10: 10%,
+      15: 15%,
+      20: 20%,
+      25: 25%,
+      30: 30%,
+      35: 35%,
+      40: 40%,
+      45: 45%,
+      50: 50%,
+      55: 55%,
+      60: 60%,
+      70: 70%,
+      80: 80%,
+      90: 90%,
+      92: 92%,
+      93: 93%,
+      95: 95%,
+    ),
   ),
   "custom-height": (
     property: height,
     class: custom-height,
     responsive: true,
     values: (
-        10: 10%,
-        15: 15%,
-        20: 20%,
-        30: 30%,
-        40: 40%,
-        60: 60%,
-        70: 70%,
-        80: 80%,
-        90: 90%,
-    )
-  )
+      5: 5%,
+      6: 6%,
+      7: 7%,
+      8: 8%,
+      9: 9%,
+      10: 10%,
+      15: 15%,
+      20: 20%,
+      30: 30%,
+      31: 31%,
+      32: 32%,
+      33: 33%,
+      34: 34%,
+      35: 35%,
+      40: 40%,
+      41: 41%,
+      42: 42%,
+      43: 43%,
+      44: 44%,
+      45: 45%,
+      46: 46%,
+      47: 47%,
+      48: 48%,
+      49: 49%,
+      50: 50%,
+      60: 60%,
+      70: 70%,
+      80: 80%,
+      90: 90%,
+      95: 95%,
+      96: 96%,
+      97: 97%,
+      98: 98%,
+      99: 99%,
+    ),
+  ),
 );
 
 // override default accordion scss variables

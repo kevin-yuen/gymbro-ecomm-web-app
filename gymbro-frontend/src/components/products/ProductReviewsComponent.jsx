@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import {
   StarFill,
   EmojiFrown,
@@ -10,14 +10,12 @@ import {
 // config
 import Messages from "../../config/messages.json";
 
-// context
-import { AuthContext } from "../../context/AuthContextProvider";
-
 // utils
 import { handleProductsAPI } from "../../utils/productAPI";
 
 // custom hooks
 import useGenerateEditableForm from "../../hooks/useGenerateEditableForm";
+import useHandleCurrentAuthStatus from "../../hooks/useHandleCurrentAuthStatus";
 
 const noCustomerReviewsErr = Messages["server-result"]["no-reviews"];
 const serverErr = Messages.server.generic;
@@ -33,24 +31,11 @@ const handleGenerateError = (statusCode) => {
   }
 };
 
-const handleIsPostEdited_CB = (isEdited) => {
-  switch (isEdited) {
-    case true:
-      return "edited";
-    case false:
-      return "posted";
-    default:
-      return;
-  }
-};
-
 const handleCalculateMonthDiff = (
   datePosted,
-  isEdited,
-  handleIsPostEdited_CB
+  isEdited
 ) => {
-  let isPostEdited = "posted";
-  if (isEdited !== undefined) isPostEdited = handleIsPostEdited_CB(isEdited);
+  const isPostEdited = !isEdited ? "posted" : "edited";
 
   const monthPosted = new Date(datePosted).getMonth() + 1;
   const currentMonth = new Date().getMonth() + 1;
@@ -69,9 +54,6 @@ const handleCalculateMonthDiff = (
 // Product Reviews Component starts here
 const ProductReviewsComponent = ({ productId, newComment }) => {
   console.log("Product Reviews Component re-renders");
-
-  const authContext = useContext(AuthContext);
-  const { authState } = authContext;
 
   const [fetchState, setFetchState] = useState({
     statusCode: undefined,
@@ -95,6 +77,9 @@ const ProductReviewsComponent = ({ productId, newComment }) => {
       customerReviews,
       setCustomerReviews
     );
+
+  const { isUserLoggedIn, handleCurrentAuthStatus } =
+    useHandleCurrentAuthStatus();
 
   const handleDeleteComment = async (productId, commentId) => {
     const serverRes = await handleProductsAPI(
@@ -133,6 +118,10 @@ const ProductReviewsComponent = ({ productId, newComment }) => {
       </>
     );
   };
+
+  useEffect(() => {
+    handleCurrentAuthStatus();
+  }, []);
 
   useEffect(() => {
     async function getProductReviews() {
@@ -190,9 +179,9 @@ const ProductReviewsComponent = ({ productId, newComment }) => {
           {customerReviews !== undefined &&
             customerReviews
               .sort((a, b) => new Date(b.datePosted) - new Date(a.datePosted))
-              .map((review) => {
+              .map((review, i) => {
                 return (
-                  <div className="row border ms-2 me-2 mt-3 rounded">
+                  <div className="row border ms-2 me-2 mt-3 rounded" key={i}>
                     <div className="col-sm-3 pt-2 pb-2">
                       <div className="border-end">
                         <p className="mb-1">{review.name}</p>
@@ -225,12 +214,11 @@ const ProductReviewsComponent = ({ productId, newComment }) => {
                       <p className="fs-9 mb-0">
                         {handleCalculateMonthDiff(
                           review.datePosted,
-                          review.isEdited,
-                          handleIsPostEdited_CB
+                          review.isEdited
                         )}
 
-                        {authState.isAuthorized &&
-                          authState.name === review.name && (
+                        {isUserLoggedIn.isLoggedIn &&
+                          isUserLoggedIn.name === review.name && (
                             <div className="position-absolute start-95 top-10">
                               <Trash3
                                 size={14}

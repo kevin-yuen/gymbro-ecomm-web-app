@@ -9,7 +9,7 @@ import FormFieldErrMessage from "../../config/messages.json";
 import FormFieldStyle from "../../config/styles.json";
 
 // utils
-import { handleAuthAPI } from "../../utils/authAPI";
+import { handleAuthAPI } from "../../utils/auth";
 
 // form field styles config
 const valid = FormFieldStyle["input-box"]["valid-style"];

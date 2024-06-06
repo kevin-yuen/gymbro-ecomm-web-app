@@ -12,7 +12,7 @@ export default function BrandComponent({ customWidth, customHeight }) {
         <img
           src={logoContext}
           alt="gym-bro-logo"
-          className={`custom-width-${customWidth} custom-height-${customHeight}`}
+          className={`navbar-logo custom-width-${customWidth} custom-height-${customHeight}`}
         />
         Bro
       </NavLink>

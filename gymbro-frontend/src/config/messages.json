@@ -86,5 +86,11 @@
     },
     "shopping-bag": {
         "insufficient": "OOPS! You've selected more than what we currently have in stock. Please check out other available items in the meantime."
+    }, 
+    "checkout": {
+        "delivery-input-error": "Please fill in all mandatory fields.",
+        "shipping-method-error": "Please choose a shipping method.",
+        "form-error": "Please fill in all mandatory fields and/or choose a shipping method.",
+        "out-of-stock-error": "We're sorry. We don't have sufficient quantities in stock to fulfill your request. Please adjust the quantity or remove the item before proceed to checkout."
     }
 }

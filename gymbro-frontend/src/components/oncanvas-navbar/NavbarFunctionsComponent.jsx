@@ -1,67 +1,63 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { BoxArrowInRight, BoxArrowRight } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
-
-// context
-import { AuthContext } from "../../context/AuthContextProvider";
 
 // config
 import Messages from "../../config/messages.json";
 
 // custom hooks
 import useLogout from "../../hooks/useLogout";
+import useHandleCurrentAuthStatus from "../../hooks/useHandleCurrentAuthStatus";
 
 // components
 import ShoppingBagIconComponent from "./ShoppingBagIconComponent";
 
 const shopBagTooltip = Messages.tooltip["shopping-bag"];
 
+const handleShowCustomerName = (customerName) => {
+  return customerName.substring(0, customerName.indexOf(" "));
+}
+
 export default function NavbarFunctionsComponent({ searchComponent }) {
   console.log("Navbar Functions Component re-renders");
-
-  const authContext = useContext(AuthContext);
-  const { authState } = authContext;
 
   const { handleLogout } = useLogout();
 
   const [enableBagAuthIcon, setEnableBagAuthIcon] = useState(false);
   const [showToolTip, setShowToolTip] = useState(false);
-  const [authorizedUserName, setAuthorizedUserName] = useState(null);
+
+  const { isUserLoggedIn, handleCurrentAuthStatus } =
+    useHandleCurrentAuthStatus();
 
   useEffect(() => {
-    setEnableBagAuthIcon(authState.isAuthorized ? true : false);
+    handleCurrentAuthStatus();
+  }, []);
 
-    if (authState.isAuthorized) {
-      const customerName = authState.name;
-
-      setAuthorizedUserName(
-        customerName.length <= 5
-          ? customerName
-          : customerName.substring(0, 6) + "..."
-      );
-    }
+  useEffect(() => {
+    setEnableBagAuthIcon(isUserLoggedIn.isLoggedIn ? true : false);
   });
-
   return (
     <div className="navbar-functions me-5 d-flex align-items-center">
       {searchComponent}
 
-      {authState.isAuthorized ? (
-        <div className="me-2 w-50">
+      {isUserLoggedIn.isLoggedIn ? (
+        <div className="me-5 w-50">
           <p className="fs-7 fw-bold custom-color-darkpurple">
-            Hello, {authorizedUserName}
+            Hello, {handleShowCustomerName(isUserLoggedIn.name)}
           </p>
         </div>
       ) : (
         <></>
       )}
 
-      <Link to={enableBagAuthIcon ? "/bag" : "#"}>
+      <Link to={enableBagAuthIcon ? "/your-bag" : "#"}>
         <span
           className="d-inline-block"
-          tabindex="0"
+          tabIndex="0"
           data-toggle="tooltip"
-          title={!authState.isAuthorized && showToolTip ? shopBagTooltip : ""}
+          title={
+            !isUserLoggedIn.isLoggedIn && showToolTip ? shopBagTooltip : ""
+          }
         >
           <ShoppingBagIconComponent
             enableBagAuthIcon={enableBagAuthIcon}

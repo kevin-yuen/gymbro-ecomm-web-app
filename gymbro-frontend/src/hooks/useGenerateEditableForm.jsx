@@ -24,7 +24,9 @@ const useGenerateEditableForm = (productId, subject, comment, customerReviews, s
     switch (postUpdateRes.status) {
       case 206:
         newPostContent = await postUpdateRes.json().then(res => {
-            res.result.reviews[0].isEdited = true;
+          // console.log(res.result);
+
+          //   res.result.reviews[0].isEdited = true;
             return res.result.reviews;
         });
 

@@ -70,11 +70,21 @@ textarea:focus {
   color: var(--antiquewhite);
 }
 
-.checkout-progress-border {
+.checkout-progress-link .checkout-step-button {
   border: 1px solid black;
   border-radius: 50%;
   width: 50px;
   height: 50px;
+}
+
+.checkout-progress-link.active .checkout-step-button{
+  border: 1px solid #3399FF;
+  background-color: #3399FF;
+  color: antiquewhite
+}
+
+.checkout-step-button:disabled {
+  color: grey;
 }
 
 .auth-container {
@@ -105,6 +115,64 @@ textarea:focus {
 @media screen and (min-width: 937px) {
   button.navbar-toggler {
     display: none !important;
+  }
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1380px) {
+  .carousel {
+    height: 590px;
+  }
+}
+
+@media screen and (min-width: 1170px) and (max-width: 1249px) {
+  .carousel {
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1169px) {
+  .carousel {
+    height: 520px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1079px) {
+  .carousel {
+    height: 480px;
+  }
+}
+
+@media screen and (min-width: 910px) and (max-width: 999px) {
+  .carousel {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 909px) {
+  .carousel {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 685px) and (max-width: 799px) {
+  .carousel {
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 684px) {
+  .carousel {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 579px) {
+  .carousel {
+    height: 250px;
+  }
+
+  .navbar-logo {
+    display: none;
   }
 }
 
