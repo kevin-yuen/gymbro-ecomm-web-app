@@ -1,7 +1,4 @@
-import React, { useState, useEffect } from "react";
-
-// components
-import ThumbnailsComponent from "../products/ThumbnailsComponent";
+import React from "react";
 
 const ProductImageComponent = ({
   src,
@@ -9,8 +6,6 @@ const ProductImageComponent = ({
   location = undefined,
   options = undefined,
 }) => {
-  console.log("Product Image Component re-renders");
-
   return (
     <>
       <img src={src} className="card-img-top" height={height} />

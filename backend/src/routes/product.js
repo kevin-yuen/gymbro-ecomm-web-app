@@ -9,6 +9,4 @@ router.get("/topRatings/:rating/:limit", getTopRatingProducts);
 router.get("/clearance/:limit", getClearanceProducts);
 router.get("/aboutProduct/product", getProductDetails)
 
-router.get("/fordata", getData);
-
 module.exports = router;

@@ -103,8 +103,6 @@ const deductItemQuantity = async (req, res) => {
   const { shoppingBagItems } = req.body;
 
   for await (const shoppingBagItem of shoppingBagItems) {
-    console.log(shoppingBagItem);
-
     try {
       await Product.findOneAndUpdate(
         {
@@ -139,7 +137,7 @@ const deductItemQuantity = async (req, res) => {
   return res.status(201).json({ message: "Quantity update complete" });
 };
 
-// for MVP, temporarily clearing customer's shopping bag upoon payment is successfully made
+// for MVP v1.0, clear customer's shopping bag upoon payment is successfully made
 const clearUserShoppingBagItem = async (req, res) => {
   const { userid } = req.params;
 

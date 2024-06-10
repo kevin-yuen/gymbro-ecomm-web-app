@@ -14,8 +14,6 @@ import { ShoppingBagContext } from "../../context/ShoppingBagContextProvider";
 import useHandleCurrentAuthStatus from "../../hooks/useHandleCurrentAuthStatus";
 
 const BagItemComponent = ({ item, outOfStockError }) => {
-  console.log("Bag Item Component re-renders");
-
   const shoppingbagContext = useContext(ShoppingBagContext);
   const { handleRemoveShoppingBagItem } = shoppingbagContext;
 
@@ -36,27 +34,30 @@ const BagItemComponent = ({ item, outOfStockError }) => {
 
       <div className="card mb-3 pb-3 border-0 border-bottom">
         <div className="row g-0">
-          <div className="col-md-4 text-center">
+          <div className="col-lg-4 text-center">
             <img
               src={item.thumbnail}
               alt={item.thumbnail}
               height={250}
-              className="rounded-2"
+              className="sb-item-thumbnail rounded-2"
             />
           </div>
-          <div className="position-relative col-md-8">
-            <div className="card-body fs-7 custom-font-family-inconsolata">
-              <p className="card-text mb-0 fs-5 custom-font-family-jersey">
+
+          <div className="position-relative col-lg-8">
+            <div className="sb-item-dets-container card-body custom-font-family-inconsolata">
+              <p className="sb-item-name card-text mb-0 custom-font-family-jersey">
                 {item.name}
               </p>
 
-              <p className="card-text mb-0">{item.fitType}</p>
+              <p className="sb-item-dets card-text mb-0">
+                {item.fitType}
+              </p>
 
-              <p className="card-text">
+              <p className="sb-item-dets card-text">
                 {item.color} | {item.size}
               </p>
 
-              <p className="card-text fw-semibold">
+              <p className="sb-item-dets card-text fw-semibold">
                 {item.discountPrice > 0 ? (
                   <>
                     <span
@@ -79,14 +80,16 @@ const BagItemComponent = ({ item, outOfStockError }) => {
               </p>
 
               {item.clearancePercent > 0 ? (
-                <div className="d-flex align-items-center custom-color-green fw-bolder fs-6">
-                  US$
-                  {handleCalculateClearanceAmount(
-                    item.clearancePercent,
-                    item.originalPrice,
-                    item.discountPrice
-                  )}
-                  <div className="custom-background-color-red custom-color-antiquewhite custom-font-family-jersey fs-6 d-inline ms-2 ps-2 pe-2 pt-1 pb-1 rounded-3">
+                <div className="sb-price-container d-flex align-items-center custom-color-green fw-bolder fs-6">
+                  <span className="sb-item-price">
+                    US$
+                    {handleCalculateClearanceAmount(
+                      item.clearancePercent,
+                      item.originalPrice,
+                      item.discountPrice
+                    )}
+                  </span>
+                  <div className="custom-background-color-red custom-color-antiquewhite custom-font-family-jersey d-inline ms-2 ps-2 pe-2 pt-1 pb-1 rounded-3">
                     After extra {item.clearancePercent}% off
                   </div>
                 </div>
@@ -95,7 +98,7 @@ const BagItemComponent = ({ item, outOfStockError }) => {
               )}
 
               <div>
-                <div className="d-flex align-items-center mt-2 mb-4">
+                <div className="sb-qty-control-container d-flex align-items-center mt-3 mb-3">
                   <QuantityArrowControlComponent
                     item={item}
                     maxQuantity={item.maxQuantity}
@@ -103,7 +106,7 @@ const BagItemComponent = ({ item, outOfStockError }) => {
                   />
                 </div>
 
-                <div className="custom-background-color-orange custom-color-antiquewhite d-inline rounded-2 ps-2 pe-2 pt-1 pb-1">
+                <div className="custom-background-color-orange custom-color-antiquewhite d-inline rounded-2 ps-2 pe-2 pt-1 pb-1 fs-7">
                   {item.maxQuantity} items available
                 </div>
 

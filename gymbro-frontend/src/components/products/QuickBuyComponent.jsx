@@ -7,9 +7,7 @@ import useAddItemToBag from "../../hooks/useAddItemToBag";
 const quickBuyQuantity = 1;
 
 // Quantity Buy Component starts here...
-const QuickBuyComponent = ({ source, unitId, size }) => {
-  console.log("Quantity Buy Component re-renders");
-
+const QuickBuyComponent = ({ source, unitId, size, units }) => {
   const [disableQuickBuy, setDisableQuickBuy] = useState(false);
 
   const { isAdding, handleAddToBag } = useAddItemToBag();
@@ -18,7 +16,7 @@ const QuickBuyComponent = ({ source, unitId, size }) => {
     size !== "NOT IN STOCK" && !isAdding
       ? setDisableQuickBuy(false)
       : setDisableQuickBuy(true);
-  }, [isAdding]);
+  }, [isAdding, units]);
 
   return (
     <div className="text-center">

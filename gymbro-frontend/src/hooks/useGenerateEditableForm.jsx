@@ -6,8 +6,6 @@ import React, { useState, useRef } from "react";
 import { handleProductsAPI } from "../utils/productAPI";
 
 const useGenerateEditableForm = (productId, subject, comment, customerReviews, setCustomerReviews) => {
-  console.log("useGenerateEditableForm custom hooks re-render");
-
   const titleRef = useRef();
   const commentRef = useRef();
 
@@ -24,9 +22,6 @@ const useGenerateEditableForm = (productId, subject, comment, customerReviews, s
     switch (postUpdateRes.status) {
       case 206:
         newPostContent = await postUpdateRes.json().then(res => {
-          // console.log(res.result);
-
-          //   res.result.reviews[0].isEdited = true;
             return res.result.reviews;
         });
 

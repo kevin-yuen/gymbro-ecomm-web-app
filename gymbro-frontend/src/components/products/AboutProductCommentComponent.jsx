@@ -17,8 +17,6 @@ const serverErr = Messages.server.generic;
 const postErr = Messages.comment.post;
 
 const AboutProductCommentComponent = ({ productId }) => {
-  console.log("About Product Comment Component re-renders");
-
   const commentTitle = useRef();
   const comment = useRef();
 

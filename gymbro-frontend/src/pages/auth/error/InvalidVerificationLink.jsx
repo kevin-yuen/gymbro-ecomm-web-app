@@ -30,9 +30,9 @@ export default function InvalidVerificationLink() {
   });
 
   const navigate = useNavigate();
-  const {pathname} = useLocation();
+  const { pathname } = useLocation();
 
-  const userId = pathname.substring(pathname.lastIndexOf("/")+1);
+  const userId = pathname.substring(pathname.lastIndexOf("/") + 1);
 
   const handleResend = async (e) => {
     e.preventDefault();
@@ -47,7 +47,7 @@ export default function InvalidVerificationLink() {
       });
 
       const resendRequest = JSON.stringify({
-        id: userId
+        id: userId,
       });
       const resendResponse = await handleAuthAPI(
         "/users/resendVerificationLink",

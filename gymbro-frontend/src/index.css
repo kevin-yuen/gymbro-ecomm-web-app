@@ -110,11 +110,19 @@ textarea:focus {
   .carousel-inner {
     margin-top: -57px;
   }
+
+  .checkoutSteps-container {
+    margin-top: 5px;
+  }
 }
 
 @media screen and (min-width: 937px) {
   button.navbar-toggler {
     display: none !important;
+  }
+
+  .checkoutSteps-container {
+    margin-top: 60px;
   }
 }
 
@@ -386,3 +394,81 @@ textarea:focus {
     margin-left: 35px !important;
   }
 }
+
+@media screen and (max-width: 1290px) {
+  .sb-item-dets-container {
+    padding-left: 35px !important;
+  }
+}
+
+@media screen and (max-width: 1190px) {
+  .sb-item-dets-container {
+    padding-left: 70px !important;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .sb-qty-input {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .ps-item-dets {
+    font-size: 10px !important;
+  }
+
+  .ps-item-name {
+    margin-left: 2px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sb-item-thumbnail {
+    padding-left: 60px;
+  }
+
+  .sb-item-dets {
+    font-size: 13px !important;
+  }
+
+  .sb-price-container,
+  .sb-qty-control-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sb-item-thumbnail {
+    padding-left: 0px;
+  }
+
+  .sb-item-dets,
+  .sb-item-price {
+    font-size: 12px;
+  }
+
+  .sb-separator {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sb-item-price {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .sb-item-name {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (min-width: 515px) {
+  .sb-item-name {
+    font-size: 22px !important;
+  }
+}
+

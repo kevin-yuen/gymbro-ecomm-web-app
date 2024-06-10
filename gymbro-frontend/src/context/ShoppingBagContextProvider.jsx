@@ -1,4 +1,4 @@
-import React, { useState, createContext, useEffect } from "react";
+import React, { useState, createContext } from "react";
 
 // utils
 import { handleShoppingBagAPI } from "../utils/shoppingBagAPI";
@@ -6,8 +6,6 @@ import { handleShoppingBagAPI } from "../utils/shoppingBagAPI";
 export const ShoppingBagContext = createContext();
 
 export default function ShoppingBagContextProvider({ children }) {
-  console.log("Shopping Bag Context Provider re-renders");
-
   const [countResError, setCountResError] = useState({
     productName: undefined,
     productSize: undefined,
@@ -17,13 +15,13 @@ export default function ShoppingBagContextProvider({ children }) {
   const [shoppingBagItems, setShoppingBagItems] = useState([]);
 
   const [totalItemCount, setTotalItemCount] = useState(0);
-  
+
   const [isLoading, setIsLoading] = useState(false);
   const [getBagItemsServerError, setGetBagItemsServerError] = useState(false);
 
   const [shippingMethod, setShippingMethod] = useState({
     type: "",
-    fee: 0
+    fee: 0,
   });
 
   const handleGetThumbnail = (options, bagItemColor) =>
@@ -99,20 +97,28 @@ export default function ShoppingBagContextProvider({ children }) {
   };
 
   const handleRemoveShoppingBagItem = async (userid, productid, unitid) => {
-    const remainItemsServerRes = await handleShoppingBagAPI(`/shoppingbag/removeItem/${userid}/${productid}/${unitid}`, "DELETE");
+    const remainItemsServerRes = await handleShoppingBagAPI(
+      `/shoppingbag/removeItem/${userid}/${productid}/${unitid}`,
+      "DELETE"
+    );
 
     switch (remainItemsServerRes.status) {
       case 201:
         let tempShoppingBagItems = [];
-        const remainProducts = await remainItemsServerRes.json().then(remainItemRes => remainItemRes.remainItems.products);
+        const remainProducts = await remainItemsServerRes
+          .json()
+          .then((remainItemRes) => remainItemRes.remainItems.products);
 
-        shoppingBagItems.filter(shoppingBagItem => {
-          remainProducts.forEach(remainProduct => {
-            if (remainProduct.productid === shoppingBagItem.productid && remainProduct.unit.unitid === shoppingBagItem.unitid) {
+        shoppingBagItems.filter((shoppingBagItem) => {
+          remainProducts.forEach((remainProduct) => {
+            if (
+              remainProduct.productid === shoppingBagItem.productid &&
+              remainProduct.unit.unitid === shoppingBagItem.unitid
+            ) {
               tempShoppingBagItems.push(shoppingBagItem);
             }
-          })
-        })
+          });
+        });
 
         setShoppingBagItems(tempShoppingBagItems);
 
@@ -122,11 +128,11 @@ export default function ShoppingBagContextProvider({ children }) {
       default:
         break;
     }
-  }
+  };
 
   const handleUpdateItemQuantity = (latestItems) => {
     setShoppingBagItems(latestItems);
-  }
+  };
 
   return (
     <ShoppingBagContext.Provider
@@ -143,7 +149,7 @@ export default function ShoppingBagContextProvider({ children }) {
         getBagItemsServerError,
         shippingMethod,
         setShippingMethod,
-        setShoppingBagItems
+        setShoppingBagItems,
       }}
     >
       {children}

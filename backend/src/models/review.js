@@ -16,7 +16,7 @@ const ReviewSchema = new mongoose.Schema({
       name: {
         type: mongoose.Schema.Types.String,
         ref: "user",
-        required: true
+        required: true,
       },
       rating: {
         type: Number,
@@ -36,8 +36,8 @@ const ReviewSchema = new mongoose.Schema({
       isEdited: {
         type: Boolean,
         default: false,
-        required: true
-      }
+        required: true,
+      },
     },
   ],
 });

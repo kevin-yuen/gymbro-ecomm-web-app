@@ -5,5 +5,3 @@ export const handleAuthAPI = async (endpoint, method, json) => {
     body: json,
   });
 };
-
-//export const isUserLoggedIn = () => localStorage.getItem("isLoggedIn");

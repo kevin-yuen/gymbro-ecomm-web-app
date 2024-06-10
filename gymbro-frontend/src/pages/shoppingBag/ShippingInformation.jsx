@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useContext, useRef } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 // components
 import CheckoutButtonsComponent from "../../components/checkout/CheckoutButtonsComponent";
-import PriceSummaryComponent from "../../components/checkout/PriceSummaryComponent";
 
 // messages
 import Messages from "../../config/messages.json";
@@ -20,26 +19,35 @@ const standardShippingFee = ShippingFeeConfig["shipping-fee"].standard;
 const expressShippingFee = ShippingFeeConfig["shipping-fee"].express;
 
 const ShippingInformation = () => {
-  console.log("Shipping Information re-renders");
-
   const navigate = useNavigate();
 
   const shoppingBagContext = useContext(ShoppingBagContext);
   const { shippingMethod, setShippingMethod } = shoppingBagContext;
 
-  const initialTempShippingMethod = shippingMethod.fee === 0 ? {type: "", fee: 0} : {type: shippingMethod.type, fee: shippingMethod.fee};
+  const initialTempShippingMethod =
+    shippingMethod.fee === 0
+      ? { type: "", fee: 0 }
+      : { type: shippingMethod.type, fee: shippingMethod.fee };
 
   const [formError, setFormError] = useState(undefined);
-  const [tempShippingMethod, setTempShippingMethod] = useState(initialTempShippingMethod);
+  const [tempShippingMethod, setTempShippingMethod] = useState(
+    initialTempShippingMethod
+  );
 
   const handleChangeShippingMethod = (e) => {
     setTempShippingMethod({ type: e.target.id, fee: e.target.value });
-  }    
+  };
 
   const handleFormVerification = () => {
-    setFormError(Number(shippingMethod.fee) === 0 ? (tempShippingMethod.fee > 0 ? false : true) : false);
-  }
-    
+    setFormError(
+      Number(shippingMethod.fee) === 0
+        ? tempShippingMethod.fee > 0
+          ? false
+          : true
+        : false
+    );
+  };
+
   useEffect(() => {
     if (formError !== undefined && !formError) {
       setShippingMethod(tempShippingMethod);

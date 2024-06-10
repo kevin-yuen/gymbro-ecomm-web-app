@@ -19,8 +19,6 @@ const handleShowCustomerName = (customerName) => {
 }
 
 export default function NavbarFunctionsComponent({ searchComponent }) {
-  console.log("Navbar Functions Component re-renders");
-
   const { handleLogout } = useLogout();
 
   const [enableBagAuthIcon, setEnableBagAuthIcon] = useState(false);

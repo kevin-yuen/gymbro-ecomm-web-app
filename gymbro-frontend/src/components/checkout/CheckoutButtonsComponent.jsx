@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRightCircleFill,
@@ -16,7 +16,6 @@ const CheckoutButtonsComponent = ({
   const handleGenerateCheckoutNavButtons = () => {
     if (prevButton === undefined && nextButton !== undefined) {
       return (
-        // <Link className="float-end" to="information">
         <button
           className="border-0 rounded-2 ps-4 pe-4 pt-3 pb-3 custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-inconsolata fw-bolder fs-7"
           onClick={(e) => {
@@ -30,7 +29,6 @@ const CheckoutButtonsComponent = ({
             <ArrowRightCircleFill size={15} />
           </span>
         </button>
-        // </Link>
       );
     } else {
       return (

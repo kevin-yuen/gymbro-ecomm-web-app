@@ -8,8 +8,6 @@ import {
 } from "../../utils/card";
 
 const ItemDetailsComponent = ({ item }) => {
-  console.log("Item Details Component re-renders");
-
   const camelProductName = handleConvertCamelCase(item.shortName);
   const uppercaseGender = handleConvertUpperCase(item.gender);
 

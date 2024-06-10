@@ -7,8 +7,6 @@ import {
 } from "react-router-dom";
 
 // context
-import LogoContextProvider from "./context/LogoContextProvider";
-import CheckoutContextProvider from "./context/CheckoutContextProvider";
 import ShoppingBagContextProvider from "./context/ShoppingBagContextProvider";
 
 // layouts
@@ -24,7 +22,6 @@ import AuthFormButtonComponent from "./components/auth/AuthFormButtonComponent";
 import SidebarFilterComponent from "./components/common/SidebarFilterComponent";
 import ErrorWrapperComponent from "./components/common/ErrorWrapperComponent";
 import PriceWrapperComponent from "./components/checkout/PriceWrapperComponent";
-import PriceSummaryComponent from "./components/checkout/PriceSummaryComponent";
 
 // pages
 import Landing from "./pages/Landing";
@@ -85,12 +82,18 @@ const router = createBrowserRouter(
         <Route path="/supplements" element={<Supplements />} />
         <Route path="/aboutProduct/:productId" element={<AboutProduct />} />
 
-        <Route path="your-bag" element={<ShoppingBagLayout><PriceWrapperComponent /></ShoppingBagLayout>}>
+        <Route
+          path="your-bag"
+          element={
+            <ShoppingBagLayout>
+              <PriceWrapperComponent />
+            </ShoppingBagLayout>
+          }
+        >
           <Route index element={<BagDetails />} />
           <Route path="information" element={<BuyerInformation />} />
           <Route path="shipping" element={<ShippingInformation />} />
           <Route path="payment" element={<PaymentInformation />} />
-          {/* <Route path="complete" element={<CheckoutCompletion />} /> */}
         </Route>
       </Route>
 
@@ -216,12 +219,8 @@ const router = createBrowserRouter(
 
 export default function App() {
   return (
-      <LogoContextProvider>
-        <ShoppingBagContextProvider>
-          <CheckoutContextProvider>
-            <RouterProvider router={router} />;
-          </CheckoutContextProvider>
-        </ShoppingBagContextProvider>
-      </LogoContextProvider>
+    <ShoppingBagContextProvider>
+      <RouterProvider router={router} />
+    </ShoppingBagContextProvider>
   );
 }

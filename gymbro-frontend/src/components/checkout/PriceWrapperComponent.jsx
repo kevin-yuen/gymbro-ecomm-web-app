@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 
 // context
 import { ShoppingBagContext } from "../../context/ShoppingBagContextProvider";
@@ -10,8 +10,6 @@ import PriceSummaryComponent from "./PriceSummaryComponent";
 import { handleCalculateClearanceAmount } from "../../utils/calculateClearance";
 
 const PriceWrapperComponent = () => {
-  console.log("Price Wrapper Component re-renders");
-
   const shoppingbagContext = useContext(ShoppingBagContext);
   const { shoppingBagItems, shippingMethod } = shoppingbagContext;
 
@@ -75,7 +73,7 @@ const PriceWrapperComponent = () => {
       ))}
 
       <div className="ps-2 pe-2 fs-6 custom-font-family-inconsolata">
-        <div className="d-flex justify-content-between mt-2">
+        <div className="ps-item-dets d-flex justify-content-between mt-2">
           <p>Sub Total</p>
 
           <p>
@@ -85,15 +83,15 @@ const PriceWrapperComponent = () => {
         </div>
 
         <div className="d-flex justify-content-between fs-7">
-          <p className="ms-2">
+          <p className="ps-item-dets ms-2">
             Shipping Fee{" "}
             {shippingMethod.type !== "" ? "(" + shippingMethod.type + ")" : ""}
           </p>
 
-          <p>US${Number(shippingMethod.fee).toFixed(2)}</p>
+          <p className="ps-item-dets">US${Number(shippingMethod.fee).toFixed(2)}</p>
         </div>
 
-        <div className="d-flex justify-content-between">
+        <div className="ps-item-dets d-flex justify-content-between">
           <p className="fw-bold">Total</p>
 
           <p className="fw-bold">US${handleCalculateTotal()}</p>

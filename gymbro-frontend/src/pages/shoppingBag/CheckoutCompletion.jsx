@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 // components
@@ -6,11 +6,11 @@ import BrandComponent from "../../components/common/BrandComponent";
 
 const CheckoutCompletion = () => {
   const navigate = useNavigate();
-  
+
   useEffect(() => {
-      setTimeout(() => {
-        navigate("/");
-      }, 8000);
+    setTimeout(() => {
+      navigate("/");
+    }, 8000);
   });
 
   return (
@@ -30,7 +30,10 @@ const CheckoutCompletion = () => {
 
         <div className="d-flex justify-content-center align-items-center">
           <p className="mb-0">Redirecting...</p>
-          <div className="ms-2 spinner-border custom-color-darkpurple" role="status"></div>
+          <div
+            className="ms-2 spinner-border custom-color-darkpurple"
+            role="status"
+          ></div>
         </div>
       </div>
     </>

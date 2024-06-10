@@ -1,7 +1,4 @@
-import React, {
-  createContext,
-  useReducer
-} from "react";
+import React, { createContext, useReducer } from "react";
 
 export const ProductContext = createContext();
 
@@ -74,9 +71,7 @@ export default function ProductContextProvider({ children, item }) {
   );
 
   return (
-    <ProductContext.Provider
-      value={{ selectedProduct, dispatchSelectProduct }}
-    >
+    <ProductContext.Provider value={{ selectedProduct, dispatchSelectProduct }}>
       {children}
     </ProductContext.Provider>
   );

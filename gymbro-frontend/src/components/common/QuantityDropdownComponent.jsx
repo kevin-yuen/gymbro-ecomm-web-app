@@ -52,8 +52,6 @@ export default function QuantityDropdownComponent({
   tempProductAddToBag,
   unitId,
 }) {
-  console.log("Quantity Dropdown Component re-renders");
-
   const shoppingBagContext = useContext(ShoppingBagContext);
 
   const { countResError } = shoppingBagContext;

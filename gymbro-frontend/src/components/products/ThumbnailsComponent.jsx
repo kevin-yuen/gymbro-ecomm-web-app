@@ -1,14 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 
 const ThumbnailsComponent = ({ selectedOption, setImg }) => {
-    console.log("Thumbnails Component re-renders");
-
   return (
 <>
           {selectedOption.imgSrc.map((img, i) => {
             return (
-              <div className="d-flex justify-content-center justify-content-around shadow rounded" index={i}>
-                <img src={img} height={85} onClick={() => setImg(img)}/>
+              <div className="d-flex justify-content-center justify-content-around shadow rounded" key={i}>
+                <img src={img} alt="" height={85} onClick={() => setImg(img)}/>
               </div>
             );
           })}

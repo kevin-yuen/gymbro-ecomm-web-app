@@ -18,7 +18,6 @@ const createPaymentIntent = async (req, res) => {
 
     return res.send({clientSecret: paymentIntent.client_secret})
   } catch (e) {
-    console.log("ERROR", e.message);
     return res.status(400).send({error: e.message});
   }
 };

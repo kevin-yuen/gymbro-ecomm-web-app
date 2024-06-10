@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDoubleRight } from "react-bootstrap-icons";
 
@@ -13,16 +13,12 @@ import menSales from "../assets/images/landing-men-sales.jpeg";
 // custom hooks
 import useGetEligibleItems from "../hooks/useGetEligibleItems";
 
-// context
-import { ShoppingBagContext } from "../context/ShoppingBagContextProvider";
-
 // config
 import Labels from "../config/labels.json";
 import Messages from "../config/messages.json";
 
 // utils
 import { apiResultLoader } from "../utils/apiResultLoader";
-import ErrorComponent from "../components/common/ErrorComponent";
 
 const discountHeader = Labels["promo-discounts"].header;
 const moreDiscounts = Labels["promo-discounts"]["more-discounts"];
@@ -43,8 +39,6 @@ const topRatingEndpoint = "/topRatings/";
 const clearanceEndpoint = "/clearance/";
 
 export default function Landing() {
-  console.log("Landing re-renders");
-
   const {
     getEligibleItems: getDiscounts,
     eligibleItems: discountItems,

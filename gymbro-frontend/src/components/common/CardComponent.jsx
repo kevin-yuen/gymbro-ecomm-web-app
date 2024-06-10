@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 // context
@@ -8,10 +8,8 @@ import { ProductContext } from "../../context/ProductContextProvider";
 import ProductImageComponent from "./ProductImageComponent";
 
 const CardComponent = ({ itemDetailsComponent }) => {
-  console.log("Card Component re-renders");
-
   const productContext = useContext(ProductContext);
-  const { selectedProduct, dispatchSelectProduct } = productContext;
+  const { selectedProduct } = productContext;
 
   return (
     <>

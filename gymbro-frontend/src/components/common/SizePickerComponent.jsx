@@ -44,8 +44,6 @@ const SizePickerComponent = ({
   selOption,
 }) => {
   // all props are stricted to "/aboutProduct/product"
-  console.log("Size Picker Component re-renders");
-
   const productContext = useContext(ProductContext);
 
   const {isUserLoggedIn, handleCurrentAuthStatus} = useHandleCurrentAuthStatus();
@@ -57,7 +55,7 @@ const SizePickerComponent = ({
         .unit.find((ut) => ut.quantity > 0);
 
       productDetails.size = selUnit !== undefined ? selUnit.size : "N/A";
-      productDetails.unitID = selUnit._id;
+      productDetails.unitID = selUnit !== undefined ? selUnit._id : undefined;
 
       return productDetails;
     } else {
@@ -136,7 +134,7 @@ const SizePickerComponent = ({
         handleGenerateQuantity(pathname, productDetails, size, unitId)}
 
       {isUserLoggedIn.isLoggedIn && pathname !== "/aboutProduct/product" ? (
-        <QuickBuyComponent source={source} unitId={unitId} size={size} />
+        <QuickBuyComponent source={source} unitId={unitId} size={size} units={units} />
       ) : (
         <></>
       )}

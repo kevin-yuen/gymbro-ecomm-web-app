@@ -29,7 +29,6 @@ const CheckoutForm = () => {
   const [isProcessing, setIsProcessing] = useState(false);
 
   const shoppingBagContext = useContext(ShoppingBagContext);
-  console.log(shoppingBagContext.shoppingBagItems);
 
   const [finalShoppingBagItems, setFinalShoppingBagItems] = useState(
     shoppingBagContext.shoppingBagItems
@@ -56,10 +55,6 @@ const CheckoutForm = () => {
       setErrorMessage(formErrorMessage);
       return;
     }
-
-    // 1. check whether there are sufficient quantities to fulfill the request
-    // 2. process payment
-    // 3. deduct in-stock quantities from the requested quantities
 
     setIsProcessing(true);
 
@@ -149,11 +144,21 @@ const CheckoutForm = () => {
 
           <button
             type="submit"
-            className={`${isProcessing ? "custom-background-color-grey" : "custom-background-color-darkpurple"} mt-2 float-end rounded-2 border-0 pt-3 pb-3 ps-4 pe-4 custom-color-antiquewhite fw-bolder custom-font-family-inconsolata fs-7`}
+            className={`${
+              isProcessing
+                ? "custom-background-color-grey"
+                : "custom-background-color-darkpurple"
+            } mt-2 float-end rounded-2 border-0 pt-3 pb-3 ps-4 pe-4 custom-color-antiquewhite fw-bolder custom-font-family-inconsolata fs-7`}
             disabled={isProcessing ? true : false}
           >
-            {isProcessing ? "Processing..." : <>Pay Now<WalletFill className="ms-2" size={20} /></>}
-
+            {isProcessing ? (
+              "Processing..."
+            ) : (
+              <>
+                Pay Now
+                <WalletFill className="ms-2" size={20} />
+              </>
+            )}
           </button>
         </div>
       </form>

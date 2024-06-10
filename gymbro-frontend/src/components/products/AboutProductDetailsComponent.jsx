@@ -29,8 +29,6 @@ const handleShowClearance = (clearancePercent) => {
 };
 
 const AboutProductDetailsComponent = ({ productDetails }) => {
-  console.log("About Product Details Component re-renders");
-
   return (
     <>
       <div className="text-center">

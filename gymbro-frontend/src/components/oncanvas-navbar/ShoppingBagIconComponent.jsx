@@ -11,8 +11,6 @@ import { handleShoppingBagAPI } from "../../utils/shoppingBagAPI";
 import useHandleCurrentAuthStatus from "../../hooks/useHandleCurrentAuthStatus";
 
 const ShoppingBagIconComponent = ({ enableBagAuthIcon, setShowToolTip }) => {
-  console.log("Shopping Bag Icon Component re-renders");
-
   const shoppingBagContext = useContext(ShoppingBagContext);
 
   const {

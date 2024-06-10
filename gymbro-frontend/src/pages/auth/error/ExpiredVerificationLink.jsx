@@ -26,18 +26,24 @@ export default function ExpiredVerificationLink() {
     const userid = pathname.substring(pathname.lastIndexOf("/") + 1);
 
     const resendRequest = JSON.stringify({
-      id: userid
+      id: userid,
     });
-    const resendResponse = await handleAuthAPI("/users/resendVerificationLink", "POST", resendRequest);
+    const resendResponse = await handleAuthAPI(
+      "/users/resendVerificationLink",
+      "POST",
+      resendRequest
+    );
 
     const serverResend = await resendResponse
-    .json()
-    .then((result) => result.isUserExist)
-    .catch((err) => err);
+      .json()
+      .then((result) => result.isUserExist)
+      .catch((err) => err);
 
     switch (resendResponse.status) {
       case 201:
-        navigate("/auth/verification_email_sent_success", {state: serverResend.email});
+        navigate("/auth/verification_email_sent_success", {
+          state: serverResend.email,
+        });
         break;
       case 500:
       case 502:
@@ -64,7 +70,7 @@ export default function ExpiredVerificationLink() {
       </div>
 
       <div className="d-flex justify-content-center align-items-center mt-3">
-      <p className="fs-7">No worries, we can send the link again.</p>
+        <p className="fs-7">No worries, we can send the link again.</p>
       </div>
       <button
         className="rounded ps-4 pe-4 pt-2 pb-2 custom-background-color-darkpurple custom-color-antiquewhite fs-7"

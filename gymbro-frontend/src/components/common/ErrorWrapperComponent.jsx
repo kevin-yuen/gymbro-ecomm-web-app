@@ -14,8 +14,6 @@ const serverError = Messages.server.generic;
 const insufficientError = Messages["shopping-bag"].insufficient;
 
 const ErrorWrapperComponent = ({ children }) => {
-  console.log("Error Wrapper Component re-renders");
-
   const shoppingBagContext = useContext(ShoppingBagContext);
   const { countResError } = shoppingBagContext;
 

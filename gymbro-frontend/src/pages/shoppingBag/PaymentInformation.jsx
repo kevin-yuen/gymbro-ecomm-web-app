@@ -8,8 +8,6 @@ import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "./CheckoutForm";
 
 const PaymentInformation = () => {
-  console.log("Payment Info Component re-renders");
-
   const [stripePromise, setStripePromise] = useState(null);
   const [clientSecret, setClientSecret] = useState("");
 

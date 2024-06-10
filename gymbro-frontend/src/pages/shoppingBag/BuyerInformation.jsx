@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import {
-  ExclamationCircle,
-  Asterisk,
-} from "react-bootstrap-icons";
+import { ExclamationCircle, Asterisk } from "react-bootstrap-icons";
 
 // config
 import statesConfig from "../../config/states.json";
@@ -14,12 +11,9 @@ import CheckoutButtonsComponent from "../../components/checkout/CheckoutButtonsC
 // messages
 import Messages from "../../config/messages.json";
 
-
 const formInputError = Messages.checkout["delivery-input-error"];
 
 const BuyerInformation = () => {
-  console.log("Buyer Information page re-renders");
-
   const navigate = useNavigate();
 
   const [info, setInfo] = useState({
@@ -50,8 +44,7 @@ const BuyerInformation = () => {
   const handlePreserveFormInputs = () => {
     sessionStorage.setItem("buyerDeliveryInfo", JSON.stringify(info));
     navigate("/your-bag/shipping");
-  }
-    
+  };
 
   const handleFormVerification = () => {
     for (const [key, value] of Object.entries(info)) {
@@ -72,7 +65,8 @@ const BuyerInformation = () => {
 
     const infoFromSessionStorage = sessionStorage.getItem("buyerDeliveryInfo");
 
-    if (infoFromSessionStorage !== null) setInfo(JSON.parse(infoFromSessionStorage));
+    if (infoFromSessionStorage !== null)
+      setInfo(JSON.parse(infoFromSessionStorage));
   }, [isFormError]);
 
   return (
@@ -178,7 +172,9 @@ const BuyerInformation = () => {
               >
                 <option value={"State"}>--- State ---</option>
                 {statesConfig.state.map((state, i) => (
-                  <option key={i} value={state}>{state}</option>
+                  <option key={i} value={state}>
+                    {state}
+                  </option>
                 ))}
               </select>
             </div>

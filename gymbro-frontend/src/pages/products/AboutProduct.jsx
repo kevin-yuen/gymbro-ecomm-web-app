@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 // utils
@@ -8,11 +8,6 @@ import { handleProductsAPI } from "../../utils/productAPI";
 import Message from "../../config/messages.json";
 
 // components
-import ProductImageGroupComponent from "../../components/products/ProductImageGroupComponent";
-import BuyComponent from "../../components/products/AboutProductDetailsComponent";
-import ProductDetailsComponent from "../../components/products/ProductDetailsComponent";
-import CustomerReviewsComponent from "../../components/products/ProductReviewsComponent";
-
 import AboutProductContentWrapperComponent from "../../components/products/AboutProductContentWrapperComponent";
 import ProductImageComponent from "../../components/common/ProductImageComponent";
 import ThumbnailsComponent from "../../components/products/ThumbnailsComponent";
@@ -20,12 +15,7 @@ import AboutProductDetailsComponent from "../../components/products/AboutProduct
 import ColorPickerComponent from "../../components/common/ColorPickerComponent";
 import SizePickerComponent from "../../components/common/SizePickerComponent";
 import ProductDescComponent from "../../components/products/ProductDescComponent";
-import ProductReviewsComponent from "../../components/products/ProductReviewsComponent";
 import AboutProductCommentComponent from "../../components/products/AboutProductCommentComponent";
-
-// mock data
-import ProductInformationData from "../../config/productInformationData.json";
-import CustomerReviewsData from "../../config/customerReviewsData.json";
 
 const productNotFoundErr = Message["server-result"]["product-not-found"];
 const serverErr = Message.server.generic;
@@ -67,8 +57,6 @@ const handleConstructProductDetails = (state, serverRes) => {
 
 // About Product component starts here...
 export default function AboutProduct() {
-  console.log("About Product Component re-renders");
-
   const { pathname, state } = useLocation();
 
   const [productDetails, setProductDetails] = useState();
@@ -168,11 +156,7 @@ export default function AboutProduct() {
       ) : (
         <AboutProductContentWrapperComponent
           productImageComponent={
-            <ProductImageComponent
-              src={img}
-              height={"743.48"}
-              // location={pathname}
-            />
+            <ProductImageComponent src={img} height={"743.48"} />
           }
           aboutProductDetailsComponent={
             <AboutProductDetailsComponent productDetails={productDetails} />
@@ -201,7 +185,9 @@ export default function AboutProduct() {
               prodFitAndCare={productDetails.fitAndCare}
             />
           }
-          productReviewsComponent={<AboutProductCommentComponent productId={productDetails._id} />}
+          productReviewsComponent={
+            <AboutProductCommentComponent productId={productDetails._id} />
+          }
         >
           <ThumbnailsComponent
             selectedOption={selectedOption}

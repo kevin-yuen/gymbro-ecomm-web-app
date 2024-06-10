@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 
 // components
 import CardComponent from "../common/CardComponent";
@@ -10,8 +10,6 @@ import ItemDetailsComponent from "../common/ItemDetailsComponent";
 import ProductContextProvider from "../../context/ProductContextProvider";
 
 export default function PromotionComponent({ eligibleItems }) {
-  console.log("Promotion Component re-renders");
-
   return (
     <div className="row pt-3">
       {eligibleItems?.map((item, i) => {

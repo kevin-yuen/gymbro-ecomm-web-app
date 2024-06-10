@@ -18,8 +18,6 @@ import useHandleCurrentAuthStatus from "../../hooks/useHandleCurrentAuthStatus";
 const serverError = Messages.server.generic;
 
 const BagDetails = () => {
-  console.log("Bag Details page re-renders");
-
   const navigate = useNavigate();
 
   const shoppingbagContext = useContext(ShoppingBagContext);
@@ -34,7 +32,6 @@ const BagDetails = () => {
     handleGetShoppingBagItems,
     shoppingBagItems,
     getBagItemsServerError,
-    handleUpdateItemQuantity,
     setShoppingBagItems,
   } = shoppingbagContext;
 
@@ -80,7 +77,6 @@ const BagDetails = () => {
     for (const item of notInItemsStorage) {
       itemsStorage.push(item);
     }
-    // handleUpdateItemQuantity(itemsStorage);
 
     setShoppingBagItems(itemsStorage);
 
@@ -103,10 +99,6 @@ const BagDetails = () => {
         <BagListComponent items={shoppingBagItems} />
 
         <div className="d-flex float-end">
-          {/* <button className="border-0 rounded-2 ps-4 pe-4 pt-3 pb-3 me-3 custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-inconsolata fw-bolder fs-7" onClick={() => handleUpdateTotalReqQtyState()}>
-            Save changes
-          </button> */}
-
           {!isSetShoppingBagItems ? (
             <CheckoutButtonsComponent
               prevButton={undefined}
@@ -114,7 +106,11 @@ const BagDetails = () => {
               handleUpdateTotalReqQtyState={handleUpdateTotalReqQtyState}
             />
           ) : (
-            <button className="border-0 rounded-2 ps-4 pe-4 pt-3 pb-3 custom-background-color-grey custom-color-antiquewhite custom-font-family-inconsolata fw-bolder fs-7" type="button" disabled>
+            <button
+              className="border-0 rounded-2 ps-4 pe-4 pt-3 pb-3 custom-background-color-grey custom-color-antiquewhite custom-font-family-inconsolata fw-bolder fs-7"
+              type="button"
+              disabled
+            >
               <span
                 className="spinner-border spinner-border-sm me-2"
                 aria-hidden="true"

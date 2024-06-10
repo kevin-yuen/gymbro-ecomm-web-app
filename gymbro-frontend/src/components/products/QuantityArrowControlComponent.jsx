@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { Dash, Plus } from "react-bootstrap-icons";
 
 const QuantityArrowControlComponent = ({
@@ -6,8 +6,6 @@ const QuantityArrowControlComponent = ({
   maxQuantity,
   totalRequestedQuantity,
 }) => {
-  console.log("Quantity Arrow Control Component re-renders");
-
   const qtyRef = useRef(totalRequestedQuantity);
   const decrementRef = useRef();
   const incrementRef = useRef();
@@ -36,7 +34,9 @@ const QuantityArrowControlComponent = ({
   };
 
   const handleCaptureUpdatedQuantity = () => {
-    const bagItemSessionStorage = sessionStorage.getItem(`bag-item-${item.unitid}`);
+    const bagItemSessionStorage = sessionStorage.getItem(
+      `bag-item-${item.unitid}`
+    );
     let bagItem;
 
     if (bagItemSessionStorage === null) {
@@ -46,11 +46,14 @@ const QuantityArrowControlComponent = ({
       };
     } else {
       bagItem = JSON.parse(bagItemSessionStorage);
-      bagItem = {...bagItem, totalRequestedQuantity: Number(qtyRef.current.value)};
+      bagItem = {
+        ...bagItem,
+        totalRequestedQuantity: Number(qtyRef.current.value),
+      };
     }
 
     sessionStorage.setItem(`bag-item-${item.unitid}`, JSON.stringify(bagItem));
-  }
+  };
 
   const handleDecrementQtyAndButtonState = () => {
     qtyRef.current.value = Number(qtyRef.current.value) - 1;
@@ -68,16 +71,17 @@ const QuantityArrowControlComponent = ({
 
   useEffect(() => {
     handleButtonsState();
-  }, []);
+  });
 
   return (
     <div className="d-flex align-items-center">
-      <span className="fw-bolder">Qty:</span>
+      {/* <span className="shopping-bag-qty fw-bolder">Qty:</span> */}
 
-      <div className="input-group ms-2 custom-width-50">
-        <span className="input-group-text">
+      {/* quantity input group for resolution of 576px or above */}
+      <div className="input-group ms-2 custom-width-75">
+        <span className="input-group-text bg-transparent border-0">
           <button
-            className="border-0 border-dark-subtle custom-background-color-antiquewhite"
+            className="rounded-circle"
             ref={decrementRef}
             onClick={() => handleDecrementQtyAndButtonState()}
           >
@@ -87,15 +91,15 @@ const QuantityArrowControlComponent = ({
 
         <input
           type="text"
-          className="form-control fs-10 text-center custom-font-family-montserrat"
+          className="sb-qty-input form-control fs-10 text-center custom-font-family-montserrat"
           value={totalRequestedQuantity}
           ref={qtyRef}
           readOnly
         />
 
-        <span className="input-group-text">
+        <span className="input-group-text bg-transparent border-0">
           <button
-            className="border-0 border-dark-subtle custom-background-color-antiquewhite"
+            className="rounded-circle"
             ref={incrementRef}
             onClick={() => handleIncrementQtyAndButtonState()}
           >

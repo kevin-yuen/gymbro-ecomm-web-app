@@ -53,8 +53,6 @@ const handleCalculateMonthDiff = (
 
 // Product Reviews Component starts here
 const ProductReviewsComponent = ({ productId, newComment }) => {
-  console.log("Product Reviews Component re-renders");
-
   const [fetchState, setFetchState] = useState({
     statusCode: undefined,
     isSuccess: false,

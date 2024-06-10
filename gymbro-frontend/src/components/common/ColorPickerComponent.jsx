@@ -2,53 +2,17 @@ import React, { useContext, useState } from "react";
 import { CircleFill } from "react-bootstrap-icons";
 
 // config
-import colorCode from "../../config/colorCodeMapping.json";
+import colorCodeConfig from "../../config/colorCodeMapping.json";
 
 // context
 import { ProductContext } from "../../context/ProductContextProvider";
 
 const handleColorCodeMapping = (colorOption) => {
-  let code;
-
-  switch (colorOption) {
-    case "black":
-    case "black marl":
-    case "black/white":
-      code = colorCode.black;
-      break;
-    case "brown marl":
-      code = colorCode["brown marl"];
-      break;
-    case "base green marl":
-      code = colorCode["base green"];
-      break;
-    case "core olive":
-      code = colorCode["core olive"];
-      break;
-    case "blue":
-      code = colorCode["navy blue"];
-      break;
-    case "grey":
-    case "light grey marl/dark grey marl/smokey grey":
-      code = colorCode["light grey"];
-      break;
-    case "light blue marl/light grey marl/turkish teal":
-      code = colorCode["light blue"];
-      break;
-    case "white":
-      code = colorCode.white;
-      break;
-    case "desert beige":
-      code = colorCode["desert beige"];
-      break;
-    case "nomad":
-      code = colorCode.nomad;
-      break;
-    default:
-      break;
+  for (const colorCode in colorCodeConfig) {
+    if (colorCode === colorOption) {
+      return colorCodeConfig[colorCode]
+    }
   }
-
-  return code;
 };
 
 const ColorPickerComponent = ({
@@ -58,7 +22,7 @@ const ColorPickerComponent = ({
   setImg,
   setSelColor,
 }) => {
-  console.log("Color Picker Component re-renders");
+  console.log("Color picker re-renders");
 
   const productContext = useContext(ProductContext);
 
@@ -79,7 +43,6 @@ const ColorPickerComponent = ({
     }
   };
 
-  // const { selectedProduct, dispatchSelectProduct } = productContext;
   const [source, setSource] = useState(handleSetSource());
 
   return (

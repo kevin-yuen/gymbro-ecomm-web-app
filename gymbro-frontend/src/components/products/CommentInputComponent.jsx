@@ -1,8 +1,6 @@
 import React from "react";
 
 const CommentInputComponent = React.forwardRef((props, ref) => {
-    console.log("Comment Input Component re-renders");
-    
   return (
     <textarea
       class="form-control fs-8"

@@ -1,11 +1,5 @@
 const Review = require("../models/review");
 
-const bralette = require("../src-data/review/gymshark/bralette.json");
-
-const insertReviewData = async () => {
-  await Review.insertMany([bralette]);
-};
-
 const getProductReview = async (req, res) => {
   try {
     const productReviews = await Review.findOne({
@@ -78,8 +72,6 @@ const deleteProductReview = async (req, res) => {
 };
 
 const updateProductReview = async (req, res) => {
-  console.log("updating review");
-
   const { newSubjectRequest, newCommentRequest } = req.body;
   const { productid, postid } = req.params;
 
@@ -123,7 +115,7 @@ const updateProductReview = async (req, res) => {
           "reviews.$.subject": newSubjectRequest,
           "reviews.$.comment": newComment,
           "reviews.$.datePosted": new Date(),
-          "reviews.$.isEdited": true
+          "reviews.$.isEdited": true,
         },
       },
       {
@@ -147,6 +139,5 @@ module.exports = {
   getProductReview,
   createProductReview,
   deleteProductReview,
-  updateProductReview,
-  insertReviewData,
+  updateProductReview
 };

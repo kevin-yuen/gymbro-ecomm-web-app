@@ -1,16 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
-import { LogoContext } from "../../context/LogoContextProvider";
+import logoSrc from "../../assets/images/logo.jpeg";
 
 export default function BrandComponent({ customWidth, customHeight }) {
-  const logoContext = useContext(LogoContext);
-
   return (
     <>
       <NavLink to="/" className="custom-color-darkpurple text-decoration-none">
         Gym
         <img
-          src={logoContext}
+          src={logoSrc}
           alt="gym-bro-logo"
           className={`navbar-logo custom-width-${customWidth} custom-height-${customHeight}`}
         />

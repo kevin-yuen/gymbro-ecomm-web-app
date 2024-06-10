@@ -83,7 +83,6 @@ const validateQuantitySufficientMiddleware = async (req, res, next) => {
       const quantityInBag = itemInBag.products.unit.quantityInBag;
 
       if (
-        // reqQty <= unitInStock.quantity &&
         reqQty + quantityInBag <=
         unitInStock.quantity
       ) {

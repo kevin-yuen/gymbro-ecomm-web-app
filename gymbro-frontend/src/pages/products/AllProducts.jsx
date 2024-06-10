@@ -18,8 +18,6 @@ const endpoint = "/all/";
 const noProdErr = Messages["server-result"]["no-products"];
 
 export default function AllProducts({ sideBarFilterComponent }) {
-  console.log("All Products re-renders");
-
   const shoppingBagContext = useContext(ShoppingBagContext);
   const { setCountResError } = shoppingBagContext;
 

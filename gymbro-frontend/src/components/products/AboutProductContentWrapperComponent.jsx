@@ -9,8 +9,6 @@ const AboutProductContentWrapperComponent = ({
   productDescComponent,
   productReviewsComponent
 }) => {
-  console.log("About Product Content Wrapper Component re-renders");
-
   return (
     <>
       <div className="container pt-5">

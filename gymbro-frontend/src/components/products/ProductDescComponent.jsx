@@ -1,8 +1,6 @@
 import React from "react";
 
 const ProductDescComponent = ({ prodDesc, prodSpec, prodFitAndCare }) => {
-  console.log("Product Desc Component re-renders");
-
   return (
     <div className="accordion" id="productDescSpec">
       <div className="accordion-item border-0 border-bottom">

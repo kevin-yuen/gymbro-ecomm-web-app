@@ -5,8 +5,7 @@ const {
   getProductReview,
   createProductReview,
   deleteProductReview,
-  updateProductReview,
-  insertReviewData,
+  updateProductReview
 } = require("../controllers/review");
 
 const {
@@ -17,8 +16,5 @@ router.get("/aboutProduct/reviews", getProductReview);
 router.post("/createReview", productReviewMiddleware, createProductReview);
 router.delete("/deleteReview", deleteProductReview);
 router.patch("/updateReview/:productid/:postid", updateProductReview);
-
-// only for inserting mock data
-router.get("/insertReviews", insertReviewData);
 
 module.exports = router;
