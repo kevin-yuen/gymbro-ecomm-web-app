@@ -13,7 +13,7 @@ const PaymentInformation = () => {
 
   useEffect(() => {
     async function getStripePublishableKey() {
-      const stripePublishableKeyPromise = await fetch("/stripe/config");
+      const stripePublishableKeyPromise = await fetch(process.env.REACT_APP_SERVER_URL + "/stripe/config");
       const { publishableKey } = await stripePublishableKeyPromise.json();
 
       setStripePromise(loadStripe(publishableKey));
@@ -29,7 +29,7 @@ const PaymentInformation = () => {
       );
 
       const paymentIntentPromise = await fetch(
-        `/stripe/create-payment-intent/${outstandingTotal}`,
+        process.env.REACT_APP_SERVER_URL + `/stripe/create-payment-intent/${outstandingTotal}`,
         {
           method: "POST",
         }
