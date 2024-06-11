@@ -27,7 +27,7 @@ app.use("/stripe", require("./src/routes/stripe"));
 
 // connect to MongoDB
 mongoose
-  .connect(process.env.MONGODB_URI, {
+  .connect("mongodb+srv://kevinyuen11:gymbroWEBAPP100@cluster0.31nxr6f.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
