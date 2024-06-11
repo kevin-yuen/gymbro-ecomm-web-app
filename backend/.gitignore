@@ -2,6 +2,4 @@
 node_modules/
 
 # dotenv environment variables files
-.env
-
-src/src-data/
+#.env
