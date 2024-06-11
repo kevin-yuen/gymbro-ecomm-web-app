@@ -92,7 +92,7 @@ const CheckoutForm = () => {
         const { error } = await stripe.confirmPayment({
           elements,
           confirmParams: {
-            return_url: process.env.REACT_APP_BASE_URL + "/checkout/complete"
+            return_url: "https://gymbro-ecomm-web-app-frontend.vercel.app/checkout/complete"
             // return_url: "http://localhost:3000/checkout/complete",
           },
         });
