@@ -16,7 +16,7 @@ const shopBagTooltip = Messages.tooltip["shopping-bag"];
 
 const handleShowCustomerName = (customerName) => {
   return customerName.substring(0, customerName.indexOf(" "));
-}
+};
 
 export default function NavbarFunctionsComponent({ searchComponent }) {
   const { handleLogout } = useLogout();
@@ -33,7 +33,8 @@ export default function NavbarFunctionsComponent({ searchComponent }) {
 
   useEffect(() => {
     setEnableBagAuthIcon(isUserLoggedIn.isLoggedIn ? true : false);
-  });
+  }, [isUserLoggedIn.isLoggedIn]);
+
   return (
     <div className="navbar-functions me-5 d-flex align-items-center">
       {searchComponent}

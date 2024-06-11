@@ -22,8 +22,6 @@ const ColorPickerComponent = ({
   setImg,
   setSelColor,
 }) => {
-  console.log("Color picker re-renders");
-
   const productContext = useContext(ProductContext);
 
   const handleSetSource = () => {

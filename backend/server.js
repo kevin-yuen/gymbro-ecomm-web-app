@@ -1,9 +1,19 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors");
 
 require("dotenv").config();
 
 const app = express();
+
+// for hosting on Vercel
+app.use(
+  cors({
+    origin: ["something"],
+    methods: ["POST", "GET", "DELETE", "PATCH"],
+    credentials: true,
+  })
+);
 
 // middleware
 app.use(express.json());
@@ -31,5 +41,5 @@ mongoose
 // start the server
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`)
-})
+  console.log(`Server is running on port ${port}`);
+});
