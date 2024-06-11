@@ -1,7 +1,7 @@
 export const handleAuthAPI = async (endpoint, method, json) => {
-  console.log("https://gymbro-ecomm-web-app-backend.vercel.app" + endpoint);
+  console.log(`${process.env.REACT_APP_SERVER_URL}`);
 
-  return await fetch("https://gymbro-ecomm-web-app-backend.vercel.app" + endpoint, {
+  return await fetch(`${process.env.REACT_APP_SERVER_URL}` + endpoint, {
     method: method,
     headers: { "Content-Type": "application/json" },
     body: json,
