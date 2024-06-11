@@ -10,7 +10,7 @@ const app = express();
 app.use(
   cors({
     origin: ["https://gymbro-ecomm-web-app-frontend.vercel.app"],
-    methods: ["POST", "GET", "DELETE", "PATCH"],
+    methods: ["POST", "GET", "DELETE", "PATCH", "OPTIONS"],
     credentials: true
   })
 );
