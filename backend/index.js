@@ -9,7 +9,7 @@ const app = express();
 // for hosting on Vercel
 app.use(
   cors({
-    origin: "https://gymbro-ecomm-web-app-frontend.vercel.app",
+    origin: "https://gymbro-fitness.vercel.app",
     methods: ["POST", "GET", "DELETE", "PATCH", "OPTIONS"],
     credentials: true
   })
