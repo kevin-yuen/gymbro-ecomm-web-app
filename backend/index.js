@@ -7,13 +7,14 @@ require("dotenv").config();
 const app = express();
 
 // for hosting on Vercel
-app.use(
-  cors({
-    origin: ["https://gymbro-ecomm-web-app-frontend.vercel.app"],
-    methods: ["POST", "GET", "DELETE", "PATCH", "OPTIONS"],
-    credentials: true
-  })
-);
+app.use(cors());
+// app.use(
+//   cors({
+//     origin: ["https://gymbro-ecomm-web-app-frontend.vercel.app"],
+//     methods: ["POST", "GET", "DELETE", "PATCH", "OPTIONS"],
+//     credentials: true
+//   })
+// );
 
 // middleware
 app.use(express.json());

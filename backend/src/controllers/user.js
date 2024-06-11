@@ -142,14 +142,7 @@ const resendToken = async (req, res) => {
 };
 
 const signInUser = async (req, res) => {
-  res.header("Access-Control-Allow-Origin", "*");
-
   const { email, password } = req.body;
-
-  // res.setHeader("Access-Control-Allow-Credentials", "true");
-  // res.setHeader("Access-Control-Max-Age", "1800");
-  // res.setHeader("Access-Control-Allow-Headers", "content-type");
-  // res.setHeader( "Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS" );
 
   try {
     const isUserExist = await User.findOne({ email });
