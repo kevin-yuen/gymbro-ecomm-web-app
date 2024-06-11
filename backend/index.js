@@ -12,6 +12,9 @@ app.use(
     origin: ["https://gymbro-ecomm-web-app-frontend.vercel.app"],
     methods: ["POST", "GET", "DELETE", "PATCH"],
     credentials: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*"
+    }
   })
 );
 
