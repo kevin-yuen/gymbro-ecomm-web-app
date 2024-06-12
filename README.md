@@ -10,7 +10,8 @@
         <li>React router</li>
         <li>Optimized application performance by leveraging React.memo() to prevent un-necessary re-renders of a component and performance hooks (useCallback(), useMemo()) to avoid expensive computations</li>
         <li>MongoDB and design of collections and documents</li>
-        <li>Server set-up</li>
+        <li>Server set-up for data storage</li>
+        <li>Leveraged NodeMailer library to set up SMTP server for sending email verification</li>
         <li>Developed REST APIs that perform CRUD operations on multiple collections and documents</li>
         <li>Stripe integration</li>
 </ul>
