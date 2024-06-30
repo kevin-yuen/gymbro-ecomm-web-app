@@ -53,10 +53,15 @@ const getProductDetails = async(req, res) => {
   }
 }
 
+const getProductsByGender = async(req, res) => {
+  await getEligibleProducts(undefined, {gender: req.params.gender}, returnFields, res);
+}
+
 module.exports = {
   getAllProducts,
   getDiscountProducts,
   getTopRatingProducts,
   getClearanceProducts,
   getProductDetails,
+  getProductsByGender
 };

@@ -83,7 +83,7 @@ export default function Landing() {
                 <br />
                 <span className="ms-5">EXCLUSIVE QUALITY.</span>
               </p>
-              <Link className="carousel-navlink custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-teko fw-semibold text-decoration-none rounded-5 ps-5 pe-5 pt-2 pb-2">
+              <Link className="carousel-navlink custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-teko fw-semibold text-decoration-none rounded-5 ps-5 pe-5 pt-2 pb-2" to="/womenActivewear">
                 SHOP WOMEN
               </Link>
             </div>
@@ -101,7 +101,7 @@ export default function Landing() {
                 <br />
                 <span className="ms-5">SASSY STYLED GYM WEAR.</span>
               </p>
-              <Link className="carousel-navlink custom-background-color-antiquewhite custom-color-darkpurple custom-font-family-teko fw-semibold text-decoration-none rounded-5 ps-5 pe-5 pt-2 pb-2">
+              <Link className="carousel-navlink custom-background-color-antiquewhite custom-color-darkpurple custom-font-family-teko fw-semibold text-decoration-none rounded-5 ps-5 pe-5 pt-2 pb-2" to="/menActivewear">
                 SHOP MEN
               </Link>
             </div>
@@ -119,7 +119,7 @@ export default function Landing() {
                 <br />
                 <span className="ms-5">PERFECTION.</span>
               </p>
-              <Link className="carousel-navlink custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-teko fw-semibold text-decoration-none rounded-5 ps-5 pe-5 pt-2 pb-2">
+              <Link className="carousel-navlink custom-background-color-darkpurple custom-color-antiquewhite custom-font-family-teko fw-semibold text-decoration-none rounded-5 ps-5 pe-5 pt-2 pb-2" to="/supplements">
                 SHOP SUPPLEMENTS
               </Link>
             </div>

@@ -81,6 +81,8 @@
         "no-topRating": "No top-rating items available today.",
         "no-clearnace": "No clearance items available today.",
         "no-products": "OOPS! All products have been sold. Please visit GymBro again later.",
+        "no-women-activewear": "OOPS! All women activewear have been sold. Please visit GymBro again later.",
+        "no-men-activewear": "OOPS! All men activewear have been sold. Please visit GymBro again later.",
         "product-not-found": "OOPS! Product has been removed!",
         "no-reviews": "No customer reviews so far. Be the first one to comment about this product!"
     },

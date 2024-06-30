@@ -6,14 +6,17 @@ require("dotenv").config();
 
 const app = express();
 
-// for hosting on Vercel
-app.use(
-  cors({
-    origin: "https://gymbro-fitness.vercel.app",
-    methods: ["POST", "GET", "DELETE", "PATCH", "OPTIONS"],
-    credentials: true
-  })
-);
+// for hosting on Vercel (prod environment)
+// app.use(
+//   cors({
+//     origin: "https://gymbro-fitness.vercel.app",
+//     methods: ["POST", "GET", "DELETE", "PATCH", "OPTIONS"],
+//     credentials: true
+//   })
+// );
+
+// for hosting on dev environment
+app.use(cors());
 
 // middleware
 app.use(express.json());

@@ -34,6 +34,8 @@ const useGetEligibleItems = (
           case "/discounts/":
           case "/topRatings/":
           case "/clearance/":
+          case "/gender/women/":
+          case "/gender/men/":
             serverResponse = await serverResponse
               .json()
               .then((res) => res.eligibleItems)

@@ -114,6 +114,10 @@ textarea:focus {
   .checkoutSteps-container {
     margin-top: 5px;
   }
+
+  .main {
+    margin-top:-50px;
+  }
 }
 
 @media screen and (min-width: 937px) {
