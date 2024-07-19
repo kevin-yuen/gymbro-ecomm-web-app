@@ -1,7 +1,7 @@
 <h1>GymBro</h1>
 
 <h3>What is it?</h3>
-<p>A full-stack MERN e-commerce web application that sells activewears and supplements</p>
+<p>A full-stack MERN e-commerce web application that sells activewears and supplements. Please visit the website <a href="https://gymbro-fitness.vercel.app/">here</a>.</p>
 
 <h3>What I learned</h3>
 <ul>
